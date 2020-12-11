@@ -1,0 +1,6 @@
+
+terminal PROG, IDENT, LBRACE, RBRACE;
+
+nonterminal Program, VarDeclList, MethodDeclList;
+
+Program ::= (Program) PROG IDENT VarDeclList LBRACE MEthodDeclList RBRACE;

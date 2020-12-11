@@ -1,0 +1,17 @@
+program MJProgram
+	const int z =2;
+	
+	int x; 
+	int y;
+	int ss[], w, r, e, res;
+{
+	int main() {
+		
+		print(1);
+		
+		x = y + 5;
+		
+		print(2);
+		
+	}
+}

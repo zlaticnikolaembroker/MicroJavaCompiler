@@ -1,0 +1,87 @@
+// generated with ast extension for cup
+// version 0.8
+// 10/11/2020 17:42:31
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class AssignorBool extends Assignors {
+
+    private String constName;
+    private Assignop Assignop;
+    private Boolean constValue;
+
+    public AssignorBool (String constName, Assignop Assignop, Boolean constValue) {
+        this.constName=constName;
+        this.Assignop=Assignop;
+        if(Assignop!=null) Assignop.setParent(this);
+        this.constValue=constValue;
+    }
+
+    public String getConstName() {
+        return constName;
+    }
+
+    public void setConstName(String constName) {
+        this.constName=constName;
+    }
+
+    public Assignop getAssignop() {
+        return Assignop;
+    }
+
+    public void setAssignop(Assignop Assignop) {
+        this.Assignop=Assignop;
+    }
+
+    public Boolean getConstValue() {
+        return constValue;
+    }
+
+    public void setConstValue(Boolean constValue) {
+        this.constValue=constValue;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(Assignop!=null) Assignop.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(Assignop!=null) Assignop.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(Assignop!=null) Assignop.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("AssignorBool(\n");
+
+        buffer.append(" "+tab+constName);
+        buffer.append("\n");
+
+        if(Assignop!=null)
+            buffer.append(Assignop.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(constValue!=null)
+            buffer.append(constValue.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [AssignorBool]");
+        return buffer.toString();
+    }
+}

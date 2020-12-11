@@ -1,0 +1,22 @@
+program MJProgram
+	const int z;
+	const int s;
+	
+	int x; 
+	int y;
+{
+	int main() {
+		
+		print(1);
+		
+		x = y + 5;
+		
+		print(2);
+		
+		if 2 
+			x = x + 2;
+			else 
+			y = y + 2;
+		
+	}
+}
