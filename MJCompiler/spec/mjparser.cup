@@ -55,14 +55,31 @@ terminal Boolean CONSTBOOL;
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
 nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement;
 nonterminal Designator, Expr, Term, Addop, Factor, ActualPars, ActualParamList;
-nonterminal Matched, Unmatched, Identifiers, ProgramDeclarations;
+nonterminal Matched, Unmatched, Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 
-Program ::= (Program) PROG IDENT VarDeclList LBRACE MethodDecl RBRACE;
+Program ::= (Program) PROG IDENT ProgramDeclarations LBRACE MethodDecl RBRACE;
 
-ProgramDeclarations ::= (ProgramDeclarations) ProgramDeclarations VarDeclList
+ProgramDeclarations ::= (ProgramDeclConst) ProgramDeclarations ConstDecl
+					|					
+					(ProgramDeclVar) ProgramDeclarations VarDecl
 					|
-					(NoProgramDeclarations) /* epsilon */
+					(NoProgramDecls) /* epsilon */
 					;
+
+ConstDecl ::= (ConstDeclaration) CONST Type:constType ConstAssignops SEMI;
+
+ConstAssignops ::= (ConstAssignNumber) IDENT:constName EQUAL NUMBER:constVal
+				|
+				(ConstAssignNumbers) ConstAssignops COMMA IDENT:constName EQUAL NUMBER:constVal
+				|
+				(ConstAssignChar) IDENT:constName EQUAL CONSTCHAR:constVal
+				|
+				(ConstAssignChars) ConstAssignops COMMA IDENT:constName EQUAL CONSTCHAR:constVal
+				|
+				(ConstAssignBool) IDENT:constName EQUAL CONSTBOOL:constVal
+				|
+				(ConstAssignBools) ConstAssignops COMMA IDENT:constName EQUAL CONSTBOOL:constVal
+				;
 
 VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
 			|

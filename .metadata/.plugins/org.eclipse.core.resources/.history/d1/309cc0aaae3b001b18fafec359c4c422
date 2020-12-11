@@ -1,0 +1,24 @@
+program MJProgram
+	
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	
+{
+	int main() {
+		
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+		
+	}
+}

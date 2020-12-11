@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/11/2020 13:20:31
+// 11/11/2020 13:45:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,7 +8,9 @@ package rs.ac.bg.etf.pp1.ast;
 public abstract class VisitorAdaptor implements Visitor { 
 
     public void visit(Factor Factor) { }
+    public void visit(ConstDecl ConstDecl) { }
     public void visit(ActualParamList ActualParamList) { }
+    public void visit(ConstAssignops ConstAssignops) { }
     public void visit(Expr Expr) { }
     public void visit(FormalParamList FormalParamList) { }
     public void visit(FormPars FormPars) { }
@@ -19,6 +21,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Statement Statement) { }
     public void visit(Identifiers Identifiers) { }
     public void visit(StatementList StatementList) { }
+    public void visit(ProgramDeclarations ProgramDeclarations) { }
     public void visit(Matched Matched) { }
     public void visit(ActualPars ActualPars) { }
     public void visit(Addop Addop) { visit(); }
@@ -61,8 +64,16 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDecl VarDecl) { visit(); }
     public void visit(NoVarDecl NoVarDecl) { visit(); }
     public void visit(VarDeclarations VarDeclarations) { visit(); }
-    public void visit(NoProgramDeclarations NoProgramDeclarations) { visit(); }
-    public void visit(ProgramDeclarations ProgramDeclarations) { visit(); }
+    public void visit(ConstAssignBools ConstAssignBools) { visit(); }
+    public void visit(ConstAssignBool ConstAssignBool) { visit(); }
+    public void visit(ConstAssignChars ConstAssignChars) { visit(); }
+    public void visit(ConstAssignChar ConstAssignChar) { visit(); }
+    public void visit(ConstAssignNumbers ConstAssignNumbers) { visit(); }
+    public void visit(ConstAssignNumber ConstAssignNumber) { visit(); }
+    public void visit(ConstDeclaration ConstDeclaration) { visit(); }
+    public void visit(NoProgramDecls NoProgramDecls) { visit(); }
+    public void visit(ProgramDeclVar ProgramDeclVar) { visit(); }
+    public void visit(ProgramDeclConst ProgramDeclConst) { visit(); }
     public void visit(Program Program) { visit(); }
 
 

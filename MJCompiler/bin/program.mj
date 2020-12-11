@@ -1,12 +1,22 @@
 program MJProgram
-
-	int x; 
-	int y;
-	int ss[], w, r, e, res;
+	
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const bool sdas = true, sadsad = false;
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const char sss = 'a', sdaasd = 's';
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	
 {
 	int main() {
 		
-		print(1);
+		print(x);
 		
 		x = y + 5;
 		

@@ -1,0 +1,20 @@
+program MJProgram
+
+	const int opala = 2;
+	const bool nesto = false, nesto2 = true;
+	
+	int x; 
+	int y;
+	int ss[], w, r, e, res;
+	
+{
+	int main() {
+		
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+		
+	}
+}

@@ -1,95 +1,280 @@
-INFO  13:20:43,229 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  13:20:43,245 - #2 program
-INFO  13:20:43,245 - #30 MJProgram
-INFO  13:20:43,246 - #30 int
-INFO  13:20:43,246 - #30 x
-INFO  13:20:43,247 - #5 ;
-INFO  13:20:43,247 - #30 int
-INFO  13:20:43,247 - #30 y
-INFO  13:20:43,248 - #5 ;
-INFO  13:20:43,248 - #30 int
-INFO  13:20:43,248 - #30 ss
-INFO  13:20:43,248 - #15 [
-INFO  13:20:43,248 - #16 ]
-INFO  13:20:43,248 - #11 ,
-INFO  13:20:43,248 - #30 w
-INFO  13:20:43,248 - #11 ,
-INFO  13:20:43,248 - #30 r
-INFO  13:20:43,248 - #11 ,
-INFO  13:20:43,249 - #30 e
-INFO  13:20:43,249 - #11 ,
-INFO  13:20:43,249 - #30 res
-INFO  13:20:43,249 - #5 ;
-INFO  13:20:43,249 - #3 {
-INFO  13:20:43,249 - #30 int
-INFO  13:20:43,249 - #30 main
-INFO  13:20:43,249 - #6 (
-INFO  13:20:43,249 - #7 )
-INFO  13:20:43,250 - #3 {
-INFO  13:20:43,250 - #12 print
-INFO  13:20:43,250 - #6 (
-INFO  13:20:43,250 - #29 1
-INFO  13:20:43,250 - #7 )
-INFO  13:20:43,251 - #5 ;
-INFO  13:20:43,251 - #30 x
-INFO  13:20:43,251 - #8 =
-INFO  13:20:43,252 - #30 y
-INFO  13:20:43,252 - #10 +
-INFO  13:20:43,252 - #29 5
-INFO  13:20:43,252 - #5 ;
-INFO  13:20:43,252 - #12 print
-INFO  13:20:43,253 - #6 (
-INFO  13:20:43,253 - #29 2
-INFO  13:20:43,253 - #7 )
-INFO  13:20:43,253 - #5 ;
-INFO  13:20:43,253 - #4 }
-INFO  13:20:43,253 - #4 }
-INFO  13:20:43,255 - Program(
+INFO  13:46:35,986 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  13:46:36,002 - #2 program
+INFO  13:46:36,002 - #30 MJProgram
+INFO  13:46:36,002 - #30 int
+INFO  13:46:36,003 - #30 sss
+INFO  13:46:36,003 - #11 ,
+INFO  13:46:36,003 - #30 fg
+INFO  13:46:36,003 - #5 ;
+INFO  13:46:36,003 - #14 const
+INFO  13:46:36,004 - #30 int
+INFO  13:46:36,004 - #30 opala
+INFO  13:46:36,004 - #8 =
+INFO  13:46:36,004 - #29 2
+INFO  13:46:36,004 - #5 ;
+INFO  13:46:36,004 - #14 const
+INFO  13:46:36,005 - #30 int
+INFO  13:46:36,005 - #30 n
+INFO  13:46:36,005 - #8 =
+INFO  13:46:36,005 - #29 3
+INFO  13:46:36,005 - #11 ,
+INFO  13:46:36,005 - #30 m
+INFO  13:46:36,005 - #8 =
+INFO  13:46:36,005 - #29 5
+INFO  13:46:36,005 - #5 ;
+INFO  13:46:36,005 - #14 const
+INFO  13:46:36,005 - #30 bool
+INFO  13:46:36,005 - #30 sdas
+INFO  13:46:36,006 - #8 =
+INFO  13:46:36,006 - #32 true
+INFO  13:46:36,006 - #11 ,
+INFO  13:46:36,006 - #30 sadsad
+INFO  13:46:36,006 - #8 =
+INFO  13:46:36,006 - #32 false
+INFO  13:46:36,006 - #5 ;
+INFO  13:46:36,006 - #30 int
+INFO  13:46:36,006 - #30 sss
+INFO  13:46:36,006 - #11 ,
+INFO  13:46:36,006 - #30 fg
+INFO  13:46:36,006 - #5 ;
+INFO  13:46:36,007 - #14 const
+INFO  13:46:36,007 - #30 int
+INFO  13:46:36,007 - #30 opala
+INFO  13:46:36,007 - #8 =
+INFO  13:46:36,007 - #29 2
+INFO  13:46:36,007 - #5 ;
+INFO  13:46:36,007 - #14 const
+INFO  13:46:36,007 - #30 int
+INFO  13:46:36,007 - #30 n
+INFO  13:46:36,007 - #8 =
+INFO  13:46:36,007 - #29 3
+INFO  13:46:36,008 - #11 ,
+INFO  13:46:36,008 - #30 m
+INFO  13:46:36,008 - #8 =
+INFO  13:46:36,008 - #29 5
+INFO  13:46:36,008 - #5 ;
+INFO  13:46:36,008 - #14 const
+INFO  13:46:36,008 - #30 char
+INFO  13:46:36,008 - #30 sss
+INFO  13:46:36,008 - #8 =
+INFO  13:46:36,008 - #31 a
+INFO  13:46:36,008 - #11 ,
+INFO  13:46:36,009 - #30 sdaasd
+INFO  13:46:36,009 - #8 =
+INFO  13:46:36,009 - #31 s
+INFO  13:46:36,009 - #5 ;
+INFO  13:46:36,009 - #30 int
+INFO  13:46:36,009 - #30 sss
+INFO  13:46:36,009 - #11 ,
+INFO  13:46:36,009 - #30 fg
+INFO  13:46:36,009 - #5 ;
+INFO  13:46:36,009 - #14 const
+INFO  13:46:36,009 - #30 int
+INFO  13:46:36,009 - #30 opala
+INFO  13:46:36,010 - #8 =
+INFO  13:46:36,010 - #29 2
+INFO  13:46:36,010 - #5 ;
+INFO  13:46:36,010 - #14 const
+INFO  13:46:36,010 - #30 int
+INFO  13:46:36,010 - #30 n
+INFO  13:46:36,010 - #8 =
+INFO  13:46:36,010 - #29 3
+INFO  13:46:36,010 - #11 ,
+INFO  13:46:36,010 - #30 m
+INFO  13:46:36,010 - #8 =
+INFO  13:46:36,010 - #29 5
+INFO  13:46:36,010 - #5 ;
+INFO  13:46:36,010 - #30 int
+INFO  13:46:36,010 - #30 sss
+INFO  13:46:36,011 - #11 ,
+INFO  13:46:36,011 - #30 fg
+INFO  13:46:36,011 - #5 ;
+INFO  13:46:36,011 - #3 {
+INFO  13:46:36,011 - #30 int
+INFO  13:46:36,011 - #30 main
+INFO  13:46:36,011 - #6 (
+INFO  13:46:36,011 - #7 )
+INFO  13:46:36,011 - #3 {
+INFO  13:46:36,012 - #12 print
+INFO  13:46:36,013 - #6 (
+INFO  13:46:36,013 - #30 x
+INFO  13:46:36,013 - #7 )
+INFO  13:46:36,014 - #5 ;
+INFO  13:46:36,014 - #30 x
+INFO  13:46:36,014 - #8 =
+INFO  13:46:36,014 - #30 y
+INFO  13:46:36,015 - #10 +
+INFO  13:46:36,015 - #29 5
+INFO  13:46:36,015 - #5 ;
+INFO  13:46:36,015 - #12 print
+INFO  13:46:36,016 - #6 (
+INFO  13:46:36,016 - #29 2
+INFO  13:46:36,016 - #7 )
+INFO  13:46:36,016 - #5 ;
+INFO  13:46:36,016 - #4 }
+INFO  13:46:36,016 - #4 }
+INFO  13:46:36,018 - Program(
  MJProgram
-  VarDeclarations(
-    VarDeclarations(
-      VarDeclarations(
-        NoVarDecl(
-        ) [NoVarDecl]
-        VarDecl(
+  ProgramDeclVar(
+    ProgramDeclConst(
+      ProgramDeclConst(
+        ProgramDeclVar(
+          ProgramDeclConst(
+            ProgramDeclConst(
+              ProgramDeclConst(
+                ProgramDeclVar(
+                  ProgramDeclConst(
+                    ProgramDeclConst(
+                      ProgramDeclConst(
+                        ProgramDeclVar(
+                          NoProgramDecls(
+                          ) [NoProgramDecls]
+                          VarDecl(
+                            Type(
+                             int
+                            ) [Type]
+                            MultipleVars(
+                              SingleVar(
+                               sss
+                              ) [SingleVar]
+                             fg
+                            ) [MultipleVars]
+                          ) [VarDecl]
+                        ) [ProgramDeclVar]
+                        ConstDeclaration(
+                          Type(
+                           int
+                          ) [Type]
+                          ConstAssignNumber(
+                           opala
+                           2
+                          ) [ConstAssignNumber]
+                        ) [ConstDeclaration]
+                      ) [ProgramDeclConst]
+                      ConstDeclaration(
+                        Type(
+                         int
+                        ) [Type]
+                        ConstAssignNumbers(
+                          ConstAssignNumber(
+                           n
+                           3
+                          ) [ConstAssignNumber]
+                         m
+                         5
+                        ) [ConstAssignNumbers]
+                      ) [ConstDeclaration]
+                    ) [ProgramDeclConst]
+                    ConstDeclaration(
+                      Type(
+                       bool
+                      ) [Type]
+                      ConstAssignBools(
+                        ConstAssignBool(
+                         sdas
+                        ) [ConstAssignBool]
+                       sadsad
+                      ) [ConstAssignBools]
+                    ) [ConstDeclaration]
+                  ) [ProgramDeclConst]
+                  VarDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    MultipleVars(
+                      SingleVar(
+                       sss
+                      ) [SingleVar]
+                     fg
+                    ) [MultipleVars]
+                  ) [VarDecl]
+                ) [ProgramDeclVar]
+                ConstDeclaration(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstAssignNumber(
+                   opala
+                   2
+                  ) [ConstAssignNumber]
+                ) [ConstDeclaration]
+              ) [ProgramDeclConst]
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                ConstAssignNumbers(
+                  ConstAssignNumber(
+                   n
+                   3
+                  ) [ConstAssignNumber]
+                 m
+                 5
+                ) [ConstAssignNumbers]
+              ) [ConstDeclaration]
+            ) [ProgramDeclConst]
+            ConstDeclaration(
+              Type(
+               char
+              ) [Type]
+              ConstAssignChars(
+                ConstAssignChar(
+                 sss
+                 a
+                ) [ConstAssignChar]
+               sdaasd
+               s
+              ) [ConstAssignChars]
+            ) [ConstDeclaration]
+          ) [ProgramDeclConst]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+            MultipleVars(
+              SingleVar(
+               sss
+              ) [SingleVar]
+             fg
+            ) [MultipleVars]
+          ) [VarDecl]
+        ) [ProgramDeclVar]
+        ConstDeclaration(
           Type(
            int
           ) [Type]
-          SingleVar(
-           x
-          ) [SingleVar]
-        ) [VarDecl]
-      ) [VarDeclarations]
-      VarDecl(
+          ConstAssignNumber(
+           opala
+           2
+          ) [ConstAssignNumber]
+        ) [ConstDeclaration]
+      ) [ProgramDeclConst]
+      ConstDeclaration(
         Type(
          int
         ) [Type]
-        SingleVar(
-         y
-        ) [SingleVar]
-      ) [VarDecl]
-    ) [VarDeclarations]
+        ConstAssignNumbers(
+          ConstAssignNumber(
+           n
+           3
+          ) [ConstAssignNumber]
+         m
+         5
+        ) [ConstAssignNumbers]
+      ) [ConstDeclaration]
+    ) [ProgramDeclConst]
     VarDecl(
       Type(
        int
       ) [Type]
       MultipleVars(
-        MultipleVars(
-          MultipleVars(
-            MultipleVars(
-              SingleArray(
-               ss
-              ) [SingleArray]
-             w
-            ) [MultipleVars]
-           r
-          ) [MultipleVars]
-         e
-        ) [MultipleVars]
-       res
+        SingleVar(
+         sss
+        ) [SingleVar]
+       fg
       ) [MultipleVars]
     ) [VarDecl]
-  ) [VarDeclarations]
+  ) [ProgramDeclVar]
   MethodDecl(
     Type(
      int
@@ -108,9 +293,11 @@ INFO  13:20:43,255 - Program(
             PrintStmt(
               TermExpr(
                 Term(
-                  Const(
-                   1
-                  ) [Const]
+                  Var(
+                    Designator(
+                     x
+                    ) [Designator]
+                  ) [Var]
                 ) [Term]
               ) [TermExpr]
             ) [PrintStmt]
@@ -156,6 +343,6 @@ INFO  13:20:43,255 - Program(
     ) [Statements]
   ) [MethodDecl]
 ) [Program]
-INFO  13:20:43,255 - ===================================
-INFO  13:20:43,257 -  Print count calls = 2
-INFO  13:20:43,257 -  Deklarisanih promenljivih ima = 3
+INFO  13:46:36,019 - ===================================
+INFO  13:46:36,020 -  Print count calls = 2
+INFO  13:46:36,020 -  Deklarisanih promenljivih ima = 4

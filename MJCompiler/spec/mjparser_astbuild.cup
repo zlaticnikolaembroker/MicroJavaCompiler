@@ -74,13 +74,32 @@ nonterminal Matched Matched;
 nonterminal Unmatched Unmatched;
 nonterminal Identifiers Identifiers;
 nonterminal ProgramDeclarations ProgramDeclarations;
+nonterminal ConstDecl ConstDecl;
+nonterminal ConstAssignops ConstAssignops;
 
-Program ::= (Program) PROG IDENT:I1 VarDeclList:V2 LBRACE MethodDecl:M3 RBRACE {: RESULT=new Program(I1, V2, M3); RESULT.setLine(I1left); :};
+Program ::= (Program) PROG IDENT:I1 ProgramDeclarations:P2 LBRACE MethodDecl:M3 RBRACE {: RESULT=new Program(I1, P2, M3); RESULT.setLine(I1left); :};
 
-ProgramDeclarations ::= (ProgramDeclarations) ProgramDeclarations:P1 VarDeclList:V2 {: RESULT=new ProgramDeclarations(P1, V2); RESULT.setLine(P1left); :}
+ProgramDeclarations ::= (ProgramDeclConst) ProgramDeclarations:P1 ConstDecl:C2 {: RESULT=new ProgramDeclConst(P1, C2); RESULT.setLine(P1left); :}
+					|					
+					(ProgramDeclVar) ProgramDeclarations:P1 VarDecl:V2 {: RESULT=new ProgramDeclVar(P1, V2); RESULT.setLine(P1left); :}
 					|
-					(NoProgramDeclarations) {: RESULT=new NoProgramDeclarations(); :} /* epsilon */
+					(NoProgramDecls) {: RESULT=new NoProgramDecls(); :} /* epsilon */
 					;
+
+ConstDecl ::= (ConstDeclaration) CONST Type:constType ConstAssignops:C1 SEMI {: RESULT=new ConstDeclaration(constType, C1); RESULT.setLine(constTypeleft); :};
+
+ConstAssignops ::= (ConstAssignNumber) IDENT:constName EQUAL NUMBER:constVal {: RESULT=new ConstAssignNumber(constName, constVal); RESULT.setLine(constNameleft); :}
+				|
+				(ConstAssignNumbers) ConstAssignops:C1 COMMA IDENT:constName EQUAL NUMBER:constVal {: RESULT=new ConstAssignNumbers(C1, constName, constVal); RESULT.setLine(C1left); :}
+				|
+				(ConstAssignChar) IDENT:constName EQUAL CONSTCHAR:constVal {: RESULT=new ConstAssignChar(constName, constVal); RESULT.setLine(constNameleft); :}
+				|
+				(ConstAssignChars) ConstAssignops:C1 COMMA IDENT:constName EQUAL CONSTCHAR:constVal {: RESULT=new ConstAssignChars(C1, constName, constVal); RESULT.setLine(C1left); :}
+				|
+				(ConstAssignBool) IDENT:constName EQUAL CONSTBOOL:constVal {: RESULT=new ConstAssignBool(constName, constVal); RESULT.setLine(constNameleft); :}
+				|
+				(ConstAssignBools) ConstAssignops:C1 COMMA IDENT:constName EQUAL CONSTBOOL:constVal {: RESULT=new ConstAssignBools(C1, constName, constVal); RESULT.setLine(C1left); :}
+				;
 
 VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDeclarations(V1, V2); RESULT.setLine(V1left); :}
 			|

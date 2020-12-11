@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/11/2020 13:20:31
+// 11/11/2020 13:45:59
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,7 +8,9 @@ package rs.ac.bg.etf.pp1.ast;
 public interface Visitor { 
 
     public void visit(Factor Factor);
+    public void visit(ConstDecl ConstDecl);
     public void visit(ActualParamList ActualParamList);
+    public void visit(ConstAssignops ConstAssignops);
     public void visit(Expr Expr);
     public void visit(FormalParamList FormalParamList);
     public void visit(FormPars FormPars);
@@ -19,6 +21,7 @@ public interface Visitor {
     public void visit(Statement Statement);
     public void visit(Identifiers Identifiers);
     public void visit(StatementList StatementList);
+    public void visit(ProgramDeclarations ProgramDeclarations);
     public void visit(Matched Matched);
     public void visit(ActualPars ActualPars);
     public void visit(Addop Addop);
@@ -61,8 +64,16 @@ public interface Visitor {
     public void visit(VarDecl VarDecl);
     public void visit(NoVarDecl NoVarDecl);
     public void visit(VarDeclarations VarDeclarations);
-    public void visit(NoProgramDeclarations NoProgramDeclarations);
-    public void visit(ProgramDeclarations ProgramDeclarations);
+    public void visit(ConstAssignBools ConstAssignBools);
+    public void visit(ConstAssignBool ConstAssignBool);
+    public void visit(ConstAssignChars ConstAssignChars);
+    public void visit(ConstAssignChar ConstAssignChar);
+    public void visit(ConstAssignNumbers ConstAssignNumbers);
+    public void visit(ConstAssignNumber ConstAssignNumber);
+    public void visit(ConstDeclaration ConstDeclaration);
+    public void visit(NoProgramDecls NoProgramDecls);
+    public void visit(ProgramDeclVar ProgramDeclVar);
+    public void visit(ProgramDeclConst ProgramDeclConst);
     public void visit(Program Program);
 
 }
