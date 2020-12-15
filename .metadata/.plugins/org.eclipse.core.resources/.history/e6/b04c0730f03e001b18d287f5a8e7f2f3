@@ -1,0 +1,9 @@
+program MJProgram
+	
+	{
+	int main(char x, int s)
+	int x; {
+		
+		x = 3;
+	}
+	}

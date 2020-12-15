@@ -37,13 +37,17 @@ import java_cup.runtime.Symbol;
 "\r\n" 	{ }
 "\f" 	{ }
 
-"program"   { return new_symbol(sym.PROG, yytext());	}
-"print" 	{ return new_symbol(sym.PRINT, yytext()); 	}
-"return" 	{ return new_symbol(sym.RETURN, yytext()); 	}
-"void" 		{ return new_symbol(sym.VOID, yytext()); 	}
-"const" 	{ return new_symbol(sym.CONST, yytext()); 	}
-"class" 	{ return new_symbol(sym.CLASS, yytext()); 	}
-"extends"   { return new_symbol(sym.EXTENDS, yytext()); }
+"program"   { return new_symbol(sym.PROG, yytext());		}
+"print" 	{ return new_symbol(sym.PRINT, yytext()); 		}
+"return" 	{ return new_symbol(sym.RETURN, yytext()); 		}
+"void" 		{ return new_symbol(sym.VOID, yytext()); 		}
+"const" 	{ return new_symbol(sym.CONST, yytext()); 		}
+"class" 	{ return new_symbol(sym.CLASS, yytext()); 		}
+"extends"   { return new_symbol(sym.EXTENDS, yytext()); 	}
+"do"        { return new_symbol(sym.DO, yytext()); 			}
+"while"     { return new_symbol(sym.WHILE, yytext()); 		}
+"break"     { return new_symbol(sym.BREAK, yytext()); 		}
+"continue"  { return new_symbol(sym.CONTINUE, yytext());	}
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); 			}
 "_" 		{ return new_symbol(sym.MINUS, yytext()); 			}

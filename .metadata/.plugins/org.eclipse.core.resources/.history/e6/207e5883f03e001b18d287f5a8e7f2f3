@@ -1,0 +1,12 @@
+program MJProgram
+	
+	{
+	int main(char x, int s)
+	int x; {
+		do {
+		x  =3;
+		 }while(3 + 3);
+		 
+		x = 3;
+	}
+	}

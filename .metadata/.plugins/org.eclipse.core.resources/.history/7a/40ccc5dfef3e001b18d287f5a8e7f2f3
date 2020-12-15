@@ -1,0 +1,8 @@
+program MJProgram
+	
+	{
+	void main() {
+		do {
+		} while(3 + 3);	
+	}
+	}

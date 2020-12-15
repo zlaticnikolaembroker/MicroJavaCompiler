@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 15:14:44
+// 15/11/2020 17:13:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,6 +16,7 @@ public class ConstAssignBools extends ConstAssignops {
         if(ConstAssignops!=null) ConstAssignops.setParent(this);
         this.constName=constName;
         this.constVal=constVal;
+
     }
 
     public ConstAssignops getConstAssignops() {

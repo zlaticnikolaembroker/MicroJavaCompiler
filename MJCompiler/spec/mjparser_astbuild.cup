@@ -46,7 +46,7 @@ scan with {:
 
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID, CONST, LSQUARE, RSQUARE;
 terminal IF, ELSE, MINUS, LESS, LESSEQUAL, GREATER, GREATEREQUAL, MUL, DIV, MOD, IDENTICAL, NOTIDENTICAL;
-terminal CLASS, EXTENDS;
+terminal CLASS, EXTENDS, DO, WHILE, BREAK, CONTINUE;
 
 terminal Integer NUMBER;
 terminal String IDENT;
@@ -190,6 +190,12 @@ Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI {: RESULT=new Assignm
 		   (ReturnNoExpr) RETURN SEMI {: RESULT=new ReturnNoExpr(); :}
 		   |
 		   (MatchedStatement) IF Expr:E1 Matched:M2 ELSE Matched:M3 {: RESULT=new MatchedStatement(E1, M2, M3); RESULT.setLine(E1left); :}
+		   |
+		   (WhileStatement) DO LBRACE StatementList:S1 RBRACE WHILE LPAREN Expr:E2 RPAREN SEMI {: RESULT=new WhileStatement(S1, E2); RESULT.setLine(S1left); :}
+		   |
+		   (BreakStatement) BREAK SEMI {: RESULT=new BreakStatement(); :}
+		   |
+		   (ContinueStatement) CONTINUE SEMI {: RESULT=new ContinueStatement(); :}
 		   ;
 			
 Expr ::= (AddExpr) Expr:te Addop:A1 Term:t {: RESULT=new AddExpr(te, A1, t); RESULT.setLine(teleft); :}
