@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/11/2020 13:45:59
+// 15/11/2020 15:14:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,9 +16,9 @@ public interface Visitor {
     public void visit(FormPars FormPars);
     public void visit(VarDeclList VarDeclList);
     public void visit(Unmatched Unmatched);
-    public void visit(FormalParamDecl FormalParamDecl);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(Statement Statement);
+    public void visit(ClassMethDecl ClassMethDecl);
     public void visit(Identifiers Identifiers);
     public void visit(StatementList StatementList);
     public void visit(ProgramDeclarations ProgramDeclarations);
@@ -49,10 +49,12 @@ public interface Visitor {
     public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
+    public void visit(FormalParamDecl FormalParamDecl);
     public void visit(SingleFormalParamDecl SingleFormalParamDecl);
     public void visit(FormalParamDecls FormalParamDecls);
     public void visit(NoFormParam NoFormParam);
     public void visit(FormParams FormParams);
+    public void visit(MethodDeclVoid MethodDeclVoid);
     public void visit(MethodDecl MethodDecl);
     public void visit(NoMethodDecl NoMethodDecl);
     public void visit(MethodDeclarations MethodDeclarations);
@@ -71,7 +73,13 @@ public interface Visitor {
     public void visit(ConstAssignNumbers ConstAssignNumbers);
     public void visit(ConstAssignNumber ConstAssignNumber);
     public void visit(ConstDeclaration ConstDeclaration);
+    public void visit(NoClassExtends NoClassExtends);
+    public void visit(ClassExtends ClassExtends);
+    public void visit(NoClassMethDeclaration NoClassMethDeclaration);
+    public void visit(ClassMethDeclaration ClassMethDeclaration);
+    public void visit(ClassDecl ClassDecl);
     public void visit(NoProgramDecls NoProgramDecls);
+    public void visit(ProgramDeclClass ProgramDeclClass);
     public void visit(ProgramDeclVar ProgramDeclVar);
     public void visit(ProgramDeclConst ProgramDeclConst);
     public void visit(Program Program);

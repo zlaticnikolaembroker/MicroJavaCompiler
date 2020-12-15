@@ -1,0 +1,60 @@
+program MJProgram
+	
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const bool sdas = true, sadsad = false;
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const char sss = 'a', sdaasd = 's';
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	int opalaaaaa[];
+	
+	class Table extends Type{
+	{
+		int n;
+		void main() {}
+		
+	}
+	
+		int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const bool sdas = true, sadsad = false;
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	const char sss = 'a', sdaasd = 's';
+	int sss, fg;
+	const int opala = 2;
+	const int n = 3, m = 5;
+	int sss, fg;
+	int opalaaaaa[];
+	
+	class Table {
+	}
+	
+	
+{
+
+	int func() {
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+	}
+	int main() {
+		
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+		
+	}
+}

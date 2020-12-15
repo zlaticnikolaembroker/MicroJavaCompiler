@@ -1,348 +1,1012 @@
-INFO  13:46:35,986 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  13:46:36,002 - #2 program
-INFO  13:46:36,002 - #30 MJProgram
-INFO  13:46:36,002 - #30 int
-INFO  13:46:36,003 - #30 sss
-INFO  13:46:36,003 - #11 ,
-INFO  13:46:36,003 - #30 fg
-INFO  13:46:36,003 - #5 ;
-INFO  13:46:36,003 - #14 const
-INFO  13:46:36,004 - #30 int
-INFO  13:46:36,004 - #30 opala
-INFO  13:46:36,004 - #8 =
-INFO  13:46:36,004 - #29 2
-INFO  13:46:36,004 - #5 ;
-INFO  13:46:36,004 - #14 const
-INFO  13:46:36,005 - #30 int
-INFO  13:46:36,005 - #30 n
-INFO  13:46:36,005 - #8 =
-INFO  13:46:36,005 - #29 3
-INFO  13:46:36,005 - #11 ,
-INFO  13:46:36,005 - #30 m
-INFO  13:46:36,005 - #8 =
-INFO  13:46:36,005 - #29 5
-INFO  13:46:36,005 - #5 ;
-INFO  13:46:36,005 - #14 const
-INFO  13:46:36,005 - #30 bool
-INFO  13:46:36,005 - #30 sdas
-INFO  13:46:36,006 - #8 =
-INFO  13:46:36,006 - #32 true
-INFO  13:46:36,006 - #11 ,
-INFO  13:46:36,006 - #30 sadsad
-INFO  13:46:36,006 - #8 =
-INFO  13:46:36,006 - #32 false
-INFO  13:46:36,006 - #5 ;
-INFO  13:46:36,006 - #30 int
-INFO  13:46:36,006 - #30 sss
-INFO  13:46:36,006 - #11 ,
-INFO  13:46:36,006 - #30 fg
-INFO  13:46:36,006 - #5 ;
-INFO  13:46:36,007 - #14 const
-INFO  13:46:36,007 - #30 int
-INFO  13:46:36,007 - #30 opala
-INFO  13:46:36,007 - #8 =
-INFO  13:46:36,007 - #29 2
-INFO  13:46:36,007 - #5 ;
-INFO  13:46:36,007 - #14 const
-INFO  13:46:36,007 - #30 int
-INFO  13:46:36,007 - #30 n
-INFO  13:46:36,007 - #8 =
-INFO  13:46:36,007 - #29 3
-INFO  13:46:36,008 - #11 ,
-INFO  13:46:36,008 - #30 m
-INFO  13:46:36,008 - #8 =
-INFO  13:46:36,008 - #29 5
-INFO  13:46:36,008 - #5 ;
-INFO  13:46:36,008 - #14 const
-INFO  13:46:36,008 - #30 char
-INFO  13:46:36,008 - #30 sss
-INFO  13:46:36,008 - #8 =
-INFO  13:46:36,008 - #31 a
-INFO  13:46:36,008 - #11 ,
-INFO  13:46:36,009 - #30 sdaasd
-INFO  13:46:36,009 - #8 =
-INFO  13:46:36,009 - #31 s
-INFO  13:46:36,009 - #5 ;
-INFO  13:46:36,009 - #30 int
-INFO  13:46:36,009 - #30 sss
-INFO  13:46:36,009 - #11 ,
-INFO  13:46:36,009 - #30 fg
-INFO  13:46:36,009 - #5 ;
-INFO  13:46:36,009 - #14 const
-INFO  13:46:36,009 - #30 int
-INFO  13:46:36,009 - #30 opala
-INFO  13:46:36,010 - #8 =
-INFO  13:46:36,010 - #29 2
-INFO  13:46:36,010 - #5 ;
-INFO  13:46:36,010 - #14 const
-INFO  13:46:36,010 - #30 int
-INFO  13:46:36,010 - #30 n
-INFO  13:46:36,010 - #8 =
-INFO  13:46:36,010 - #29 3
-INFO  13:46:36,010 - #11 ,
-INFO  13:46:36,010 - #30 m
-INFO  13:46:36,010 - #8 =
-INFO  13:46:36,010 - #29 5
-INFO  13:46:36,010 - #5 ;
-INFO  13:46:36,010 - #30 int
-INFO  13:46:36,010 - #30 sss
-INFO  13:46:36,011 - #11 ,
-INFO  13:46:36,011 - #30 fg
-INFO  13:46:36,011 - #5 ;
-INFO  13:46:36,011 - #3 {
-INFO  13:46:36,011 - #30 int
-INFO  13:46:36,011 - #30 main
-INFO  13:46:36,011 - #6 (
-INFO  13:46:36,011 - #7 )
-INFO  13:46:36,011 - #3 {
-INFO  13:46:36,012 - #12 print
-INFO  13:46:36,013 - #6 (
-INFO  13:46:36,013 - #30 x
-INFO  13:46:36,013 - #7 )
-INFO  13:46:36,014 - #5 ;
-INFO  13:46:36,014 - #30 x
-INFO  13:46:36,014 - #8 =
-INFO  13:46:36,014 - #30 y
-INFO  13:46:36,015 - #10 +
-INFO  13:46:36,015 - #29 5
-INFO  13:46:36,015 - #5 ;
-INFO  13:46:36,015 - #12 print
-INFO  13:46:36,016 - #6 (
-INFO  13:46:36,016 - #29 2
-INFO  13:46:36,016 - #7 )
-INFO  13:46:36,016 - #5 ;
-INFO  13:46:36,016 - #4 }
-INFO  13:46:36,016 - #4 }
-INFO  13:46:36,018 - Program(
+INFO  15:16:05,984 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  15:16:05,999 - #2 program
+INFO  15:16:05,999 - #32 MJProgram
+INFO  15:16:05,999 - #32 int
+INFO  15:16:06,000 - #32 sss
+INFO  15:16:06,000 - #11 ,
+INFO  15:16:06,000 - #32 fg
+INFO  15:16:06,000 - #5 ;
+INFO  15:16:06,000 - #14 const
+INFO  15:16:06,001 - #32 int
+INFO  15:16:06,001 - #32 opala
+INFO  15:16:06,001 - #8 =
+INFO  15:16:06,001 - #31 2
+INFO  15:16:06,001 - #5 ;
+INFO  15:16:06,001 - #14 const
+INFO  15:16:06,002 - #32 int
+INFO  15:16:06,002 - #32 n
+INFO  15:16:06,002 - #8 =
+INFO  15:16:06,002 - #31 3
+INFO  15:16:06,002 - #11 ,
+INFO  15:16:06,002 - #32 m
+INFO  15:16:06,002 - #8 =
+INFO  15:16:06,002 - #31 5
+INFO  15:16:06,002 - #5 ;
+INFO  15:16:06,002 - #14 const
+INFO  15:16:06,003 - #32 bool
+INFO  15:16:06,003 - #32 sdas
+INFO  15:16:06,003 - #8 =
+INFO  15:16:06,003 - #34 true
+INFO  15:16:06,003 - #11 ,
+INFO  15:16:06,003 - #32 sadsad
+INFO  15:16:06,003 - #8 =
+INFO  15:16:06,003 - #34 false
+INFO  15:16:06,003 - #5 ;
+INFO  15:16:06,003 - #32 int
+INFO  15:16:06,003 - #32 sss
+INFO  15:16:06,004 - #11 ,
+INFO  15:16:06,004 - #32 fg
+INFO  15:16:06,004 - #5 ;
+INFO  15:16:06,004 - #14 const
+INFO  15:16:06,004 - #32 int
+INFO  15:16:06,004 - #32 opala
+INFO  15:16:06,004 - #8 =
+INFO  15:16:06,004 - #31 2
+INFO  15:16:06,004 - #5 ;
+INFO  15:16:06,004 - #14 const
+INFO  15:16:06,004 - #32 int
+INFO  15:16:06,004 - #32 n
+INFO  15:16:06,004 - #8 =
+INFO  15:16:06,004 - #31 3
+INFO  15:16:06,004 - #11 ,
+INFO  15:16:06,004 - #32 m
+INFO  15:16:06,004 - #8 =
+INFO  15:16:06,005 - #31 5
+INFO  15:16:06,005 - #5 ;
+INFO  15:16:06,005 - #14 const
+INFO  15:16:06,005 - #32 char
+INFO  15:16:06,005 - #32 sss
+INFO  15:16:06,005 - #8 =
+INFO  15:16:06,005 - #33 a
+INFO  15:16:06,005 - #11 ,
+INFO  15:16:06,005 - #32 sdaasd
+INFO  15:16:06,005 - #8 =
+INFO  15:16:06,005 - #33 s
+INFO  15:16:06,005 - #5 ;
+INFO  15:16:06,005 - #32 int
+INFO  15:16:06,005 - #32 sss
+INFO  15:16:06,006 - #11 ,
+INFO  15:16:06,006 - #32 fg
+INFO  15:16:06,006 - #5 ;
+INFO  15:16:06,006 - #14 const
+INFO  15:16:06,006 - #32 int
+INFO  15:16:06,006 - #32 opala
+INFO  15:16:06,006 - #8 =
+INFO  15:16:06,006 - #31 2
+INFO  15:16:06,006 - #5 ;
+INFO  15:16:06,006 - #14 const
+INFO  15:16:06,006 - #32 int
+INFO  15:16:06,006 - #32 n
+INFO  15:16:06,006 - #8 =
+INFO  15:16:06,006 - #31 3
+INFO  15:16:06,006 - #11 ,
+INFO  15:16:06,006 - #32 m
+INFO  15:16:06,006 - #8 =
+INFO  15:16:06,007 - #31 5
+INFO  15:16:06,007 - #5 ;
+INFO  15:16:06,007 - #32 int
+INFO  15:16:06,007 - #32 sss
+INFO  15:16:06,007 - #11 ,
+INFO  15:16:06,007 - #32 fg
+INFO  15:16:06,007 - #5 ;
+INFO  15:16:06,007 - #32 int
+INFO  15:16:06,007 - #32 opalaaaaa
+INFO  15:16:06,007 - #15 [
+INFO  15:16:06,007 - #16 ]
+INFO  15:16:06,007 - #5 ;
+INFO  15:16:06,007 - #29 class
+INFO  15:16:06,007 - #32 Table
+INFO  15:16:06,007 - #30 extends
+INFO  15:16:06,007 - #32 Nesto
+INFO  15:16:06,007 - #3 {
+INFO  15:16:06,008 - #32 int
+INFO  15:16:06,008 - #32 pos
+INFO  15:16:06,008 - #15 [
+INFO  15:16:06,008 - #16 ]
+INFO  15:16:06,008 - #11 ,
+INFO  15:16:06,008 - #32 neg
+INFO  15:16:06,008 - #15 [
+INFO  15:16:06,008 - #16 ]
+INFO  15:16:06,008 - #5 ;
+INFO  15:16:06,009 - #3 {
+INFO  15:16:06,009 - #13 void
+INFO  15:16:06,009 - #32 putp
+INFO  15:16:06,009 - #6 (
+INFO  15:16:06,009 - #32 int
+INFO  15:16:06,009 - #32 idx
+INFO  15:16:06,009 - #11 ,
+INFO  15:16:06,009 - #32 int
+INFO  15:16:06,009 - #32 nesto
+INFO  15:16:06,009 - #7 )
+INFO  15:16:06,010 - #3 {
+INFO  15:16:06,010 - #32 this
+INFO  15:16:06,010 - #8 =
+INFO  15:16:06,010 - #32 a
+INFO  15:16:06,010 - #5 ;
+INFO  15:16:06,011 - #4 }
+INFO  15:16:06,011 - #13 void
+INFO  15:16:06,011 - #32 putn
+INFO  15:16:06,011 - #6 (
+INFO  15:16:06,011 - #32 int
+INFO  15:16:06,011 - #32 idx
+INFO  15:16:06,012 - #11 ,
+INFO  15:16:06,012 - #32 int
+INFO  15:16:06,012 - #32 nesto
+INFO  15:16:06,012 - #7 )
+INFO  15:16:06,012 - #3 {
+INFO  15:16:06,012 - #32 this
+INFO  15:16:06,012 - #8 =
+INFO  15:16:06,012 - #32 a
+INFO  15:16:06,012 - #5 ;
+INFO  15:16:06,012 - #4 }
+INFO  15:16:06,012 - #32 int
+INFO  15:16:06,012 - #32 getp
+INFO  15:16:06,012 - #6 (
+INFO  15:16:06,013 - #32 int
+INFO  15:16:06,013 - #32 idx
+INFO  15:16:06,013 - #11 ,
+INFO  15:16:06,013 - #32 int
+INFO  15:16:06,013 - #32 nesto
+INFO  15:16:06,013 - #7 )
+INFO  15:16:06,013 - #3 {
+INFO  15:16:06,013 - #9 return
+INFO  15:16:06,013 - #32 pos
+INFO  15:16:06,013 - #15 [
+ERROR 15:16:06,014 - 
+Sintaksna greska na liniji 27
+INFO  15:16:06,014 - #32 idx
+INFO  15:16:06,014 - #16 ]
+INFO  15:16:06,014 - #5 ;
+INFO  15:16:06,014 - #4 }
+INFO  15:16:06,015 - #32 int
+INFO  15:16:06,015 - #32 getn
+ERROR 15:16:06,015 - Izvrsen oporavak do ; u liniji 27
+INFO  15:16:06,015 - #6 (
+INFO  15:16:06,015 - #32 int
+INFO  15:16:06,015 - #32 idx
+INFO  15:16:06,016 - #11 ,
+INFO  15:16:06,016 - #32 int
+INFO  15:16:06,016 - #32 nesto
+INFO  15:16:06,016 - #7 )
+INFO  15:16:06,016 - #3 {
+INFO  15:16:06,016 - #9 return
+INFO  15:16:06,016 - #32 neg
+INFO  15:16:06,016 - #15 [
+ERROR 15:16:06,016 - 
+Sintaksna greska na liniji 30
+INFO  15:16:06,016 - #32 idx
+INFO  15:16:06,016 - #16 ]
+INFO  15:16:06,016 - #5 ;
+INFO  15:16:06,016 - #4 }
+INFO  15:16:06,016 - #4 }
+INFO  15:16:06,016 - #4 }
+ERROR 15:16:06,016 - Izvrsen oporavak do ; u liniji 30
+INFO  15:16:06,017 - #32 int
+INFO  15:16:06,017 - #32 sss
+INFO  15:16:06,017 - #11 ,
+INFO  15:16:06,017 - #32 fg
+INFO  15:16:06,018 - #5 ;
+INFO  15:16:06,018 - #14 const
+INFO  15:16:06,018 - #32 int
+INFO  15:16:06,018 - #32 opala
+INFO  15:16:06,018 - #8 =
+INFO  15:16:06,018 - #31 2
+INFO  15:16:06,018 - #5 ;
+INFO  15:16:06,018 - #14 const
+INFO  15:16:06,018 - #32 int
+INFO  15:16:06,018 - #32 n
+INFO  15:16:06,018 - #8 =
+INFO  15:16:06,018 - #31 3
+INFO  15:16:06,018 - #11 ,
+INFO  15:16:06,018 - #32 m
+INFO  15:16:06,018 - #8 =
+INFO  15:16:06,018 - #31 5
+INFO  15:16:06,019 - #5 ;
+INFO  15:16:06,019 - #14 const
+INFO  15:16:06,019 - #32 bool
+INFO  15:16:06,019 - #32 sdas
+INFO  15:16:06,019 - #8 =
+INFO  15:16:06,019 - #34 true
+INFO  15:16:06,019 - #11 ,
+INFO  15:16:06,019 - #32 sadsad
+INFO  15:16:06,019 - #8 =
+INFO  15:16:06,019 - #34 false
+INFO  15:16:06,019 - #5 ;
+INFO  15:16:06,019 - #32 int
+INFO  15:16:06,019 - #32 sss
+INFO  15:16:06,019 - #11 ,
+INFO  15:16:06,019 - #32 fg
+INFO  15:16:06,019 - #5 ;
+INFO  15:16:06,019 - #14 const
+INFO  15:16:06,019 - #32 int
+INFO  15:16:06,019 - #32 opala
+INFO  15:16:06,019 - #8 =
+INFO  15:16:06,019 - #31 2
+INFO  15:16:06,019 - #5 ;
+INFO  15:16:06,020 - #14 const
+INFO  15:16:06,020 - #32 int
+INFO  15:16:06,020 - #32 n
+INFO  15:16:06,020 - #8 =
+INFO  15:16:06,020 - #31 3
+INFO  15:16:06,020 - #11 ,
+INFO  15:16:06,020 - #32 m
+INFO  15:16:06,020 - #8 =
+INFO  15:16:06,020 - #31 5
+INFO  15:16:06,020 - #5 ;
+INFO  15:16:06,020 - #14 const
+INFO  15:16:06,020 - #32 char
+INFO  15:16:06,020 - #32 sss
+INFO  15:16:06,020 - #8 =
+INFO  15:16:06,020 - #33 a
+INFO  15:16:06,020 - #11 ,
+INFO  15:16:06,020 - #32 sdaasd
+INFO  15:16:06,021 - #8 =
+INFO  15:16:06,021 - #33 s
+INFO  15:16:06,021 - #5 ;
+INFO  15:16:06,021 - #32 int
+INFO  15:16:06,021 - #32 sss
+INFO  15:16:06,021 - #11 ,
+INFO  15:16:06,021 - #32 fg
+INFO  15:16:06,021 - #5 ;
+INFO  15:16:06,021 - #14 const
+INFO  15:16:06,021 - #32 int
+INFO  15:16:06,021 - #32 opala
+INFO  15:16:06,021 - #8 =
+INFO  15:16:06,021 - #31 2
+INFO  15:16:06,021 - #5 ;
+INFO  15:16:06,021 - #14 const
+INFO  15:16:06,021 - #32 int
+INFO  15:16:06,021 - #32 n
+INFO  15:16:06,021 - #8 =
+INFO  15:16:06,022 - #31 3
+INFO  15:16:06,022 - #11 ,
+INFO  15:16:06,022 - #32 m
+INFO  15:16:06,022 - #8 =
+INFO  15:16:06,022 - #31 5
+INFO  15:16:06,022 - #5 ;
+INFO  15:16:06,022 - #32 int
+INFO  15:16:06,022 - #32 sss
+INFO  15:16:06,022 - #11 ,
+INFO  15:16:06,022 - #32 fg
+INFO  15:16:06,022 - #5 ;
+INFO  15:16:06,022 - #32 int
+INFO  15:16:06,022 - #32 opalaaaaa
+INFO  15:16:06,022 - #15 [
+INFO  15:16:06,022 - #16 ]
+INFO  15:16:06,022 - #5 ;
+INFO  15:16:06,022 - #29 class
+INFO  15:16:06,022 - #32 Table
+INFO  15:16:06,022 - #3 {
+INFO  15:16:06,023 - #4 }
+INFO  15:16:06,023 - #3 {
+INFO  15:16:06,023 - #32 int
+INFO  15:16:06,023 - #32 func
+INFO  15:16:06,023 - #6 (
+INFO  15:16:06,023 - #7 )
+INFO  15:16:06,023 - #3 {
+INFO  15:16:06,023 - #12 print
+INFO  15:16:06,023 - #6 (
+INFO  15:16:06,023 - #32 x
+INFO  15:16:06,023 - #7 )
+INFO  15:16:06,023 - #5 ;
+INFO  15:16:06,023 - #32 x
+INFO  15:16:06,024 - #8 =
+INFO  15:16:06,024 - #32 y
+INFO  15:16:06,024 - #10 +
+INFO  15:16:06,024 - #31 5
+INFO  15:16:06,024 - #5 ;
+INFO  15:16:06,024 - #12 print
+INFO  15:16:06,024 - #6 (
+INFO  15:16:06,024 - #31 2
+INFO  15:16:06,024 - #7 )
+INFO  15:16:06,024 - #5 ;
+INFO  15:16:06,024 - #4 }
+INFO  15:16:06,024 - #32 int
+INFO  15:16:06,024 - #32 main
+INFO  15:16:06,024 - #6 (
+INFO  15:16:06,024 - #7 )
+INFO  15:16:06,024 - #3 {
+INFO  15:16:06,025 - #12 print
+INFO  15:16:06,025 - #6 (
+INFO  15:16:06,025 - #32 x
+INFO  15:16:06,025 - #7 )
+INFO  15:16:06,025 - #5 ;
+INFO  15:16:06,025 - #32 x
+INFO  15:16:06,025 - #8 =
+INFO  15:16:06,025 - #32 y
+INFO  15:16:06,025 - #10 +
+INFO  15:16:06,025 - #31 5
+INFO  15:16:06,025 - #5 ;
+INFO  15:16:06,025 - #12 print
+INFO  15:16:06,025 - #6 (
+INFO  15:16:06,025 - #31 2
+INFO  15:16:06,025 - #7 )
+INFO  15:16:06,025 - #5 ;
+INFO  15:16:06,025 - #4 }
+INFO  15:16:06,025 - #4 }
+INFO  15:16:06,028 - Program(
  MJProgram
-  ProgramDeclVar(
-    ProgramDeclConst(
-      ProgramDeclConst(
-        ProgramDeclVar(
+  ProgramDeclClass(
+    ProgramDeclVar(
+      ProgramDeclVar(
+        ProgramDeclConst(
           ProgramDeclConst(
-            ProgramDeclConst(
+            ProgramDeclVar(
               ProgramDeclConst(
-                ProgramDeclVar(
+                ProgramDeclConst(
                   ProgramDeclConst(
-                    ProgramDeclConst(
+                    ProgramDeclVar(
                       ProgramDeclConst(
-                        ProgramDeclVar(
-                          NoProgramDecls(
-                          ) [NoProgramDecls]
-                          VarDecl(
+                        ProgramDeclConst(
+                          ProgramDeclConst(
+                            ProgramDeclVar(
+                              ProgramDeclClass(
+                                ProgramDeclVar(
+                                  ProgramDeclVar(
+                                    ProgramDeclConst(
+                                      ProgramDeclConst(
+                                        ProgramDeclVar(
+                                          ProgramDeclConst(
+                                            ProgramDeclConst(
+                                              ProgramDeclConst(
+                                                ProgramDeclVar(
+                                                  ProgramDeclConst(
+                                                    ProgramDeclConst(
+                                                      ProgramDeclConst(
+                                                        ProgramDeclVar(
+                                                          NoProgramDecls(
+                                                          ) [NoProgramDecls]
+                                                          VarDecl(
+                                                            Type(
+                                                             int
+                                                            ) [Type]
+                                                            MultipleVars(
+                                                              SingleVar(
+                                                               sss
+                                                              ) [SingleVar]
+                                                             fg
+                                                            ) [MultipleVars]
+                                                          ) [VarDecl]
+                                                        ) [ProgramDeclVar]
+                                                        ConstDeclaration(
+                                                          Type(
+                                                           int
+                                                          ) [Type]
+                                                          ConstAssignNumber(
+                                                           opala
+                                                           2
+                                                          ) [ConstAssignNumber]
+                                                        ) [ConstDeclaration]
+                                                      ) [ProgramDeclConst]
+                                                      ConstDeclaration(
+                                                        Type(
+                                                         int
+                                                        ) [Type]
+                                                        ConstAssignNumbers(
+                                                          ConstAssignNumber(
+                                                           n
+                                                           3
+                                                          ) [ConstAssignNumber]
+                                                         m
+                                                         5
+                                                        ) [ConstAssignNumbers]
+                                                      ) [ConstDeclaration]
+                                                    ) [ProgramDeclConst]
+                                                    ConstDeclaration(
+                                                      Type(
+                                                       bool
+                                                      ) [Type]
+                                                      ConstAssignBools(
+                                                        ConstAssignBool(
+                                                         sdas
+                                                        ) [ConstAssignBool]
+                                                       sadsad
+                                                      ) [ConstAssignBools]
+                                                    ) [ConstDeclaration]
+                                                  ) [ProgramDeclConst]
+                                                  VarDecl(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                    MultipleVars(
+                                                      SingleVar(
+                                                       sss
+                                                      ) [SingleVar]
+                                                     fg
+                                                    ) [MultipleVars]
+                                                  ) [VarDecl]
+                                                ) [ProgramDeclVar]
+                                                ConstDeclaration(
+                                                  Type(
+                                                   int
+                                                  ) [Type]
+                                                  ConstAssignNumber(
+                                                   opala
+                                                   2
+                                                  ) [ConstAssignNumber]
+                                                ) [ConstDeclaration]
+                                              ) [ProgramDeclConst]
+                                              ConstDeclaration(
+                                                Type(
+                                                 int
+                                                ) [Type]
+                                                ConstAssignNumbers(
+                                                  ConstAssignNumber(
+                                                   n
+                                                   3
+                                                  ) [ConstAssignNumber]
+                                                 m
+                                                 5
+                                                ) [ConstAssignNumbers]
+                                              ) [ConstDeclaration]
+                                            ) [ProgramDeclConst]
+                                            ConstDeclaration(
+                                              Type(
+                                               char
+                                              ) [Type]
+                                              ConstAssignChars(
+                                                ConstAssignChar(
+                                                 sss
+                                                 a
+                                                ) [ConstAssignChar]
+                                               sdaasd
+                                               s
+                                              ) [ConstAssignChars]
+                                            ) [ConstDeclaration]
+                                          ) [ProgramDeclConst]
+                                          VarDecl(
+                                            Type(
+                                             int
+                                            ) [Type]
+                                            MultipleVars(
+                                              SingleVar(
+                                               sss
+                                              ) [SingleVar]
+                                             fg
+                                            ) [MultipleVars]
+                                          ) [VarDecl]
+                                        ) [ProgramDeclVar]
+                                        ConstDeclaration(
+                                          Type(
+                                           int
+                                          ) [Type]
+                                          ConstAssignNumber(
+                                           opala
+                                           2
+                                          ) [ConstAssignNumber]
+                                        ) [ConstDeclaration]
+                                      ) [ProgramDeclConst]
+                                      ConstDeclaration(
+                                        Type(
+                                         int
+                                        ) [Type]
+                                        ConstAssignNumbers(
+                                          ConstAssignNumber(
+                                           n
+                                           3
+                                          ) [ConstAssignNumber]
+                                         m
+                                         5
+                                        ) [ConstAssignNumbers]
+                                      ) [ConstDeclaration]
+                                    ) [ProgramDeclConst]
+                                    VarDecl(
+                                      Type(
+                                       int
+                                      ) [Type]
+                                      MultipleVars(
+                                        SingleVar(
+                                         sss
+                                        ) [SingleVar]
+                                       fg
+                                      ) [MultipleVars]
+                                    ) [VarDecl]
+                                  ) [ProgramDeclVar]
+                                  VarDecl(
+                                    Type(
+                                     int
+                                    ) [Type]
+                                    SingleArray(
+                                     opalaaaaa
+                                    ) [SingleArray]
+                                  ) [VarDecl]
+                                ) [ProgramDeclVar]
+                                ClassDecl(
+                                 Table
+                                  ClassExtends(
+                                    Type(
+                                     Nesto
+                                    ) [Type]
+                                  ) [ClassExtends]
+                                  VarDeclarations(
+                                    NoVarDecl(
+                                    ) [NoVarDecl]
+                                    VarDecl(
+                                      Type(
+                                       int
+                                      ) [Type]
+                                      MultupleArray(
+                                        SingleArray(
+                                         pos
+                                        ) [SingleArray]
+                                       neg
+                                      ) [MultupleArray]
+                                    ) [VarDecl]
+                                  ) [VarDeclarations]
+                                  ClassMethDeclaration(
+                                    MethodDeclarations(
+                                      MethodDeclarations(
+                                        MethodDeclarations(
+                                          MethodDeclarations(
+                                            NoMethodDecl(
+                                            ) [NoMethodDecl]
+                                            MethodDeclVoid(
+                                             putp
+                                              FormParams(
+                                                FormalParamDecls(
+                                                  SingleFormalParamDecl(
+                                                    FormalParamDecl(
+                                                      Type(
+                                                       int
+                                                      ) [Type]
+                                                     idx
+                                                    ) [FormalParamDecl]
+                                                  ) [SingleFormalParamDecl]
+                                                  FormalParamDecl(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                   nesto
+                                                  ) [FormalParamDecl]
+                                                ) [FormalParamDecls]
+                                              ) [FormParams]
+                                              NoVarDecl(
+                                              ) [NoVarDecl]
+                                              Statements(
+                                                NoStmt(
+                                                ) [NoStmt]
+                                                MatchedStmt(
+                                                  Assignment(
+                                                    Designator(
+                                                     this
+                                                    ) [Designator]
+                                                    TermExpr(
+                                                      Term(
+                                                        Var(
+                                                          Designator(
+                                                           a
+                                                          ) [Designator]
+                                                        ) [Var]
+                                                      ) [Term]
+                                                    ) [TermExpr]
+                                                  ) [Assignment]
+                                                ) [MatchedStmt]
+                                              ) [Statements]
+                                            ) [MethodDeclVoid]
+                                          ) [MethodDeclarations]
+                                          MethodDeclVoid(
+                                           putn
+                                            FormParams(
+                                              FormalParamDecls(
+                                                SingleFormalParamDecl(
+                                                  FormalParamDecl(
+                                                    Type(
+                                                     int
+                                                    ) [Type]
+                                                   idx
+                                                  ) [FormalParamDecl]
+                                                ) [SingleFormalParamDecl]
+                                                FormalParamDecl(
+                                                  Type(
+                                                   int
+                                                  ) [Type]
+                                                 nesto
+                                                ) [FormalParamDecl]
+                                              ) [FormalParamDecls]
+                                            ) [FormParams]
+                                            NoVarDecl(
+                                            ) [NoVarDecl]
+                                            Statements(
+                                              NoStmt(
+                                              ) [NoStmt]
+                                              MatchedStmt(
+                                                Assignment(
+                                                  Designator(
+                                                   this
+                                                  ) [Designator]
+                                                  TermExpr(
+                                                    Term(
+                                                      Var(
+                                                        Designator(
+                                                         a
+                                                        ) [Designator]
+                                                      ) [Var]
+                                                    ) [Term]
+                                                  ) [TermExpr]
+                                                ) [Assignment]
+                                              ) [MatchedStmt]
+                                            ) [Statements]
+                                          ) [MethodDeclVoid]
+                                        ) [MethodDeclarations]
+                                        MethodDecl(
+                                          Type(
+                                           int
+                                          ) [Type]
+                                         getp
+                                          FormParams(
+                                            FormalParamDecls(
+                                              SingleFormalParamDecl(
+                                                FormalParamDecl(
+                                                  Type(
+                                                   int
+                                                  ) [Type]
+                                                 idx
+                                                ) [FormalParamDecl]
+                                              ) [SingleFormalParamDecl]
+                                              FormalParamDecl(
+                                                Type(
+                                                 int
+                                                ) [Type]
+                                               nesto
+                                              ) [FormalParamDecl]
+                                            ) [FormalParamDecls]
+                                          ) [FormParams]
+                                          NoVarDecl(
+                                          ) [NoVarDecl]
+                                          Statements(
+                                            NoStmt(
+                                            ) [NoStmt]
+                                            MatchedStmt(
+                                              ErrorStmt(
+                                              ) [ErrorStmt]
+                                            ) [MatchedStmt]
+                                          ) [Statements]
+                                        ) [MethodDecl]
+                                      ) [MethodDeclarations]
+                                      MethodDecl(
+                                        Type(
+                                         int
+                                        ) [Type]
+                                       getn
+                                        FormParams(
+                                          FormalParamDecls(
+                                            SingleFormalParamDecl(
+                                              FormalParamDecl(
+                                                Type(
+                                                 int
+                                                ) [Type]
+                                               idx
+                                              ) [FormalParamDecl]
+                                            ) [SingleFormalParamDecl]
+                                            FormalParamDecl(
+                                              Type(
+                                               int
+                                              ) [Type]
+                                             nesto
+                                            ) [FormalParamDecl]
+                                          ) [FormalParamDecls]
+                                        ) [FormParams]
+                                        NoVarDecl(
+                                        ) [NoVarDecl]
+                                        Statements(
+                                          NoStmt(
+                                          ) [NoStmt]
+                                          MatchedStmt(
+                                            ErrorStmt(
+                                            ) [ErrorStmt]
+                                          ) [MatchedStmt]
+                                        ) [Statements]
+                                      ) [MethodDecl]
+                                    ) [MethodDeclarations]
+                                  ) [ClassMethDeclaration]
+                                ) [ClassDecl]
+                              ) [ProgramDeclClass]
+                              VarDecl(
+                                Type(
+                                 int
+                                ) [Type]
+                                MultipleVars(
+                                  SingleVar(
+                                   sss
+                                  ) [SingleVar]
+                                 fg
+                                ) [MultipleVars]
+                              ) [VarDecl]
+                            ) [ProgramDeclVar]
+                            ConstDeclaration(
+                              Type(
+                               int
+                              ) [Type]
+                              ConstAssignNumber(
+                               opala
+                               2
+                              ) [ConstAssignNumber]
+                            ) [ConstDeclaration]
+                          ) [ProgramDeclConst]
+                          ConstDeclaration(
                             Type(
                              int
                             ) [Type]
-                            MultipleVars(
-                              SingleVar(
-                               sss
-                              ) [SingleVar]
-                             fg
-                            ) [MultipleVars]
-                          ) [VarDecl]
-                        ) [ProgramDeclVar]
+                            ConstAssignNumbers(
+                              ConstAssignNumber(
+                               n
+                               3
+                              ) [ConstAssignNumber]
+                             m
+                             5
+                            ) [ConstAssignNumbers]
+                          ) [ConstDeclaration]
+                        ) [ProgramDeclConst]
                         ConstDeclaration(
                           Type(
-                           int
+                           bool
                           ) [Type]
-                          ConstAssignNumber(
-                           opala
-                           2
-                          ) [ConstAssignNumber]
+                          ConstAssignBools(
+                            ConstAssignBool(
+                             sdas
+                            ) [ConstAssignBool]
+                           sadsad
+                          ) [ConstAssignBools]
                         ) [ConstDeclaration]
                       ) [ProgramDeclConst]
-                      ConstDeclaration(
+                      VarDecl(
                         Type(
                          int
                         ) [Type]
-                        ConstAssignNumbers(
-                          ConstAssignNumber(
-                           n
-                           3
-                          ) [ConstAssignNumber]
-                         m
-                         5
-                        ) [ConstAssignNumbers]
-                      ) [ConstDeclaration]
-                    ) [ProgramDeclConst]
+                        MultipleVars(
+                          SingleVar(
+                           sss
+                          ) [SingleVar]
+                         fg
+                        ) [MultipleVars]
+                      ) [VarDecl]
+                    ) [ProgramDeclVar]
                     ConstDeclaration(
                       Type(
-                       bool
+                       int
                       ) [Type]
-                      ConstAssignBools(
-                        ConstAssignBool(
-                         sdas
-                        ) [ConstAssignBool]
-                       sadsad
-                      ) [ConstAssignBools]
+                      ConstAssignNumber(
+                       opala
+                       2
+                      ) [ConstAssignNumber]
                     ) [ConstDeclaration]
                   ) [ProgramDeclConst]
-                  VarDecl(
+                  ConstDeclaration(
                     Type(
                      int
                     ) [Type]
-                    MultipleVars(
-                      SingleVar(
-                       sss
-                      ) [SingleVar]
-                     fg
-                    ) [MultipleVars]
-                  ) [VarDecl]
-                ) [ProgramDeclVar]
+                    ConstAssignNumbers(
+                      ConstAssignNumber(
+                       n
+                       3
+                      ) [ConstAssignNumber]
+                     m
+                     5
+                    ) [ConstAssignNumbers]
+                  ) [ConstDeclaration]
+                ) [ProgramDeclConst]
                 ConstDeclaration(
                   Type(
-                   int
+                   char
                   ) [Type]
-                  ConstAssignNumber(
-                   opala
-                   2
-                  ) [ConstAssignNumber]
+                  ConstAssignChars(
+                    ConstAssignChar(
+                     sss
+                     a
+                    ) [ConstAssignChar]
+                   sdaasd
+                   s
+                  ) [ConstAssignChars]
                 ) [ConstDeclaration]
               ) [ProgramDeclConst]
-              ConstDeclaration(
+              VarDecl(
                 Type(
                  int
                 ) [Type]
-                ConstAssignNumbers(
-                  ConstAssignNumber(
-                   n
-                   3
-                  ) [ConstAssignNumber]
-                 m
-                 5
-                ) [ConstAssignNumbers]
-              ) [ConstDeclaration]
-            ) [ProgramDeclConst]
+                MultipleVars(
+                  SingleVar(
+                   sss
+                  ) [SingleVar]
+                 fg
+                ) [MultipleVars]
+              ) [VarDecl]
+            ) [ProgramDeclVar]
             ConstDeclaration(
               Type(
-               char
+               int
               ) [Type]
-              ConstAssignChars(
-                ConstAssignChar(
-                 sss
-                 a
-                ) [ConstAssignChar]
-               sdaasd
-               s
-              ) [ConstAssignChars]
+              ConstAssignNumber(
+               opala
+               2
+              ) [ConstAssignNumber]
             ) [ConstDeclaration]
           ) [ProgramDeclConst]
-          VarDecl(
+          ConstDeclaration(
             Type(
              int
             ) [Type]
-            MultipleVars(
-              SingleVar(
-               sss
-              ) [SingleVar]
-             fg
-            ) [MultipleVars]
-          ) [VarDecl]
-        ) [ProgramDeclVar]
-        ConstDeclaration(
+            ConstAssignNumbers(
+              ConstAssignNumber(
+               n
+               3
+              ) [ConstAssignNumber]
+             m
+             5
+            ) [ConstAssignNumbers]
+          ) [ConstDeclaration]
+        ) [ProgramDeclConst]
+        VarDecl(
           Type(
            int
           ) [Type]
-          ConstAssignNumber(
-           opala
-           2
-          ) [ConstAssignNumber]
-        ) [ConstDeclaration]
-      ) [ProgramDeclConst]
-      ConstDeclaration(
+          MultipleVars(
+            SingleVar(
+             sss
+            ) [SingleVar]
+           fg
+          ) [MultipleVars]
+        ) [VarDecl]
+      ) [ProgramDeclVar]
+      VarDecl(
         Type(
          int
         ) [Type]
-        ConstAssignNumbers(
-          ConstAssignNumber(
-           n
-           3
-          ) [ConstAssignNumber]
-         m
-         5
-        ) [ConstAssignNumbers]
-      ) [ConstDeclaration]
-    ) [ProgramDeclConst]
-    VarDecl(
-      Type(
-       int
-      ) [Type]
-      MultipleVars(
-        SingleVar(
-         sss
-        ) [SingleVar]
-       fg
-      ) [MultipleVars]
-    ) [VarDecl]
-  ) [ProgramDeclVar]
-  MethodDecl(
-    Type(
-     int
-    ) [Type]
-   main
-    NoFormParam(
-    ) [NoFormParam]
-    NoVarDecl(
-    ) [NoVarDecl]
-    Statements(
-      Statements(
+        SingleArray(
+         opalaaaaa
+        ) [SingleArray]
+      ) [VarDecl]
+    ) [ProgramDeclVar]
+    ClassDecl(
+     Table
+      NoClassExtends(
+      ) [NoClassExtends]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoClassMethDeclaration(
+      ) [NoClassMethDeclaration]
+    ) [ClassDecl]
+  ) [ProgramDeclClass]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        Type(
+         int
+        ) [Type]
+       func
+        NoFormParam(
+        ) [NoFormParam]
+        NoVarDecl(
+        ) [NoVarDecl]
         Statements(
-          NoStmt(
-          ) [NoStmt]
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                PrintStmt(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         x
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              Assignment(
+                Designator(
+                 x
+                ) [Designator]
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         y
+                        ) [Designator]
+                      ) [Var]
+                    ) [Term]
+                  ) [TermExpr]
+                  Addop(
+                  ) [Addop]
+                  Term(
+                    Const(
+                     5
+                    ) [Const]
+                  ) [Term]
+                ) [AddExpr]
+              ) [Assignment]
+            ) [MatchedStmt]
+          ) [Statements]
           MatchedStmt(
             PrintStmt(
               TermExpr(
                 Term(
-                  Var(
-                    Designator(
-                     x
-                    ) [Designator]
-                  ) [Var]
+                  Const(
+                   2
+                  ) [Const]
                 ) [Term]
               ) [TermExpr]
             ) [PrintStmt]
           ) [MatchedStmt]
         ) [Statements]
-        MatchedStmt(
-          Assignment(
-            Designator(
-             x
-            ) [Designator]
-            AddExpr(
-              TermExpr(
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              PrintStmt(
+                TermExpr(
+                  Term(
+                    Var(
+                      Designator(
+                       x
+                      ) [Designator]
+                    ) [Var]
+                  ) [Term]
+                ) [TermExpr]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            Assignment(
+              Designator(
+               x
+              ) [Designator]
+              AddExpr(
+                TermExpr(
+                  Term(
+                    Var(
+                      Designator(
+                       y
+                      ) [Designator]
+                    ) [Var]
+                  ) [Term]
+                ) [TermExpr]
+                Addop(
+                ) [Addop]
                 Term(
-                  Var(
-                    Designator(
-                     y
-                    ) [Designator]
-                  ) [Var]
+                  Const(
+                   5
+                  ) [Const]
                 ) [Term]
-              ) [TermExpr]
-              Addop(
-              ) [Addop]
+              ) [AddExpr]
+            ) [Assignment]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
               Term(
                 Const(
-                 5
+                 2
                 ) [Const]
               ) [Term]
-            ) [AddExpr]
-          ) [Assignment]
+            ) [TermExpr]
+          ) [PrintStmt]
         ) [MatchedStmt]
       ) [Statements]
-      MatchedStmt(
-        PrintStmt(
-          TermExpr(
-            Term(
-              Const(
-               2
-              ) [Const]
-            ) [Term]
-          ) [TermExpr]
-        ) [PrintStmt]
-      ) [MatchedStmt]
-    ) [Statements]
-  ) [MethodDecl]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
 ) [Program]
-INFO  13:46:36,019 - ===================================
-INFO  13:46:36,020 -  Print count calls = 2
-INFO  13:46:36,020 -  Deklarisanih promenljivih ima = 4
+INFO  15:16:06,029 - ===================================
+INFO  15:16:06,031 -  Print count calls = 4
+INFO  15:16:06,032 -  Deklarisanih promenljivih ima = 11

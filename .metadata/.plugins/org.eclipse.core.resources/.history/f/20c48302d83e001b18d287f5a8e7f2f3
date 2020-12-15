@@ -1,0 +1,25 @@
+program MJProgram
+	
+	
+	class table 
+	
+	
+{
+
+	int func() {
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+	}
+	int main() {
+		
+		print(x);
+		
+		x = y + 5;
+		
+		print(2);
+		
+	}
+}

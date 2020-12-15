@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 11/11/2020 13:45:59
+// 15/11/2020 15:14:44
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,9 +16,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormPars FormPars) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(Unmatched Unmatched) { }
-    public void visit(FormalParamDecl FormalParamDecl) { }
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(Statement Statement) { }
+    public void visit(ClassMethDecl ClassMethDecl) { }
     public void visit(Identifiers Identifiers) { }
     public void visit(StatementList StatementList) { }
     public void visit(ProgramDeclarations ProgramDeclarations) { }
@@ -49,10 +49,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MatchedStmt MatchedStmt) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(Statements Statements) { visit(); }
+    public void visit(FormalParamDecl FormalParamDecl) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
+    public void visit(MethodDeclVoid MethodDeclVoid) { visit(); }
     public void visit(MethodDecl MethodDecl) { visit(); }
     public void visit(NoMethodDecl NoMethodDecl) { visit(); }
     public void visit(MethodDeclarations MethodDeclarations) { visit(); }
@@ -71,7 +73,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ConstAssignNumbers ConstAssignNumbers) { visit(); }
     public void visit(ConstAssignNumber ConstAssignNumber) { visit(); }
     public void visit(ConstDeclaration ConstDeclaration) { visit(); }
+    public void visit(NoClassExtends NoClassExtends) { visit(); }
+    public void visit(ClassExtends ClassExtends) { visit(); }
+    public void visit(NoClassMethDeclaration NoClassMethDeclaration) { visit(); }
+    public void visit(ClassMethDeclaration ClassMethDeclaration) { visit(); }
+    public void visit(ClassDecl ClassDecl) { visit(); }
     public void visit(NoProgramDecls NoProgramDecls) { visit(); }
+    public void visit(ProgramDeclClass ProgramDeclClass) { visit(); }
     public void visit(ProgramDeclVar ProgramDeclVar) { visit(); }
     public void visit(ProgramDeclConst ProgramDeclConst) { visit(); }
     public void visit(Program Program) { visit(); }
