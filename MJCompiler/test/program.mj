@@ -9,6 +9,7 @@ program MJProgram
 		read(t[3]);
 		break;
 		continue;
+		print(3,3);
 		 }while(3 + 3);
 		 
 		x = 3;

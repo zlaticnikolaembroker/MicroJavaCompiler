@@ -1,57 +1,64 @@
-INFO  17:35:16,021 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  17:35:16,034 - #2 program
-INFO  17:35:16,034 - #38 MJProgram
-INFO  17:35:16,035 - #3 {
-INFO  17:35:16,035 - #38 int
-INFO  17:35:16,035 - #38 main
-INFO  17:35:16,035 - #6 (
-INFO  17:35:16,035 - #38 char
-INFO  17:35:16,035 - #38 x
-INFO  17:35:16,035 - #11 ,
-INFO  17:35:16,036 - #38 int
-INFO  17:35:16,036 - #38 s
-INFO  17:35:16,036 - #7 )
-INFO  17:35:16,036 - #38 int
-INFO  17:35:16,036 - #38 x
-INFO  17:35:16,036 - #5 ;
-INFO  17:35:16,037 - #3 {
-INFO  17:35:16,037 - #31 do
-INFO  17:35:16,038 - #3 {
-INFO  17:35:16,038 - #38 x
-INFO  17:35:16,038 - #8 =
-INFO  17:35:16,038 - #37 3
-INFO  17:35:16,038 - #5 ;
-INFO  17:35:16,038 - #38 t
-INFO  17:35:16,039 - #8 =
-INFO  17:35:16,039 - #37 3
-INFO  17:35:16,039 - #5 ;
-INFO  17:35:16,039 - #35 read
-INFO  17:35:16,039 - #6 (
-INFO  17:35:16,039 - #38 t
-INFO  17:35:16,039 - #15 [
-INFO  17:35:16,039 - #37 3
-INFO  17:35:16,039 - #16 ]
-INFO  17:35:16,039 - #7 )
-INFO  17:35:16,039 - #5 ;
-INFO  17:35:16,039 - #33 break
-INFO  17:35:16,039 - #5 ;
-INFO  17:35:16,040 - #34 continue
-INFO  17:35:16,040 - #5 ;
-INFO  17:35:16,040 - #4 }
-INFO  17:35:16,040 - #32 while
-INFO  17:35:16,040 - #6 (
-INFO  17:35:16,040 - #37 3
-INFO  17:35:16,040 - #10 +
-INFO  17:35:16,041 - #37 3
-INFO  17:35:16,041 - #7 )
-INFO  17:35:16,041 - #5 ;
-INFO  17:35:16,041 - #38 x
-INFO  17:35:16,041 - #8 =
-INFO  17:35:16,041 - #37 3
-INFO  17:35:16,041 - #5 ;
-INFO  17:35:16,042 - #4 }
-INFO  17:35:16,042 - #4 }
-INFO  17:35:16,043 - Program(
+INFO  17:37:54,219 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  17:37:54,238 - #2 program
+INFO  17:37:54,238 - #38 MJProgram
+INFO  17:37:54,238 - #3 {
+INFO  17:37:54,239 - #38 int
+INFO  17:37:54,239 - #38 main
+INFO  17:37:54,239 - #6 (
+INFO  17:37:54,239 - #38 char
+INFO  17:37:54,239 - #38 x
+INFO  17:37:54,239 - #11 ,
+INFO  17:37:54,240 - #38 int
+INFO  17:37:54,240 - #38 s
+INFO  17:37:54,240 - #7 )
+INFO  17:37:54,240 - #38 int
+INFO  17:37:54,241 - #38 x
+INFO  17:37:54,241 - #5 ;
+INFO  17:37:54,241 - #3 {
+INFO  17:37:54,241 - #31 do
+INFO  17:37:54,242 - #3 {
+INFO  17:37:54,242 - #38 x
+INFO  17:37:54,242 - #8 =
+INFO  17:37:54,242 - #37 3
+INFO  17:37:54,242 - #5 ;
+INFO  17:37:54,243 - #38 t
+INFO  17:37:54,243 - #8 =
+INFO  17:37:54,243 - #37 3
+INFO  17:37:54,243 - #5 ;
+INFO  17:37:54,243 - #35 read
+INFO  17:37:54,243 - #6 (
+INFO  17:37:54,243 - #38 t
+INFO  17:37:54,244 - #15 [
+INFO  17:37:54,244 - #37 3
+INFO  17:37:54,244 - #16 ]
+INFO  17:37:54,244 - #7 )
+INFO  17:37:54,244 - #5 ;
+INFO  17:37:54,244 - #33 break
+INFO  17:37:54,244 - #5 ;
+INFO  17:37:54,245 - #34 continue
+INFO  17:37:54,245 - #5 ;
+INFO  17:37:54,246 - #12 print
+INFO  17:37:54,246 - #6 (
+INFO  17:37:54,246 - #37 3
+INFO  17:37:54,246 - #11 ,
+INFO  17:37:54,246 - #37 3
+INFO  17:37:54,246 - #7 )
+INFO  17:37:54,246 - #5 ;
+INFO  17:37:54,246 - #4 }
+INFO  17:37:54,247 - #32 while
+INFO  17:37:54,247 - #6 (
+INFO  17:37:54,247 - #37 3
+INFO  17:37:54,247 - #10 +
+INFO  17:37:54,247 - #37 3
+INFO  17:37:54,247 - #7 )
+INFO  17:37:54,248 - #5 ;
+INFO  17:37:54,248 - #38 x
+INFO  17:37:54,248 - #8 =
+INFO  17:37:54,248 - #37 3
+INFO  17:37:54,248 - #5 ;
+INFO  17:37:54,248 - #4 }
+INFO  17:37:54,248 - #4 }
+INFO  17:37:54,250 - Program(
  MJProgram
   NoProgramDecls(
   ) [NoProgramDecls]
@@ -104,12 +111,28 @@ INFO  17:35:16,043 - Program(
                   Statements(
                     Statements(
                       Statements(
-                        NoStmt(
-                        ) [NoStmt]
+                        Statements(
+                          NoStmt(
+                          ) [NoStmt]
+                          MatchedStmt(
+                            Assignment(
+                              Designator(
+                               x
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   3
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Assignment]
+                          ) [MatchedStmt]
+                        ) [Statements]
                         MatchedStmt(
                           Assignment(
                             Designator(
-                             x
+                             t
                             ) [Designator]
                             TermExpr(
                               Term(
@@ -122,43 +145,41 @@ INFO  17:35:16,043 - Program(
                         ) [MatchedStmt]
                       ) [Statements]
                       MatchedStmt(
-                        Assignment(
-                          Designator(
+                        ReadStmt(
+                          DesignatorArrayItem(
                            t
-                          ) [Designator]
-                          TermExpr(
-                            Term(
-                              Const(
-                               3
-                              ) [Const]
-                            ) [Term]
-                          ) [TermExpr]
-                        ) [Assignment]
+                            TermExpr(
+                              Term(
+                                Const(
+                                 3
+                                ) [Const]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [DesignatorArrayItem]
+                        ) [ReadStmt]
                       ) [MatchedStmt]
                     ) [Statements]
                     MatchedStmt(
-                      ReadStmt(
-                        DesignatorArrayItem(
-                         t
-                          TermExpr(
-                            Term(
-                              Const(
-                               3
-                              ) [Const]
-                            ) [Term]
-                          ) [TermExpr]
-                        ) [DesignatorArrayItem]
-                      ) [ReadStmt]
+                      BreakStatement(
+                      ) [BreakStatement]
                     ) [MatchedStmt]
                   ) [Statements]
                   MatchedStmt(
-                    BreakStatement(
-                    ) [BreakStatement]
+                    ContinueStatement(
+                    ) [ContinueStatement]
                   ) [MatchedStmt]
                 ) [Statements]
                 MatchedStmt(
-                  ContinueStatement(
-                  ) [ContinueStatement]
+                  PrintStmtWithNum(
+                    TermExpr(
+                      Term(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                   3
+                  ) [PrintStmtWithNum]
                 ) [MatchedStmt]
               ) [Statements]
               AddExpr(
@@ -198,6 +219,6 @@ INFO  17:35:16,043 - Program(
     ) [MethodDecl]
   ) [MethodDeclarations]
 ) [Program]
-INFO  17:35:16,043 - ===================================
-INFO  17:35:16,044 -  Print count calls = 0
-INFO  17:35:16,044 -  Deklarisanih promenljivih ima = 1
+INFO  17:37:54,251 - ===================================
+INFO  17:37:54,252 -  Print count calls = 0
+INFO  17:37:54,252 -  Deklarisanih promenljivih ima = 1

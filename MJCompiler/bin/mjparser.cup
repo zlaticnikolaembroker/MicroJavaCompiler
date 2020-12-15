@@ -163,6 +163,8 @@ Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
 		   |
 		   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 		   |
+		   (PrintStmtWithNum) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
+		   |
 		   (ReadStmt) READ LPAREN Designator RPAREN SEMI
 		   |
 		   (ReturnExpr) RETURN Expr:t SEMI
