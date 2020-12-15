@@ -46,7 +46,7 @@ scan with {:
 
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID, CONST, LSQUARE, RSQUARE;
 terminal IF, ELSE, MINUS, LESS, LESSEQUAL, GREATER, GREATEREQUAL, MUL, DIV, MOD, IDENTICAL, NOTIDENTICAL;
-terminal CLASS, EXTENDS, DO, WHILE, BREAK, CONTINUE;
+terminal CLASS, EXTENDS, DO, WHILE, BREAK, CONTINUE, READ, DOT;
 
 terminal Integer NUMBER;
 terminal String IDENT;
@@ -185,6 +185,8 @@ Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI {: RESULT=new Assignm
 		   |
 		   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
 		   |
+		   (ReadStmt) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new ReadStmt(D1); RESULT.setLine(D1left); :}
+		   |
 		   (ReturnExpr) RETURN Expr:t SEMI {: RESULT=new ReturnExpr(t); RESULT.setLine(tleft); :}
 		   |
 		   (ReturnNoExpr) RETURN SEMI {: RESULT=new ReturnNoExpr(); :}
@@ -222,7 +224,12 @@ ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=ne
 				(ActualParam) Expr:E1 {: RESULT=new ActualParam(E1); RESULT.setLine(E1left); :}
 				;
 				
-Designator ::= (Designator) IDENT:name {: RESULT=new Designator(name); RESULT.setLine(nameleft); :};
+Designator ::= (Designator) IDENT:name {: RESULT=new Designator(name); RESULT.setLine(nameleft); :}
+			|
+			(DesignatorDot) IDENT:name DOT IDENT:filedName {: RESULT=new DesignatorDot(name, filedName); RESULT.setLine(nameleft); :}
+			|
+			(DesignatorArrayItem) IDENT:arrayName LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(arrayName, index); RESULT.setLine(arrayNameleft); :} 
+			;
 
 Addop ::= (Addop) PLUS {: RESULT=new Addop(); :};
 		
