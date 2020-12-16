@@ -47,6 +47,7 @@ scan with {:
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID, CONST, LSQUARE, RSQUARE;
 terminal IF, ELSE, MINUS, LESS, LESSEQUAL, GREATER, GREATEREQUAL, MUL, DIV, MOD, IDENTICAL, NOTIDENTICAL;
 terminal CLASS, EXTENDS, DO, WHILE, BREAK, CONTINUE, READ, DOT, SWITCH, CASE, COLON;
+terminal NEW;
 
 terminal Integer NUMBER;
 terminal String IDENT;
@@ -58,7 +59,7 @@ nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement
 nonterminal Designator, Expr, Term, Addop, Factor, ActualPars, ActualParamList;
 nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal ClassDecl, ClassExtends, ClassMethDecl, CaseStmt, CaseStmtList;
-nonterminal Matched, Unmatched;
+nonterminal Matched, Unmatched, Mulop, Relop;
 
 Program ::= (Program) PROG IDENT ProgramDeclarations LBRACE MethodDeclList RBRACE;
 
@@ -196,13 +197,26 @@ Expr ::= (AddExpr) Expr:te Addop Term:t
 	 (TermExpr) Term:t
 	 ;
 
-Term ::= (Term) Factor:t;
+Term ::= (Term) Factor:t 
+		|
+		(TermMore) Term Mulop Factor
+		;
 
 Factor ::= (Const) NUMBER
+		|
+		(ConstChar) CONSTCHAR
+		|
+		(ConstBool) CONSTBOOL
 		|
 		(Var) Designator:d
 		| 
 		(FuncCall) Designator:func LPAREN ActualPars RPAREN
+		|
+		(ExprParens) LPAREN Expr RPAREN
+		|
+		(NewExpression) NEW Type:varType
+		|
+		(NewExpressionArray) NEW Type:varType LSQUARE Expr RSQUARE
 		;
 		
 ActualPars ::= (Actuals) ActualParamList
@@ -217,11 +231,32 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 				
 Designator ::= (Designator) IDENT:name
 			|
-			(DesignatorDot) IDENT:name DOT IDENT:filedName
+			(DesignatorDot) IDENT:name DOT IDENT:fieldName
 			|
 			(DesignatorArrayItem) IDENT:arrayName LSQUARE Expr:index RSQUARE 
 			;
 
-Addop ::= (Addop) PLUS;
+Addop ::= (AddopPlus) PLUS
+		|
+		(AddopMinus) MINUS
+		;
 		
-		
+Mulop ::= (MulopMul) MUL	
+		|
+		(MulopDiv) DIV
+		|
+		(MulopMod) MOD
+		;
+
+Relop ::= (RelopIdentical) IDENTICAL
+		|
+		(RelopNotIdentical) NOTIDENTICAL
+		|
+		(RelopGreater) GREATER
+		|
+		(RelopGreaterEqual) GREATEREQUAL
+		|
+		(RelopLess) LESS
+		|
+		(RelopLessEqual) LESSEQUAL
+		;

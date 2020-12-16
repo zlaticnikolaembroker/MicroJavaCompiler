@@ -52,9 +52,11 @@ import java_cup.runtime.Symbol;
 "switch"	{ return new_symbol(sym.SWITCH, yytext());		}
 "case"		{ return new_symbol(sym.CASE, yytext());		}
 "if"      	{ return new_symbol(sym.IF, yytext());			}
-"else"      { return new_symbol(sym.ELSE, yytext());			}
+"else"      { return new_symbol(sym.ELSE, yytext());		}
+"new"  		{ return new_symbol(sym.NEW, yytext());			}
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); 			}
+"-"   		{ return new_symbol(sym.MINUS, yytext()); 			}
 "_" 		{ return new_symbol(sym.MINUS, yytext()); 			}
 "=="        { return new_symbol(sym.IDENTICAL, yytext()); 		}
 "!="        { return new_symbol(sym.NOTIDENTICAL, yytext()); 	}
@@ -67,6 +69,9 @@ import java_cup.runtime.Symbol;
 "," 		{ return new_symbol(sym.COMMA, yytext()); 			}
 "."         { return new_symbol(sym.DOT, yytext()); 			}
 ":"         { return new_symbol(sym.COLON, yytext()); 			}
+"*"			{ return new_symbol(sym.MUL, yytext()); 			}
+"/"         { return new_symbol(sym.DIV, yytext()); 			}
+"%"         { return new_symbol(sym.MOD, yytext()); 			}
 
 "(" 		{ return new_symbol(sym.LPAREN, yytext()); 	}
 ")" 		{ return new_symbol(sym.RPAREN, yytext()); 	}

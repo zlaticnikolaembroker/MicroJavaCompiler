@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 14:48:51
+// 16/11/2020 15:6:53
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -13,7 +13,6 @@ public class MethodDeclVoid extends MethodDecl {
     private StatementList StatementList;
 
     public MethodDeclVoid (String methName, FormPars FormPars, VarDeclList VarDeclList, StatementList StatementList) {
-    	super(null, null, null, null, null);
         this.methName=methName;
         this.FormPars=FormPars;
         if(FormPars!=null) FormPars.setParent(this);

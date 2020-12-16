@@ -47,6 +47,7 @@ scan with {:
 terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, EQUAL, RETURN, PLUS, COMMA, PRINT, VOID, CONST, LSQUARE, RSQUARE;
 terminal IF, ELSE, MINUS, LESS, LESSEQUAL, GREATER, GREATEREQUAL, MUL, DIV, MOD, IDENTICAL, NOTIDENTICAL;
 terminal CLASS, EXTENDS, DO, WHILE, BREAK, CONTINUE, READ, DOT, SWITCH, CASE, COLON;
+terminal NEW;
 
 terminal Integer NUMBER;
 terminal String IDENT;
@@ -82,6 +83,8 @@ nonterminal CaseStmt CaseStmt;
 nonterminal CaseStmtList CaseStmtList;
 nonterminal Matched Matched;
 nonterminal Unmatched Unmatched;
+nonterminal Mulop Mulop;
+nonterminal Relop Relop;
 
 Program ::= (Program) PROG IDENT:I1 ProgramDeclarations:P2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(I1, P2, M3); RESULT.setLine(I1left); :};
 
@@ -219,13 +222,26 @@ Expr ::= (AddExpr) Expr:te Addop:A1 Term:t {: RESULT=new AddExpr(te, A1, t); RES
 	 (TermExpr) Term:t {: RESULT=new TermExpr(t); RESULT.setLine(tleft); :}
 	 ;
 
-Term ::= (Term) Factor:t {: RESULT=new Term(t); RESULT.setLine(tleft); :};
+Term ::= (Term) Factor:t {: RESULT=new Term(t); RESULT.setLine(tleft); :} 
+		|
+		(TermMore) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new TermMore(T1, M2, F3); RESULT.setLine(T1left); :}
+		;
 
 Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
+		|
+		(ConstChar) CONSTCHAR:C1 {: RESULT=new ConstChar(C1); RESULT.setLine(C1left); :}
+		|
+		(ConstBool) CONSTBOOL:C1 {: RESULT=new ConstBool(C1); RESULT.setLine(C1left); :}
 		|
 		(Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
 		| 
 		(FuncCall) Designator:func LPAREN ActualPars:A1 RPAREN {: RESULT=new FuncCall(func, A1); RESULT.setLine(funcleft); :}
+		|
+		(ExprParens) LPAREN Expr:E1 RPAREN {: RESULT=new ExprParens(E1); RESULT.setLine(E1left); :}
+		|
+		(NewExpression) NEW Type:varType {: RESULT=new NewExpression(varType); RESULT.setLine(varTypeleft); :}
+		|
+		(NewExpressionArray) NEW Type:varType LSQUARE Expr:E1 RSQUARE {: RESULT=new NewExpressionArray(varType, E1); RESULT.setLine(varTypeleft); :}
 		;
 		
 ActualPars ::= (Actuals) ActualParamList:A1 {: RESULT=new Actuals(A1); RESULT.setLine(A1left); :}
@@ -240,11 +256,32 @@ ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=ne
 				
 Designator ::= (Designator) IDENT:name {: RESULT=new Designator(name); RESULT.setLine(nameleft); :}
 			|
-			(DesignatorDot) IDENT:name DOT IDENT:filedName {: RESULT=new DesignatorDot(name, filedName); RESULT.setLine(nameleft); :}
+			(DesignatorDot) IDENT:name DOT IDENT:fieldName {: RESULT=new DesignatorDot(name, fieldName); RESULT.setLine(nameleft); :}
 			|
 			(DesignatorArrayItem) IDENT:arrayName LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(arrayName, index); RESULT.setLine(arrayNameleft); :} 
 			;
 
-Addop ::= (Addop) PLUS {: RESULT=new Addop(); :};
+Addop ::= (AddopPlus) PLUS {: RESULT=new AddopPlus(); :}
+		|
+		(AddopMinus) MINUS {: RESULT=new AddopMinus(); :}
+		;
 		
-		
+Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :}	
+		|
+		(MulopDiv) DIV {: RESULT=new MulopDiv(); :}
+		|
+		(MulopMod) MOD {: RESULT=new MulopMod(); :}
+		;
+
+Relop ::= (RelopIdentical) IDENTICAL {: RESULT=new RelopIdentical(); :}
+		|
+		(RelopNotIdentical) NOTIDENTICAL {: RESULT=new RelopNotIdentical(); :}
+		|
+		(RelopGreater) GREATER {: RESULT=new RelopGreater(); :}
+		|
+		(RelopGreaterEqual) GREATEREQUAL {: RESULT=new RelopGreaterEqual(); :}
+		|
+		(RelopLess) LESS {: RESULT=new RelopLess(); :}
+		|
+		(RelopLessEqual) LESSEQUAL {: RESULT=new RelopLessEqual(); :}
+		;

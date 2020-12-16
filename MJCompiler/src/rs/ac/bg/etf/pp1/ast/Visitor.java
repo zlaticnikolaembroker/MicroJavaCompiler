@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 14:52:27
+// 16/11/2020 15:6:53
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,6 +8,7 @@ package rs.ac.bg.etf.pp1.ast;
 public interface Visitor { 
 
     public void visit(Factor Factor);
+    public void visit(Mulop Mulop);
     public void visit(ConstDecl ConstDecl);
     public void visit(ActualParamList ActualParamList);
     public void visit(ConstAssignops ConstAssignops);
@@ -17,8 +18,10 @@ public interface Visitor {
     public void visit(VarDeclList VarDeclList);
     public void visit(CaseStmtList CaseStmtList);
     public void visit(Unmatched Unmatched);
+    public void visit(Addop Addop);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(Statement Statement);
+    public void visit(Relop Relop);
     public void visit(CaseStmt CaseStmt);
     public void visit(ClassMethDecl ClassMethDecl);
     public void visit(Identifiers Identifiers);
@@ -26,7 +29,17 @@ public interface Visitor {
     public void visit(Matched Matched);
     public void visit(ProgramDeclarations ProgramDeclarations);
     public void visit(ActualPars ActualPars);
-    public void visit(Addop Addop);
+    public void visit(RelopLessEqual RelopLessEqual);
+    public void visit(RelopLess RelopLess);
+    public void visit(RelopGreaterEqual RelopGreaterEqual);
+    public void visit(RelopGreater RelopGreater);
+    public void visit(RelopNotIdentical RelopNotIdentical);
+    public void visit(RelopIdentical RelopIdentical);
+    public void visit(MulopMod MulopMod);
+    public void visit(MulopDiv MulopDiv);
+    public void visit(MulopMul MulopMul);
+    public void visit(AddopMinus AddopMinus);
+    public void visit(AddopPlus AddopPlus);
     public void visit(DesignatorArrayItem DesignatorArrayItem);
     public void visit(DesignatorDot DesignatorDot);
     public void visit(Designator Designator);
@@ -34,9 +47,15 @@ public interface Visitor {
     public void visit(ActualParams ActualParams);
     public void visit(NoActuals NoActuals);
     public void visit(Actuals Actuals);
+    public void visit(NewExpressionArray NewExpressionArray);
+    public void visit(NewExpression NewExpression);
+    public void visit(ExprParens ExprParens);
     public void visit(FuncCall FuncCall);
     public void visit(Var Var);
+    public void visit(ConstBool ConstBool);
+    public void visit(ConstChar ConstChar);
     public void visit(Const Const);
+    public void visit(TermMore TermMore);
     public void visit(Term Term);
     public void visit(TermExpr TermExpr);
     public void visit(AddExpr AddExpr);
