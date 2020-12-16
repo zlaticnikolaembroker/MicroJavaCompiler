@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 17:32:21
+// 16/11/2020 14:9:48
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,7 +11,6 @@ public class DesignatorArrayItem extends Designator {
     private Expr Expr;
 
     public DesignatorArrayItem (String arrayName, Expr Expr) {
-    	super(null);
         this.arrayName=arrayName;
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);

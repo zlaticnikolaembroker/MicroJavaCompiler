@@ -1,9 +1,0 @@
-program MJProgram
-	
-	{
-	int main(char x, int 2)
-	int x; {
-		
-		x = 3;
-	}
-	}

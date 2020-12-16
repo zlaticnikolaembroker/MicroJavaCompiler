@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 17:13:5
+// 16/11/2020 14:9:48
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,7 +16,7 @@ public class ConstAssignBools extends ConstAssignops {
         if(ConstAssignops!=null) ConstAssignops.setParent(this);
         this.constName=constName;
         this.constVal=constVal;
-
+        if(constVal!=null) constVal.setParent(this);
     }
 
     public ConstAssignops getConstAssignops() {
@@ -49,16 +49,18 @@ public class ConstAssignBools extends ConstAssignops {
 
     public void childrenAccept(Visitor visitor) {
         if(ConstAssignops!=null) ConstAssignops.accept(visitor);
-
+        if(constVal!=null) constVal.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ConstAssignops!=null) ConstAssignops.traverseTopDown(visitor);
+        if(constVal!=null) constVal.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ConstAssignops!=null) ConstAssignops.traverseBottomUp(visitor);
+        if(constVal!=null) constVal.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -74,6 +76,12 @@ public class ConstAssignBools extends ConstAssignops {
         buffer.append("\n");
 
         buffer.append(" "+tab+constName);
+        buffer.append("\n");
+
+        if(constVal!=null)
+            buffer.append(constVal.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);

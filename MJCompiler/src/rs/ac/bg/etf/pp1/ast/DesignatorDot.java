@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 17:32:21
+// 16/11/2020 14:9:48
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,7 +11,6 @@ public class DesignatorDot extends Designator {
     private String filedName;
 
     public DesignatorDot (String name, String filedName) {
-    	super(null);
         this.name=name;
         this.filedName=filedName;
     }

@@ -1,16 +1,16 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 13:10:3
+// 16/11/2020 14:9:48
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class UnmatchedIf extends Unmatched {
+public class IfStatement extends Statement {
 
     private Expr Expr;
     private Statement Statement;
 
-    public UnmatchedIf (Expr Expr, Statement Statement) {
+    public IfStatement (Expr Expr, Statement Statement) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
         this.Statement=Statement;
@@ -57,7 +57,7 @@ public class UnmatchedIf extends Unmatched {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("UnmatchedIf(\n");
+        buffer.append("IfStatement(\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
@@ -72,7 +72,7 @@ public class UnmatchedIf extends Unmatched {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [UnmatchedIf]");
+        buffer.append(") [IfStatement]");
         return buffer.toString();
     }
 }

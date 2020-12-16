@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 15:33:15
+// 16/11/2020 14:9:48
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,7 +8,6 @@ package rs.ac.bg.etf.pp1.ast;
 public class NoClassExtends extends ClassExtends {
 
     public NoClassExtends () {
-    	super(null);
     }
 
     public void accept(Visitor visitor) {

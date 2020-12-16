@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="3"/>
+		<item key="selection" value="conflict"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="3"/>
-			<item value="31"/>
-			<item value="29"/>
-			<item value="FormalParamDecl"/>
-			<item value="VarDeclList"/>
-			<item value="NoConstDeclList"/>
-			<item value="FormPars("/>
-			<item value="CONSTCHAR"/>
-			<item value="CONST"/>
-			<item value="ConstDeclList"/>
-			<item value="VarDecl"/>
-			<item value="ConstDecl"/>
-			<item value="COMMA"/>
-			<item value="MINUS"/>
-			<item value="PLUS"/>
+			<item value="conflict"/>
+			<item value="IfStatement"/>
+			<item value="StatementList"/>
+			<item value="error"/>
+			<item value="matched"/>
+			<item value="if "/>
+			<item value="if"/>
+			<item value="IF "/>
+			<item value="errpor"/>
+			<item value="syntax_error"/>
+			<item value="Const"/>
+			<item value="PrintSt"/>
+			<item value="Designa"/>
+			<item value="print"/>
+			<item value="return"/>
 		</list>
 		<list key="replacehistory">
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="1129"/>
-		<item key="DIALOG_Y_ORIGIN" value="345"/>
-		<item key="DIALOG_WIDTH" value="348"/>
-		<item key="DIALOG_HEIGHT" value="440"/>
+		<item key="DIALOG_X_ORIGIN" value="1083"/>
+		<item key="DIALOG_Y_ORIGIN" value="471"/>
+		<item key="DIALOG_WIDTH" value="566"/>
+		<item key="DIALOG_HEIGHT" value="581"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
 </section>

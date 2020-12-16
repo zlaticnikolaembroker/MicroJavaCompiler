@@ -1,126 +1,200 @@
-INFO  13:10:47,002 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  13:10:47,017 - #2 program
-INFO  13:10:47,017 - #41 MJProgram
-INFO  13:10:47,017 - #14 const
-INFO  13:10:47,017 - #41 int
-INFO  13:10:47,017 - #41 s
-INFO  13:10:47,018 - #8 =
-INFO  13:10:47,018 - #40 3
-INFO  13:10:47,018 - #5 ;
-INFO  13:10:47,018 - #14 const
-INFO  13:10:47,018 - #41 bool
-INFO  13:10:47,018 - #41 opala
-INFO  13:10:47,018 - #8 =
-INFO  13:10:47,018 - #43 false
-INFO  13:10:47,019 - #5 ;
-INFO  13:10:47,019 - #3 {
-INFO  13:10:47,019 - #41 int
-INFO  13:10:47,020 - #41 main
-INFO  13:10:47,020 - #6 (
-INFO  13:10:47,020 - #41 char
-INFO  13:10:47,020 - #41 x
-INFO  13:10:47,020 - #11 ,
-INFO  13:10:47,020 - #41 int
-INFO  13:10:47,020 - #41 s
-INFO  13:10:47,020 - #7 )
-INFO  13:10:47,020 - #41 int
-INFO  13:10:47,021 - #41 x
-INFO  13:10:47,021 - #5 ;
-INFO  13:10:47,021 - #3 {
-INFO  13:10:47,022 - #31 do
-INFO  13:10:47,022 - #3 {
-INFO  13:10:47,022 - #41 x
-INFO  13:10:47,022 - #8 =
-INFO  13:10:47,022 - #40 3
-INFO  13:10:47,022 - #5 ;
-INFO  13:10:47,023 - #41 t
-INFO  13:10:47,023 - #8 =
-INFO  13:10:47,023 - #40 3
-INFO  13:10:47,023 - #5 ;
-INFO  13:10:47,023 - #35 read
-INFO  13:10:47,023 - #6 (
-INFO  13:10:47,023 - #41 t
-INFO  13:10:47,023 - #15 [
-INFO  13:10:47,023 - #40 3
-INFO  13:10:47,023 - #16 ]
-INFO  13:10:47,023 - #7 )
-INFO  13:10:47,023 - #5 ;
-INFO  13:10:47,024 - #33 break
-INFO  13:10:47,024 - #5 ;
-INFO  13:10:47,024 - #34 continue
-INFO  13:10:47,024 - #5 ;
-INFO  13:10:47,024 - #12 print
-INFO  13:10:47,024 - #6 (
-INFO  13:10:47,024 - #40 3
-INFO  13:10:47,024 - #11 ,
-INFO  13:10:47,024 - #40 3
-INFO  13:10:47,024 - #7 )
-INFO  13:10:47,025 - #5 ;
-INFO  13:10:47,025 - #4 }
-INFO  13:10:47,025 - #32 while
-INFO  13:10:47,025 - #6 (
-INFO  13:10:47,025 - #40 3
-INFO  13:10:47,025 - #10 +
-INFO  13:10:47,025 - #40 3
-INFO  13:10:47,025 - #7 )
-INFO  13:10:47,025 - #5 ;
-INFO  13:10:47,025 - #12 print
-INFO  13:10:47,025 - #6 (
-INFO  13:10:47,026 - #40 3
-INFO  13:10:47,026 - #7 )
-INFO  13:10:47,026 - #5 ;
-INFO  13:10:47,026 - #41 x
-INFO  13:10:47,026 - #8 =
-INFO  13:10:47,026 - #40 3
-INFO  13:10:47,026 - #5 ;
-INFO  13:10:47,026 - #37 switch
-INFO  13:10:47,026 - #6 (
-INFO  13:10:47,026 - #40 3
-INFO  13:10:47,026 - #7 )
-INFO  13:10:47,026 - #3 {
-INFO  13:10:47,026 - #38 case
-INFO  13:10:47,026 - #40 3
-INFO  13:10:47,026 - #39 :
-INFO  13:10:47,026 - #3 {
-INFO  13:10:47,026 - #41 x
-INFO  13:10:47,026 - #8 =
-INFO  13:10:47,026 - #40 3
-INFO  13:10:47,026 - #5 ;
-INFO  13:10:47,026 - #41 x
-INFO  13:10:47,026 - #8 =
-INFO  13:10:47,027 - #40 4
-INFO  13:10:47,027 - #5 ;
-INFO  13:10:47,027 - #4 }
-INFO  13:10:47,027 - #38 case
-INFO  13:10:47,027 - #40 3
-INFO  13:10:47,027 - #39 :
-INFO  13:10:47,027 - #3 {
-INFO  13:10:47,027 - #41 x
-INFO  13:10:47,027 - #8 =
-INFO  13:10:47,027 - #40 3
-INFO  13:10:47,027 - #5 ;
-INFO  13:10:47,027 - #41 x
-INFO  13:10:47,027 - #8 =
-INFO  13:10:47,027 - #40 5
-INFO  13:10:47,027 - #5 ;
-INFO  13:10:47,027 - #4 }
-INFO  13:10:47,027 - #38 case
-INFO  13:10:47,027 - #40 3
-INFO  13:10:47,028 - #39 :
-INFO  13:10:47,028 - #3 {
-INFO  13:10:47,028 - #41 x
-INFO  13:10:47,028 - #8 =
-INFO  13:10:47,028 - #40 3
-INFO  13:10:47,028 - #5 ;
-INFO  13:10:47,028 - #41 x
-INFO  13:10:47,028 - #8 =
-INFO  13:10:47,028 - #40 6
-INFO  13:10:47,028 - #5 ;
-INFO  13:10:47,028 - #4 }
-INFO  13:10:47,028 - #4 }
-INFO  13:10:47,028 - #4 }
-INFO  13:10:47,028 - #4 }
-INFO  13:10:47,030 - Program(
+INFO  14:09:08,669 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  14:09:08,683 - #2 program
+INFO  14:09:08,683 - #41 MJProgram
+INFO  14:09:08,683 - #14 const
+INFO  14:09:08,683 - #41 int
+INFO  14:09:08,683 - #41 s
+INFO  14:09:08,684 - #8 =
+INFO  14:09:08,684 - #40 3
+INFO  14:09:08,684 - #5 ;
+INFO  14:09:08,684 - #14 const
+INFO  14:09:08,684 - #41 bool
+INFO  14:09:08,684 - #41 opala
+INFO  14:09:08,684 - #8 =
+INFO  14:09:08,684 - #43 false
+INFO  14:09:08,684 - #5 ;
+INFO  14:09:08,684 - #3 {
+INFO  14:09:08,684 - #41 int
+INFO  14:09:08,685 - #41 main
+INFO  14:09:08,685 - #6 (
+INFO  14:09:08,685 - #41 char
+INFO  14:09:08,685 - #41 x
+INFO  14:09:08,685 - #11 ,
+INFO  14:09:08,685 - #41 int
+INFO  14:09:08,685 - #41 s
+INFO  14:09:08,685 - #7 )
+INFO  14:09:08,685 - #41 int
+INFO  14:09:08,686 - #41 x
+INFO  14:09:08,686 - #5 ;
+INFO  14:09:08,686 - #3 {
+INFO  14:09:08,686 - #31 do
+INFO  14:09:08,686 - #3 {
+INFO  14:09:08,686 - #41 x
+INFO  14:09:08,686 - #8 =
+INFO  14:09:08,686 - #40 3
+INFO  14:09:08,686 - #5 ;
+INFO  14:09:08,687 - #41 t
+INFO  14:09:08,687 - #8 =
+INFO  14:09:08,687 - #40 3
+INFO  14:09:08,687 - #5 ;
+INFO  14:09:08,687 - #35 read
+INFO  14:09:08,687 - #6 (
+INFO  14:09:08,687 - #41 t
+INFO  14:09:08,687 - #15 [
+INFO  14:09:08,687 - #40 3
+INFO  14:09:08,687 - #16 ]
+INFO  14:09:08,687 - #7 )
+INFO  14:09:08,688 - #5 ;
+INFO  14:09:08,688 - #33 break
+INFO  14:09:08,688 - #5 ;
+INFO  14:09:08,688 - #34 continue
+INFO  14:09:08,688 - #5 ;
+INFO  14:09:08,688 - #12 print
+INFO  14:09:08,688 - #6 (
+INFO  14:09:08,688 - #40 3
+INFO  14:09:08,688 - #11 ,
+INFO  14:09:08,688 - #40 3
+INFO  14:09:08,688 - #7 )
+INFO  14:09:08,688 - #5 ;
+INFO  14:09:08,688 - #4 }
+INFO  14:09:08,689 - #32 while
+INFO  14:09:08,689 - #6 (
+INFO  14:09:08,689 - #40 3
+INFO  14:09:08,689 - #10 +
+INFO  14:09:08,689 - #40 3
+INFO  14:09:08,689 - #7 )
+INFO  14:09:08,689 - #5 ;
+INFO  14:09:08,689 - #12 print
+INFO  14:09:08,690 - #6 (
+INFO  14:09:08,690 - #40 3
+INFO  14:09:08,690 - #7 )
+INFO  14:09:08,690 - #5 ;
+INFO  14:09:08,690 - #41 x
+INFO  14:09:08,690 - #8 =
+INFO  14:09:08,690 - #40 3
+INFO  14:09:08,690 - #5 ;
+INFO  14:09:08,690 - #37 switch
+INFO  14:09:08,690 - #6 (
+INFO  14:09:08,690 - #40 3
+INFO  14:09:08,690 - #7 )
+INFO  14:09:08,690 - #3 {
+INFO  14:09:08,691 - #38 case
+INFO  14:09:08,691 - #40 3
+INFO  14:09:08,691 - #39 :
+INFO  14:09:08,691 - #3 {
+INFO  14:09:08,691 - #41 x
+INFO  14:09:08,691 - #8 =
+INFO  14:09:08,691 - #40 3
+INFO  14:09:08,691 - #5 ;
+INFO  14:09:08,691 - #41 x
+INFO  14:09:08,691 - #8 =
+INFO  14:09:08,691 - #40 4
+INFO  14:09:08,691 - #5 ;
+INFO  14:09:08,691 - #4 }
+INFO  14:09:08,691 - #38 case
+INFO  14:09:08,691 - #40 3
+INFO  14:09:08,691 - #39 :
+INFO  14:09:08,692 - #3 {
+INFO  14:09:08,692 - #41 x
+INFO  14:09:08,692 - #8 =
+INFO  14:09:08,692 - #40 3
+INFO  14:09:08,692 - #5 ;
+INFO  14:09:08,692 - #41 x
+INFO  14:09:08,692 - #8 =
+INFO  14:09:08,692 - #40 5
+INFO  14:09:08,692 - #5 ;
+INFO  14:09:08,692 - #4 }
+INFO  14:09:08,692 - #38 case
+INFO  14:09:08,692 - #40 3
+INFO  14:09:08,693 - #39 :
+INFO  14:09:08,693 - #3 {
+INFO  14:09:08,693 - #41 x
+INFO  14:09:08,693 - #8 =
+INFO  14:09:08,693 - #40 3
+INFO  14:09:08,693 - #5 ;
+INFO  14:09:08,693 - #41 x
+INFO  14:09:08,693 - #8 =
+INFO  14:09:08,693 - #40 6
+INFO  14:09:08,693 - #5 ;
+INFO  14:09:08,693 - #4 }
+INFO  14:09:08,693 - #4 }
+INFO  14:09:08,693 - #17 if
+INFO  14:09:08,693 - #6 (
+INFO  14:09:08,694 - #40 3
+INFO  14:09:08,694 - #7 )
+INFO  14:09:08,694 - #3 {
+INFO  14:09:08,694 - #41 x
+INFO  14:09:08,694 - #8 =
+INFO  14:09:08,694 - #40 3
+INFO  14:09:08,694 - #5 ;
+INFO  14:09:08,694 - #41 t
+INFO  14:09:08,694 - #8 =
+INFO  14:09:08,694 - #40 3
+INFO  14:09:08,694 - #5 ;
+INFO  14:09:08,694 - #35 read
+INFO  14:09:08,694 - #6 (
+INFO  14:09:08,694 - #41 t
+INFO  14:09:08,694 - #15 [
+INFO  14:09:08,695 - #40 3
+INFO  14:09:08,695 - #16 ]
+INFO  14:09:08,695 - #7 )
+INFO  14:09:08,695 - #5 ;
+INFO  14:09:08,695 - #33 break
+INFO  14:09:08,695 - #5 ;
+INFO  14:09:08,695 - #34 continue
+INFO  14:09:08,695 - #5 ;
+INFO  14:09:08,695 - #12 print
+INFO  14:09:08,695 - #6 (
+INFO  14:09:08,695 - #40 3
+INFO  14:09:08,695 - #11 ,
+INFO  14:09:08,695 - #40 3
+INFO  14:09:08,695 - #7 )
+INFO  14:09:08,695 - #5 ;
+INFO  14:09:08,695 - #4 }
+INFO  14:09:08,695 - #17 if
+INFO  14:09:08,695 - #6 (
+INFO  14:09:08,695 - #40 3
+INFO  14:09:08,695 - #7 )
+INFO  14:09:08,696 - #41 x
+INFO  14:09:08,696 - #8 =
+INFO  14:09:08,696 - #40 3
+INFO  14:09:08,696 - #5 ;
+INFO  14:09:08,696 - #17 if
+INFO  14:09:08,696 - #6 (
+INFO  14:09:08,696 - #40 3
+INFO  14:09:08,696 - #7 )
+INFO  14:09:08,696 - #3 {
+INFO  14:09:08,696 - #41 x
+INFO  14:09:08,696 - #8 =
+INFO  14:09:08,696 - #40 3
+INFO  14:09:08,696 - #5 ;
+INFO  14:09:08,696 - #41 t
+INFO  14:09:08,696 - #8 =
+INFO  14:09:08,696 - #40 3
+INFO  14:09:08,696 - #5 ;
+INFO  14:09:08,696 - #35 read
+INFO  14:09:08,696 - #6 (
+INFO  14:09:08,696 - #41 t
+INFO  14:09:08,696 - #15 [
+INFO  14:09:08,696 - #40 3
+INFO  14:09:08,696 - #16 ]
+INFO  14:09:08,696 - #7 )
+INFO  14:09:08,696 - #5 ;
+INFO  14:09:08,697 - #33 break
+INFO  14:09:08,697 - #5 ;
+INFO  14:09:08,697 - #34 continue
+INFO  14:09:08,697 - #5 ;
+INFO  14:09:08,697 - #12 print
+INFO  14:09:08,697 - #6 (
+INFO  14:09:08,697 - #40 3
+INFO  14:09:08,697 - #11 ,
+INFO  14:09:08,697 - #40 3
+INFO  14:09:08,697 - #7 )
+INFO  14:09:08,697 - #5 ;
+INFO  14:09:08,697 - #4 }
+INFO  14:09:08,697 - #4 }
+INFO  14:09:08,697 - #4 }
+INFO  14:09:08,699 - Program(
  MJProgram
   ProgramDeclConst(
     ProgramDeclConst(
@@ -187,20 +261,139 @@ INFO  13:10:47,030 - Program(
         Statements(
           Statements(
             Statements(
-              NoStmt(
-              ) [NoStmt]
-              MatchedStmt(
-                WhileStatement(
+              Statements(
+                Statements(
                   Statements(
-                    Statements(
+                    NoStmt(
+                    ) [NoStmt]
+                    WhileStatement(
                       Statements(
                         Statements(
                           Statements(
                             Statements(
-                              NoStmt(
-                              ) [NoStmt]
-                              MatchedStmt(
-                                Assignment(
+                              Statements(
+                                Statements(
+                                  NoStmt(
+                                  ) [NoStmt]
+                                  Statement(
+                                    Designator(
+                                     x
+                                    ) [Designator]
+                                    TermExpr(
+                                      Term(
+                                        Const(
+                                         3
+                                        ) [Const]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [Statement]
+                                ) [Statements]
+                                Statement(
+                                  Designator(
+                                   t
+                                  ) [Designator]
+                                  TermExpr(
+                                    Term(
+                                      Const(
+                                       3
+                                      ) [Const]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [Statement]
+                              ) [Statements]
+                              ReadStmt(
+                                DesignatorArrayItem(
+                                 t
+                                  TermExpr(
+                                    Term(
+                                      Const(
+                                       3
+                                      ) [Const]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [DesignatorArrayItem]
+                              ) [ReadStmt]
+                            ) [Statements]
+                            BreakStatement(
+                            ) [BreakStatement]
+                          ) [Statements]
+                          ContinueStatement(
+                          ) [ContinueStatement]
+                        ) [Statements]
+                        PrintStmtWithNum(
+                          TermExpr(
+                            Term(
+                              Const(
+                               3
+                              ) [Const]
+                            ) [Term]
+                          ) [TermExpr]
+                         3
+                        ) [PrintStmtWithNum]
+                      ) [Statements]
+                      AddExpr(
+                        TermExpr(
+                          Term(
+                            Const(
+                             3
+                            ) [Const]
+                          ) [Term]
+                        ) [TermExpr]
+                        Addop(
+                        ) [Addop]
+                        Term(
+                          Const(
+                           3
+                          ) [Const]
+                        ) [Term]
+                      ) [AddExpr]
+                    ) [WhileStatement]
+                  ) [Statements]
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [Statements]
+                Statement(
+                  Designator(
+                   x
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       3
+                      ) [Const]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Statement]
+              ) [Statements]
+              SwitchStatement(
+                TermExpr(
+                  Term(
+                    Const(
+                     3
+                    ) [Const]
+                  ) [Term]
+                ) [TermExpr]
+                CaseStatementList(
+                  CaseStatementList(
+                    OneCaseStmt(
+                      CaseStatement(
+                       3
+                        Statements(
+                          NoStmt(
+                          ) [NoStmt]
+                          StatementsBraces(
+                            Statements(
+                              Statements(
+                                NoStmt(
+                                ) [NoStmt]
+                                Statement(
                                   Designator(
                                    x
                                   ) [Designator]
@@ -211,13 +404,38 @@ INFO  13:10:47,030 - Program(
                                       ) [Const]
                                     ) [Term]
                                   ) [TermExpr]
-                                ) [Assignment]
-                              ) [MatchedStmt]
-                            ) [Statements]
-                            MatchedStmt(
-                              Assignment(
+                                ) [Statement]
+                              ) [Statements]
+                              Statement(
                                 Designator(
-                                 t
+                                 x
+                                ) [Designator]
+                                TermExpr(
+                                  Term(
+                                    Const(
+                                     4
+                                    ) [Const]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Statement]
+                            ) [Statements]
+                          ) [StatementsBraces]
+                        ) [Statements]
+                      ) [CaseStatement]
+                    ) [OneCaseStmt]
+                    CaseStatement(
+                     3
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        StatementsBraces(
+                          Statements(
+                            Statements(
+                              NoStmt(
+                              ) [NoStmt]
+                              Statement(
+                                Designator(
+                                 x
                                 ) [Designator]
                                 TermExpr(
                                   Term(
@@ -226,114 +444,36 @@ INFO  13:10:47,030 - Program(
                                     ) [Const]
                                   ) [Term]
                                 ) [TermExpr]
-                              ) [Assignment]
-                            ) [MatchedStmt]
+                              ) [Statement]
+                            ) [Statements]
+                            Statement(
+                              Designator(
+                               x
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   5
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Statement]
                           ) [Statements]
-                          MatchedStmt(
-                            ReadStmt(
-                              DesignatorArrayItem(
-                               t
-                                TermExpr(
-                                  Term(
-                                    Const(
-                                     3
-                                    ) [Const]
-                                  ) [Term]
-                                ) [TermExpr]
-                              ) [DesignatorArrayItem]
-                            ) [ReadStmt]
-                          ) [MatchedStmt]
-                        ) [Statements]
-                        MatchedStmt(
-                          BreakStatement(
-                          ) [BreakStatement]
-                        ) [MatchedStmt]
+                        ) [StatementsBraces]
                       ) [Statements]
-                      MatchedStmt(
-                        ContinueStatement(
-                        ) [ContinueStatement]
-                      ) [MatchedStmt]
-                    ) [Statements]
-                    MatchedStmt(
-                      PrintStmtWithNum(
-                        TermExpr(
-                          Term(
-                            Const(
-                             3
-                            ) [Const]
-                          ) [Term]
-                        ) [TermExpr]
-                       3
-                      ) [PrintStmtWithNum]
-                    ) [MatchedStmt]
-                  ) [Statements]
-                  AddExpr(
-                    TermExpr(
-                      Term(
-                        Const(
-                         3
-                        ) [Const]
-                      ) [Term]
-                    ) [TermExpr]
-                    Addop(
-                    ) [Addop]
-                    Term(
-                      Const(
-                       3
-                      ) [Const]
-                    ) [Term]
-                  ) [AddExpr]
-                ) [WhileStatement]
-              ) [MatchedStmt]
-            ) [Statements]
-            MatchedStmt(
-              PrintStmt(
-                TermExpr(
-                  Term(
-                    Const(
-                     3
-                    ) [Const]
-                  ) [Term]
-                ) [TermExpr]
-              ) [PrintStmt]
-            ) [MatchedStmt]
-          ) [Statements]
-          MatchedStmt(
-            Assignment(
-              Designator(
-               x
-              ) [Designator]
-              TermExpr(
-                Term(
-                  Const(
-                   3
-                  ) [Const]
-                ) [Term]
-              ) [TermExpr]
-            ) [Assignment]
-          ) [MatchedStmt]
-        ) [Statements]
-        MatchedStmt(
-          SwitchStatement(
-            TermExpr(
-              Term(
-                Const(
-                 3
-                ) [Const]
-              ) [Term]
-            ) [TermExpr]
-            CaseStatementList(
-              CaseStatementList(
-                OneCaseStmt(
+                    ) [CaseStatement]
+                  ) [CaseStatementList]
                   CaseStatement(
                    3
-                    StatementsBraces(
-                      Statements(
+                    Statements(
+                      NoStmt(
+                      ) [NoStmt]
+                      StatementsBraces(
                         Statements(
-                          NoStmt(
-                          ) [NoStmt]
-                          MatchedStmt(
-                            Assignment(
+                          Statements(
+                            NoStmt(
+                            ) [NoStmt]
+                            Statement(
                               Designator(
                                x
                               ) [Designator]
@@ -344,38 +484,60 @@ INFO  13:10:47,030 - Program(
                                   ) [Const]
                                 ) [Term]
                               ) [TermExpr]
-                            ) [Assignment]
-                          ) [MatchedStmt]
-                        ) [Statements]
-                        MatchedStmt(
-                          Assignment(
+                            ) [Statement]
+                          ) [Statements]
+                          Statement(
                             Designator(
                              x
                             ) [Designator]
                             TermExpr(
                               Term(
                                 Const(
-                                 4
+                                 6
                                 ) [Const]
                               ) [Term]
                             ) [TermExpr]
-                          ) [Assignment]
-                        ) [MatchedStmt]
-                      ) [Statements]
-                    ) [StatementsBraces]
+                          ) [Statement]
+                        ) [Statements]
+                      ) [StatementsBraces]
+                    ) [Statements]
                   ) [CaseStatement]
-                ) [OneCaseStmt]
-                CaseStatement(
-                 3
-                  StatementsBraces(
+                ) [CaseStatementList]
+              ) [SwitchStatement]
+            ) [Statements]
+            IfStatement(
+              TermExpr(
+                Term(
+                  Const(
+                   3
+                  ) [Const]
+                ) [Term]
+              ) [TermExpr]
+              StatementsBraces(
+                Statements(
+                  Statements(
                     Statements(
                       Statements(
-                        NoStmt(
-                        ) [NoStmt]
-                        MatchedStmt(
-                          Assignment(
+                        Statements(
+                          Statements(
+                            NoStmt(
+                            ) [NoStmt]
+                            Statement(
+                              Designator(
+                               x
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   3
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Statement]
+                          ) [Statements]
+                          Statement(
                             Designator(
-                             x
+                             t
                             ) [Designator]
                             TermExpr(
                               Term(
@@ -384,36 +546,81 @@ INFO  13:10:47,030 - Program(
                                 ) [Const]
                               ) [Term]
                             ) [TermExpr]
-                          ) [Assignment]
-                        ) [MatchedStmt]
+                          ) [Statement]
+                        ) [Statements]
+                        ReadStmt(
+                          DesignatorArrayItem(
+                           t
+                            TermExpr(
+                              Term(
+                                Const(
+                                 3
+                                ) [Const]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [DesignatorArrayItem]
+                        ) [ReadStmt]
                       ) [Statements]
-                      MatchedStmt(
-                        Assignment(
-                          Designator(
-                           x
-                          ) [Designator]
-                          TermExpr(
-                            Term(
-                              Const(
-                               5
-                              ) [Const]
-                            ) [Term]
-                          ) [TermExpr]
-                        ) [Assignment]
-                      ) [MatchedStmt]
+                      BreakStatement(
+                      ) [BreakStatement]
                     ) [Statements]
-                  ) [StatementsBraces]
-                ) [CaseStatement]
-              ) [CaseStatementList]
-              CaseStatement(
+                    ContinueStatement(
+                    ) [ContinueStatement]
+                  ) [Statements]
+                  PrintStmtWithNum(
+                    TermExpr(
+                      Term(
+                        Const(
+                         3
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                   3
+                  ) [PrintStmtWithNum]
+                ) [Statements]
+              ) [StatementsBraces]
+            ) [IfStatement]
+          ) [Statements]
+          IfStatement(
+            TermExpr(
+              Term(
+                Const(
+                 3
+                ) [Const]
+              ) [Term]
+            ) [TermExpr]
+            Statement(
+              Designator(
+               x
+              ) [Designator]
+              TermExpr(
+                Term(
+                  Const(
+                   3
+                  ) [Const]
+                ) [Term]
+              ) [TermExpr]
+            ) [Statement]
+          ) [IfStatement]
+        ) [Statements]
+        IfStatement(
+          TermExpr(
+            Term(
+              Const(
                3
-                StatementsBraces(
+              ) [Const]
+            ) [Term]
+          ) [TermExpr]
+          StatementsBraces(
+            Statements(
+              Statements(
+                Statements(
                   Statements(
                     Statements(
-                      NoStmt(
-                      ) [NoStmt]
-                      MatchedStmt(
-                        Assignment(
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        Statement(
                           Designator(
                            x
                           ) [Designator]
@@ -424,33 +631,57 @@ INFO  13:10:47,030 - Program(
                               ) [Const]
                             ) [Term]
                           ) [TermExpr]
-                        ) [Assignment]
-                      ) [MatchedStmt]
-                    ) [Statements]
-                    MatchedStmt(
-                      Assignment(
+                        ) [Statement]
+                      ) [Statements]
+                      Statement(
                         Designator(
-                         x
+                         t
                         ) [Designator]
                         TermExpr(
                           Term(
                             Const(
-                             6
+                             3
                             ) [Const]
                           ) [Term]
                         ) [TermExpr]
-                      ) [Assignment]
-                    ) [MatchedStmt]
+                      ) [Statement]
+                    ) [Statements]
+                    ReadStmt(
+                      DesignatorArrayItem(
+                       t
+                        TermExpr(
+                          Term(
+                            Const(
+                             3
+                            ) [Const]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [DesignatorArrayItem]
+                    ) [ReadStmt]
                   ) [Statements]
-                ) [StatementsBraces]
-              ) [CaseStatement]
-            ) [CaseStatementList]
-          ) [SwitchStatement]
-        ) [MatchedStmt]
+                  BreakStatement(
+                  ) [BreakStatement]
+                ) [Statements]
+                ContinueStatement(
+                ) [ContinueStatement]
+              ) [Statements]
+              PrintStmtWithNum(
+                TermExpr(
+                  Term(
+                    Const(
+                     3
+                    ) [Const]
+                  ) [Term]
+                ) [TermExpr]
+               3
+              ) [PrintStmtWithNum]
+            ) [Statements]
+          ) [StatementsBraces]
+        ) [IfStatement]
       ) [Statements]
     ) [MethodDecl]
   ) [MethodDeclarations]
 ) [Program]
-INFO  13:10:47,030 - ===================================
-INFO  13:10:47,031 -  Print count calls = 1
-INFO  13:10:47,031 -  Deklarisanih promenljivih ima = 1
+INFO  14:09:08,699 - ===================================
+INFO  14:09:08,700 -  Print count calls = 1
+INFO  14:09:08,701 -  Deklarisanih promenljivih ima = 1

@@ -56,7 +56,7 @@ terminal Boolean CONSTBOOL;
 nonterminal Program, VarDeclList, MethodDeclList, VarDecl, Type, MethodDecl;
 nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement;
 nonterminal Designator, Expr, Term, Addop, Factor, ActualPars, ActualParamList;
-nonterminal Matched, Unmatched, Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
+nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal ClassDecl, ClassExtends, ClassMethDecl, CaseStmt, CaseStmtList;
 
 Program ::= (Program) PROG IDENT ProgramDeclarations LBRACE MethodDeclList RBRACE;
@@ -139,23 +139,10 @@ FormalParamDecl ::= (FormalParamDecl) Type:paramType IDENT:paramName;
 
 StatementList ::= (Statements) StatementList Statement
 				|
-				(StatementsBraces) LBRACE StatementList RBRACE
-				|
 				(NoStmt) /* epsilon */
-				;
-				
-Statement ::= (MatchedStmt) Matched
-		   |
-		   (UnmatchedStmt) Unmatched
-		   ; 
+				;	 
 
-Unmatched ::= (UnmatchedIf) IF Expr Statement
-		 	|
-		 	(UnmatchedIfElse) IF Expr Matched ELSE Unmatched
-		 	;
-		 
-
-Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
+Statement ::= (Statement) Designator:dest EQUAL Expr:e SEMI
 		   |
 		   (ErrorStmt) error SEMI:l
 		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
@@ -173,7 +160,7 @@ Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
 		   |
 		   (ReturnNoExpr) RETURN SEMI
 		   |
-		   (MatchedStatement) IF Expr Matched ELSE Matched
+		   (IfStatement) IF LPAREN Expr RPAREN Statement
 		   |
 		   (WhileStatement) DO LBRACE StatementList RBRACE WHILE LPAREN Expr RPAREN SEMI
 		   |
@@ -182,6 +169,8 @@ Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
 		   (ContinueStatement) CONTINUE SEMI
 		   |
 		   (SwitchStatement) SWITCH LPAREN Expr RPAREN LBRACE CaseStmtList RBRACE
+		   |
+		   (StatementsBraces) LBRACE StatementList RBRACE
 		   ;
 		   
 CaseStmt ::= (CaseStatement) CASE NUMBER COLON StatementList;
