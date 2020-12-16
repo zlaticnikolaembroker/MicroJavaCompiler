@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 15/11/2020 17:36:56
+// 16/11/2020 13:10:3
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -15,9 +15,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormalParamList FormalParamList) { }
     public void visit(FormPars FormPars) { }
     public void visit(VarDeclList VarDeclList) { }
+    public void visit(CaseStmtList CaseStmtList) { }
     public void visit(Unmatched Unmatched) { }
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(Statement Statement) { }
+    public void visit(CaseStmt CaseStmt) { }
     public void visit(ClassMethDecl ClassMethDecl) { }
     public void visit(Identifiers Identifiers) { }
     public void visit(StatementList StatementList) { }
@@ -38,6 +40,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Term Term) { visit(); }
     public void visit(TermExpr TermExpr) { visit(); }
     public void visit(AddExpr AddExpr) { visit(); }
+    public void visit(OneCaseStmt OneCaseStmt) { visit(); }
+    public void visit(CaseStatementList CaseStatementList) { visit(); }
+    public void visit(CaseStatement CaseStatement) { visit(); }
+    public void visit(SwitchStatement SwitchStatement) { visit(); }
     public void visit(ContinueStatement ContinueStatement) { visit(); }
     public void visit(BreakStatement BreakStatement) { visit(); }
     public void visit(WhileStatement WhileStatement) { visit(); }
@@ -55,6 +61,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(UnmatchedStmt UnmatchedStmt) { visit(); }
     public void visit(MatchedStmt MatchedStmt) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
+    public void visit(StatementsBraces StatementsBraces) { visit(); }
     public void visit(Statements Statements) { visit(); }
     public void visit(FormalParamDecl FormalParamDecl) { visit(); }
     public void visit(SingleFormalParamDecl SingleFormalParamDecl) { visit(); }

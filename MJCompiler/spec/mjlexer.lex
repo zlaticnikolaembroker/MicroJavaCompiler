@@ -49,6 +49,8 @@ import java_cup.runtime.Symbol;
 "break"     { return new_symbol(sym.BREAK, yytext()); 		}
 "continue"  { return new_symbol(sym.CONTINUE, yytext());	}
 "read"      { return new_symbol(sym.READ, yytext());		}
+"switch"	{ return new_symbol(sym.SWITCH, yytext());		}
+"case"		{ return new_symbol(sym.CASE, yytext());		}
 
 "+" 		{ return new_symbol(sym.PLUS, yytext()); 			}
 "_" 		{ return new_symbol(sym.MINUS, yytext()); 			}
@@ -62,6 +64,7 @@ import java_cup.runtime.Symbol;
 ";" 		{ return new_symbol(sym.SEMI, yytext()); 			}
 "," 		{ return new_symbol(sym.COMMA, yytext()); 			}
 "."         { return new_symbol(sym.DOT, yytext()); 			}
+":"         { return new_symbol(sym.COLON, yytext()); 			}
 
 "(" 		{ return new_symbol(sym.LPAREN, yytext()); 	}
 ")" 		{ return new_symbol(sym.RPAREN, yytext()); 	}

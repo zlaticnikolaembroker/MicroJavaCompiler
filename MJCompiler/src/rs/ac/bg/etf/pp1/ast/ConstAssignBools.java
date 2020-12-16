@@ -49,6 +49,7 @@ public class ConstAssignBools extends ConstAssignops {
 
     public void childrenAccept(Visitor visitor) {
         if(ConstAssignops!=null) ConstAssignops.accept(visitor);
+
     }
 
     public void traverseTopDown(Visitor visitor) {
