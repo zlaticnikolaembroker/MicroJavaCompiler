@@ -30,9 +30,23 @@ program MJProgram
 			break;
 			continue;
 			print(3,3);
+		}  else {
+			x = 3;
+			t = 3;
+			read(t[3]);
+			break;
+			continue;
+			print(3,3);
 		} 
 		
-		if(3) x = 3;
+		if(3) x = 3; else {
+			x = 3;
+			t = 3;
+			read(t[3]);
+			break;
+			continue;
+			print(3,3);
+		} 
 		
 		if(3) {
 			x = 3;
@@ -41,7 +55,9 @@ program MJProgram
 			break;
 			continue;
 			print(3,3);
-		}
+		} else 
+			x = 3;
+			
 	
 	}
 	}

@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="conflict"/>
+		<item key="selection" value="ElseStatement"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="ElseStatement"/>
 			<item value="conflict"/>
+			<item value="ELSE"/>
+			<item value="UnMatched"/>
+			<item value="Matched"/>
 			<item value="IfStatement"/>
 			<item value="StatementList"/>
 			<item value="error"/>
@@ -19,10 +23,6 @@
 			<item value="errpor"/>
 			<item value="syntax_error"/>
 			<item value="Const"/>
-			<item value="PrintSt"/>
-			<item value="Designa"/>
-			<item value="print"/>
-			<item value="return"/>
 		</list>
 		<list key="replacehistory">
 		</list>

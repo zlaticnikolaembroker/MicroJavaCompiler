@@ -58,6 +58,7 @@ nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement
 nonterminal Designator, Expr, Term, Addop, Factor, ActualPars, ActualParamList;
 nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal ClassDecl, ClassExtends, ClassMethDecl, CaseStmt, CaseStmtList;
+nonterminal Matched, Unmatched;
 
 Program ::= (Program) PROG IDENT ProgramDeclarations LBRACE MethodDeclList RBRACE;
 
@@ -142,7 +143,17 @@ StatementList ::= (Statements) StatementList Statement
 				(NoStmt) /* epsilon */
 				;	 
 
-Statement ::= (Statement) Designator:dest EQUAL Expr:e SEMI
+Statement ::= (MatchedStmt) Matched
+		   |
+		   (UnmatchedStmt) Unmatched
+		   ; 
+
+Unmatched ::= (UnmatchedIf) IF LPAREN Expr RPAREN Statement
+		 	|
+		 	(UnmatchedIfElse) IF LPAREN Expr RPAREN Matched ELSE Unmatched
+		 	;
+		 
+Matched ::= (Assignment) Designator:dest EQUAL Expr:e SEMI
 		   |
 		   (ErrorStmt) error SEMI:l
 		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
@@ -160,7 +171,7 @@ Statement ::= (Statement) Designator:dest EQUAL Expr:e SEMI
 		   |
 		   (ReturnNoExpr) RETURN SEMI
 		   |
-		   (IfStatement) IF LPAREN Expr RPAREN Statement
+		   (MatchedStatement) IF LPAREN Expr RPAREN Matched ELSE Matched
 		   |
 		   (WhileStatement) DO LBRACE StatementList RBRACE WHILE LPAREN Expr RPAREN SEMI
 		   |

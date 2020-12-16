@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 14:9:48
+// 16/11/2020 14:52:27
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,11 +16,14 @@ public interface Visitor {
     public void visit(FormPars FormPars);
     public void visit(VarDeclList VarDeclList);
     public void visit(CaseStmtList CaseStmtList);
+    public void visit(Unmatched Unmatched);
     public void visit(MethodDeclList MethodDeclList);
+    public void visit(Statement Statement);
     public void visit(CaseStmt CaseStmt);
     public void visit(ClassMethDecl ClassMethDecl);
     public void visit(Identifiers Identifiers);
     public void visit(StatementList StatementList);
+    public void visit(Matched Matched);
     public void visit(ProgramDeclarations ProgramDeclarations);
     public void visit(ActualPars ActualPars);
     public void visit(Addop Addop);
@@ -45,8 +48,7 @@ public interface Visitor {
     public void visit(ContinueStatement ContinueStatement);
     public void visit(BreakStatement BreakStatement);
     public void visit(WhileStatement WhileStatement);
-    public void visit(IfElseStatement IfElseStatement);
-    public void visit(IfStatement IfStatement);
+    public void visit(MatchedStatement MatchedStatement);
     public void visit(ReturnNoExpr ReturnNoExpr);
     public void visit(ReturnExpr ReturnExpr);
     public void visit(ReadStmt ReadStmt);
@@ -54,7 +56,11 @@ public interface Visitor {
     public void visit(PrintStmt PrintStmt);
     public void visit(ErrorStmtComma ErrorStmtComma);
     public void visit(ErrorStmt ErrorStmt);
-    public void visit(Statement Statement);
+    public void visit(Assignment Assignment);
+    public void visit(UnmatchedIfElse UnmatchedIfElse);
+    public void visit(UnmatchedIf UnmatchedIf);
+    public void visit(UnmatchedStmt UnmatchedStmt);
+    public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
     public void visit(FormalParamDecl FormalParamDecl);

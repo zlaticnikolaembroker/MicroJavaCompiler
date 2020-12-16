@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 14:9:48
+// 16/11/2020 14:52:27
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,11 +16,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormPars FormPars) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(CaseStmtList CaseStmtList) { }
+    public void visit(Unmatched Unmatched) { }
     public void visit(MethodDeclList MethodDeclList) { }
+    public void visit(Statement Statement) { }
     public void visit(CaseStmt CaseStmt) { }
     public void visit(ClassMethDecl ClassMethDecl) { }
     public void visit(Identifiers Identifiers) { }
     public void visit(StatementList StatementList) { }
+    public void visit(Matched Matched) { }
     public void visit(ProgramDeclarations ProgramDeclarations) { }
     public void visit(ActualPars ActualPars) { }
     public void visit(Addop Addop) { visit(); }
@@ -45,8 +48,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ContinueStatement ContinueStatement) { visit(); }
     public void visit(BreakStatement BreakStatement) { visit(); }
     public void visit(WhileStatement WhileStatement) { visit(); }
-    public void visit(IfElseStatement IfElseStatement) { visit(); }
-    public void visit(IfStatement IfStatement) { visit(); }
+    public void visit(MatchedStatement MatchedStatement) { visit(); }
     public void visit(ReturnNoExpr ReturnNoExpr) { visit(); }
     public void visit(ReturnExpr ReturnExpr) { visit(); }
     public void visit(ReadStmt ReadStmt) { visit(); }
@@ -54,7 +56,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(PrintStmt PrintStmt) { visit(); }
     public void visit(ErrorStmtComma ErrorStmtComma) { visit(); }
     public void visit(ErrorStmt ErrorStmt) { visit(); }
-    public void visit(Statement Statement) { visit(); }
+    public void visit(Assignment Assignment) { visit(); }
+    public void visit(UnmatchedIfElse UnmatchedIfElse) { visit(); }
+    public void visit(UnmatchedIf UnmatchedIf) { visit(); }
+    public void visit(UnmatchedStmt UnmatchedStmt) { visit(); }
+    public void visit(MatchedStmt MatchedStmt) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(Statements Statements) { visit(); }
     public void visit(FormalParamDecl FormalParamDecl) { visit(); }
