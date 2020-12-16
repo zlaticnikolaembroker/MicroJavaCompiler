@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 15:6:53
+// 17/11/2020 12:56:30
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,13 @@ package rs.ac.bg.etf.pp1.ast;
 public class WhileStatement extends Matched {
 
     private StatementList StatementList;
-    private Expr Expr;
+    private Condition Condition;
 
-    public WhileStatement (StatementList StatementList, Expr Expr) {
+    public WhileStatement (StatementList StatementList, Condition Condition) {
         this.StatementList=StatementList;
         if(StatementList!=null) StatementList.setParent(this);
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+        this.Condition=Condition;
+        if(Condition!=null) Condition.setParent(this);
     }
 
     public StatementList getStatementList() {
@@ -25,12 +25,12 @@ public class WhileStatement extends Matched {
         this.StatementList=StatementList;
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public Condition getCondition() {
+        return Condition;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setCondition(Condition Condition) {
+        this.Condition=Condition;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +39,18 @@ public class WhileStatement extends Matched {
 
     public void childrenAccept(Visitor visitor) {
         if(StatementList!=null) StatementList.accept(visitor);
-        if(Expr!=null) Expr.accept(visitor);
+        if(Condition!=null) Condition.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(StatementList!=null) StatementList.traverseTopDown(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
+        if(Condition!=null) Condition.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(StatementList!=null) StatementList.traverseBottomUp(visitor);
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
+        if(Condition!=null) Condition.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +65,8 @@ public class WhileStatement extends Matched {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(Condition!=null)
+            buffer.append(Condition.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

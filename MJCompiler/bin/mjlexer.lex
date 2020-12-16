@@ -72,11 +72,16 @@ import java_cup.runtime.Symbol;
 "*"			{ return new_symbol(sym.MUL, yytext()); 			}
 "/"         { return new_symbol(sym.DIV, yytext()); 			}
 "%"         { return new_symbol(sym.MOD, yytext()); 			}
+"++"		{ return new_symbol(sym.INCREMENT, yytext()); 		}
+"--"		{ return new_symbol(sym.DECREMENT, yytext()); 		}
+"&&"		{ return new_symbol(sym.AND, yytext()); 			}
+"||"		{ return new_symbol(sym.OR, yytext()); 				}
+"?"      	{ return new_symbol(sym.QUESTION, yytext()); 		}
 
-"(" 		{ return new_symbol(sym.LPAREN, yytext()); 	}
-")" 		{ return new_symbol(sym.RPAREN, yytext()); 	}
-"{" 		{ return new_symbol(sym.LBRACE, yytext()); 	}
-"}"			{ return new_symbol(sym.RBRACE, yytext()); 	}
+"(" 		{ return new_symbol(sym.LPAREN, yytext()); 		}
+")" 		{ return new_symbol(sym.RPAREN, yytext()); 		}
+"{" 		{ return new_symbol(sym.LBRACE, yytext()); 		}
+"}"			{ return new_symbol(sym.RBRACE, yytext()); 		}
 "["			{ return new_symbol(sym.LSQUARE, yytext()); 	}
 "]"			{ return new_symbol(sym.RSQUARE, yytext()); 	}
 

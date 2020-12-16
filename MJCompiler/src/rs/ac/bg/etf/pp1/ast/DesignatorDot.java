@@ -1,26 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 15:6:53
+// 17/11/2020 12:56:30
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class DesignatorDot extends Designator {
 
-    private String name;
+    private Designator Designator;
     private String fieldName;
 
-    public DesignatorDot (String name, String fieldName) {
-        this.name=name;
+    public DesignatorDot (Designator Designator, String fieldName) {
+    	super(null);
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
         this.fieldName=fieldName;
     }
 
-    public String getName() {
-        return name;
+    public Designator getDesignator() {
+        return Designator;
     }
 
-    public void setName(String name) {
-        this.name=name;
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
     }
 
     public String getFieldName() {
@@ -36,13 +38,16 @@ public class DesignatorDot extends Designator {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -51,7 +56,10 @@ public class DesignatorDot extends Designator {
         buffer.append(tab);
         buffer.append("DesignatorDot(\n");
 
-        buffer.append(" "+tab+name);
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(" "+tab+fieldName);

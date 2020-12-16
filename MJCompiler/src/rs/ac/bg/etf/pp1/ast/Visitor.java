@@ -1,34 +1,38 @@
 // generated with ast extension for cup
 // version 0.8
-// 16/11/2020 15:6:53
+// 17/11/2020 12:56:30
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Factor Factor);
-    public void visit(Mulop Mulop);
-    public void visit(ConstDecl ConstDecl);
-    public void visit(ActualParamList ActualParamList);
-    public void visit(ConstAssignops ConstAssignops);
-    public void visit(Expr Expr);
-    public void visit(FormalParamList FormalParamList);
-    public void visit(FormPars FormPars);
-    public void visit(VarDeclList VarDeclList);
-    public void visit(CaseStmtList CaseStmtList);
     public void visit(Unmatched Unmatched);
-    public void visit(Addop Addop);
-    public void visit(MethodDeclList MethodDeclList);
-    public void visit(Statement Statement);
-    public void visit(Relop Relop);
+    public void visit(Mulop Mulop);
     public void visit(CaseStmt CaseStmt);
-    public void visit(ClassMethDecl ClassMethDecl);
-    public void visit(Identifiers Identifiers);
-    public void visit(StatementList StatementList);
     public void visit(Matched Matched);
     public void visit(ProgramDeclarations ProgramDeclarations);
+    public void visit(Relop Relop);
+    public void visit(StatementList StatementList);
+    public void visit(Addop Addop);
+    public void visit(Factor Factor);
+    public void visit(BasicMinusExpr BasicMinusExpr);
+    public void visit(ConditionExpr ConditionExpr);
+    public void visit(ActualParamList ActualParamList);
+    public void visit(VarDeclList VarDeclList);
+    public void visit(FormalParamList FormalParamList);
+    public void visit(Expr Expr);
+    public void visit(DesignatorStatement DesignatorStatement);
     public void visit(ActualPars ActualPars);
+    public void visit(ConstAssignops ConstAssignops);
+    public void visit(BasicExpr BasicExpr);
+    public void visit(Statement Statement);
+    public void visit(ClassMethDecl ClassMethDecl);
+    public void visit(Identifiers Identifiers);
+    public void visit(ConstDecl ConstDecl);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(CaseStmtList CaseStmtList);
+    public void visit(FormPars FormPars);
     public void visit(RelopLessEqual RelopLessEqual);
     public void visit(RelopLess RelopLess);
     public void visit(RelopGreaterEqual RelopGreaterEqual);
@@ -40,6 +44,11 @@ public interface Visitor {
     public void visit(MulopMul MulopMul);
     public void visit(AddopMinus AddopMinus);
     public void visit(AddopPlus AddopPlus);
+    public void visit(Assignop Assignop);
+    public void visit(DesignatorStmtDec DesignatorStmtDec);
+    public void visit(DesignatorStmtInc DesignatorStmtInc);
+    public void visit(DesignatorStmtFunc DesignatorStmtFunc);
+    public void visit(DesignatorStmtAssignop DesignatorStmtAssignop);
     public void visit(DesignatorArrayItem DesignatorArrayItem);
     public void visit(DesignatorDot DesignatorDot);
     public void visit(Designator Designator);
@@ -57,8 +66,20 @@ public interface Visitor {
     public void visit(Const Const);
     public void visit(TermMore TermMore);
     public void visit(Term Term);
+    public void visit(Ternary Ternary);
+    public void visit(MinusExpresion MinusExpresion);
+    public void visit(BasicExpresion BasicExpresion);
+    public void visit(MinusExpr MinusExpr);
     public void visit(TermExpr TermExpr);
     public void visit(AddExpr AddExpr);
+    public void visit(ConditionMore ConditionMore);
+    public void visit(Condition Condition);
+    public void visit(CondTermMore CondTermMore);
+    public void visit(CondTerm CondTerm);
+    public void visit(CondtFactMore CondtFactMore);
+    public void visit(CondFact CondFact);
+    public void visit(OnlyMinusExpr OnlyMinusExpr);
+    public void visit(OnlyBasicExpr OnlyBasicExpr);
     public void visit(OneCaseStmt OneCaseStmt);
     public void visit(CaseStatementList CaseStatementList);
     public void visit(CaseStatement CaseStatement);
