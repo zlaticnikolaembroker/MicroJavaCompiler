@@ -106,7 +106,11 @@ VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
 			(NoVarDecl) /* epsilon */
 			;
 
-VarDecl ::= (VarDecl) Type:varType Identifiers SEMI;
+VarDecl ::= (VarDecl) Type:varType Identifiers SEMI
+		|
+		(VarError) error SEMI:l
+		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		   ;
 
 Identifiers ::= (SingleVar) IDENT:varName
 			|

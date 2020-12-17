@@ -139,7 +139,11 @@ VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDec
 			(NoVarDecl) {: RESULT=new NoVarDecl(); :} /* epsilon */
 			;
 
-VarDecl ::= (VarDecl) Type:varType Identifiers:I1 SEMI {: RESULT=new VarDecl(varType, I1); RESULT.setLine(varTypeleft); :};
+VarDecl ::= (VarDecl) Type:varType Identifiers:I1 SEMI {: RESULT=new VarDecl(varType, I1); RESULT.setLine(varTypeleft); :}
+		|
+		(VarError) error SEMI:l
+		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new VarError(); :}
+		   ;
 
 Identifiers ::= (SingleVar) IDENT:varName {: RESULT=new SingleVar(varName); RESULT.setLine(varNameleft); :}
 			|

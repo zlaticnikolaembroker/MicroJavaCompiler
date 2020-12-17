@@ -3,6 +3,9 @@
 program test_303
 
 const int cinilac = 4, delilac = 3;
+int x ,
+const int x = 3;
+int x = 3;
 
 class Predmet
 {
@@ -129,6 +132,7 @@ int tezinaK, tezinaS;
 		print(zapreminaK); print(eol);
 		print(tezinaS); print(eol);
 		print(tezinaK); print(eol);
+		x = 13 asd 123we sd ;
 		
 		i = 0;
 		do{
