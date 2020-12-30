@@ -1,32 +1,46 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2020 13:11:25
+// 30/11/2020 2:0:15
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class CondtFactMore extends CondFact {
 
-    private BasicMinusExpr BasicMinusExpr;
+    private OptionalMinus OptionalMinus;
+    private BasicExpr BasicExpr;
     private Relop Relop;
-    private BasicMinusExpr BasicMinusExpr1;
+    private OptionalMinus OptionalMinus1;
+    private BasicExpr BasicExpr2;
 
-    public CondtFactMore (BasicMinusExpr BasicMinusExpr, Relop Relop, BasicMinusExpr BasicMinusExpr1) {
-    	super(null);
-        this.BasicMinusExpr=BasicMinusExpr;
-        if(BasicMinusExpr!=null) BasicMinusExpr.setParent(this);
+    public CondtFactMore (OptionalMinus OptionalMinus, BasicExpr BasicExpr, Relop Relop, OptionalMinus OptionalMinus1, BasicExpr BasicExpr2) {
+    	super(null, null);
+        this.OptionalMinus=OptionalMinus;
+        if(OptionalMinus!=null) OptionalMinus.setParent(this);
+        this.BasicExpr=BasicExpr;
+        if(BasicExpr!=null) BasicExpr.setParent(this);
         this.Relop=Relop;
         if(Relop!=null) Relop.setParent(this);
-        this.BasicMinusExpr1=BasicMinusExpr1;
-        if(BasicMinusExpr1!=null) BasicMinusExpr1.setParent(this);
+        this.OptionalMinus1=OptionalMinus1;
+        if(OptionalMinus1!=null) OptionalMinus1.setParent(this);
+        this.BasicExpr2=BasicExpr2;
+        if(BasicExpr2!=null) BasicExpr2.setParent(this);
     }
 
-    public BasicMinusExpr getBasicMinusExpr() {
-        return BasicMinusExpr;
+    public OptionalMinus getOptionalMinus() {
+        return OptionalMinus;
     }
 
-    public void setBasicMinusExpr(BasicMinusExpr BasicMinusExpr) {
-        this.BasicMinusExpr=BasicMinusExpr;
+    public void setOptionalMinus(OptionalMinus OptionalMinus) {
+        this.OptionalMinus=OptionalMinus;
+    }
+
+    public BasicExpr getBasicExpr() {
+        return BasicExpr;
+    }
+
+    public void setBasicExpr(BasicExpr BasicExpr) {
+        this.BasicExpr=BasicExpr;
     }
 
     public Relop getRelop() {
@@ -37,12 +51,20 @@ public class CondtFactMore extends CondFact {
         this.Relop=Relop;
     }
 
-    public BasicMinusExpr getBasicMinusExpr1() {
-        return BasicMinusExpr1;
+    public OptionalMinus getOptionalMinus1() {
+        return OptionalMinus1;
     }
 
-    public void setBasicMinusExpr1(BasicMinusExpr BasicMinusExpr1) {
-        this.BasicMinusExpr1=BasicMinusExpr1;
+    public void setOptionalMinus1(OptionalMinus OptionalMinus1) {
+        this.OptionalMinus1=OptionalMinus1;
+    }
+
+    public BasicExpr getBasicExpr2() {
+        return BasicExpr2;
+    }
+
+    public void setBasicExpr2(BasicExpr BasicExpr2) {
+        this.BasicExpr2=BasicExpr2;
     }
 
     public void accept(Visitor visitor) {
@@ -50,22 +72,28 @@ public class CondtFactMore extends CondFact {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(BasicMinusExpr!=null) BasicMinusExpr.accept(visitor);
+        if(OptionalMinus!=null) OptionalMinus.accept(visitor);
+        if(BasicExpr!=null) BasicExpr.accept(visitor);
         if(Relop!=null) Relop.accept(visitor);
-        if(BasicMinusExpr1!=null) BasicMinusExpr1.accept(visitor);
+        if(OptionalMinus1!=null) OptionalMinus1.accept(visitor);
+        if(BasicExpr2!=null) BasicExpr2.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(BasicMinusExpr!=null) BasicMinusExpr.traverseTopDown(visitor);
+        if(OptionalMinus!=null) OptionalMinus.traverseTopDown(visitor);
+        if(BasicExpr!=null) BasicExpr.traverseTopDown(visitor);
         if(Relop!=null) Relop.traverseTopDown(visitor);
-        if(BasicMinusExpr1!=null) BasicMinusExpr1.traverseTopDown(visitor);
+        if(OptionalMinus1!=null) OptionalMinus1.traverseTopDown(visitor);
+        if(BasicExpr2!=null) BasicExpr2.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(BasicMinusExpr!=null) BasicMinusExpr.traverseBottomUp(visitor);
+        if(OptionalMinus!=null) OptionalMinus.traverseBottomUp(visitor);
+        if(BasicExpr!=null) BasicExpr.traverseBottomUp(visitor);
         if(Relop!=null) Relop.traverseBottomUp(visitor);
-        if(BasicMinusExpr1!=null) BasicMinusExpr1.traverseBottomUp(visitor);
+        if(OptionalMinus1!=null) OptionalMinus1.traverseBottomUp(visitor);
+        if(BasicExpr2!=null) BasicExpr2.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -74,8 +102,14 @@ public class CondtFactMore extends CondFact {
         buffer.append(tab);
         buffer.append("CondtFactMore(\n");
 
-        if(BasicMinusExpr!=null)
-            buffer.append(BasicMinusExpr.toString("  "+tab));
+        if(OptionalMinus!=null)
+            buffer.append(OptionalMinus.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(BasicExpr!=null)
+            buffer.append(BasicExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
@@ -86,8 +120,14 @@ public class CondtFactMore extends CondFact {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(BasicMinusExpr1!=null)
-            buffer.append(BasicMinusExpr1.toString("  "+tab));
+        if(OptionalMinus1!=null)
+            buffer.append(OptionalMinus1.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(BasicExpr2!=null)
+            buffer.append(BasicExpr2.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

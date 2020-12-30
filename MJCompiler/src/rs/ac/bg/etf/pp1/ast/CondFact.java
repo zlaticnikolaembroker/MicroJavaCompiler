@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2020 13:11:25
+// 30/11/2020 2:0:15
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,19 +9,30 @@ public class CondFact implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private BasicMinusExpr BasicMinusExpr;
+    private OptionalMinus OptionalMinus;
+    private BasicExpr BasicExpr;
 
-    public CondFact (BasicMinusExpr BasicMinusExpr) {
-        this.BasicMinusExpr=BasicMinusExpr;
-        if(BasicMinusExpr!=null) BasicMinusExpr.setParent(this);
+    public CondFact (OptionalMinus OptionalMinus, BasicExpr BasicExpr) {
+        this.OptionalMinus=OptionalMinus;
+        if(OptionalMinus!=null) OptionalMinus.setParent(this);
+        this.BasicExpr=BasicExpr;
+        if(BasicExpr!=null) BasicExpr.setParent(this);
     }
 
-    public BasicMinusExpr getBasicMinusExpr() {
-        return BasicMinusExpr;
+    public OptionalMinus getOptionalMinus() {
+        return OptionalMinus;
     }
 
-    public void setBasicMinusExpr(BasicMinusExpr BasicMinusExpr) {
-        this.BasicMinusExpr=BasicMinusExpr;
+    public void setOptionalMinus(OptionalMinus OptionalMinus) {
+        this.OptionalMinus=OptionalMinus;
+    }
+
+    public BasicExpr getBasicExpr() {
+        return BasicExpr;
+    }
+
+    public void setBasicExpr(BasicExpr BasicExpr) {
+        this.BasicExpr=BasicExpr;
     }
 
     public SyntaxNode getParent() {
@@ -45,16 +56,19 @@ public class CondFact implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(BasicMinusExpr!=null) BasicMinusExpr.accept(visitor);
+        if(OptionalMinus!=null) OptionalMinus.accept(visitor);
+        if(BasicExpr!=null) BasicExpr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(BasicMinusExpr!=null) BasicMinusExpr.traverseTopDown(visitor);
+        if(OptionalMinus!=null) OptionalMinus.traverseTopDown(visitor);
+        if(BasicExpr!=null) BasicExpr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(BasicMinusExpr!=null) BasicMinusExpr.traverseBottomUp(visitor);
+        if(OptionalMinus!=null) OptionalMinus.traverseBottomUp(visitor);
+        if(BasicExpr!=null) BasicExpr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -63,8 +77,14 @@ public class CondFact implements SyntaxNode {
         buffer.append(tab);
         buffer.append("CondFact(\n");
 
-        if(BasicMinusExpr!=null)
-            buffer.append(BasicMinusExpr.toString("  "+tab));
+        if(OptionalMinus!=null)
+            buffer.append(OptionalMinus.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(BasicExpr!=null)
+            buffer.append(BasicExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

@@ -1,38 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 17/11/2020 13:11:25
+// 30/11/2020 2:0:15
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public interface Visitor { 
 
-    public void visit(Unmatched Unmatched);
-    public void visit(Mulop Mulop);
-    public void visit(CaseStmt CaseStmt);
-    public void visit(Matched Matched);
-    public void visit(ProgramDeclarations ProgramDeclarations);
-    public void visit(Relop Relop);
-    public void visit(StatementList StatementList);
-    public void visit(Addop Addop);
-    public void visit(Factor Factor);
-    public void visit(BasicMinusExpr BasicMinusExpr);
-    public void visit(ConditionExpr ConditionExpr);
-    public void visit(ActualParamList ActualParamList);
-    public void visit(VarDeclList VarDeclList);
-    public void visit(FormalParamList FormalParamList);
-    public void visit(Expr Expr);
-    public void visit(DesignatorStatement DesignatorStatement);
-    public void visit(ActualPars ActualPars);
-    public void visit(ConstAssignops ConstAssignops);
     public void visit(BasicExpr BasicExpr);
-    public void visit(Statement Statement);
-    public void visit(ClassMethDecl ClassMethDecl);
-    public void visit(Identifiers Identifiers);
+    public void visit(Factor Factor);
+    public void visit(Mulop Mulop);
+    public void visit(DesignatorStatement DesignatorStatement);
     public void visit(ConstDecl ConstDecl);
-    public void visit(MethodDeclList MethodDeclList);
-    public void visit(CaseStmtList CaseStmtList);
+    public void visit(ActualParamList ActualParamList);
+    public void visit(ConstAssignops ConstAssignops);
+    public void visit(Expr Expr);
+    public void visit(FormalParamList FormalParamList);
     public void visit(FormPars FormPars);
+    public void visit(VarDeclList VarDeclList);
+    public void visit(Addop Addop);
+    public void visit(MethodDeclList MethodDeclList);
+    public void visit(Statement Statement);
+    public void visit(Relop Relop);
+    public void visit(Identifiers Identifiers);
+    public void visit(StatementList StatementList);
+    public void visit(ProgramDeclarations ProgramDeclarations);
+    public void visit(ActualPars ActualPars);
     public void visit(RelopLessEqual RelopLessEqual);
     public void visit(RelopLess RelopLess);
     public void visit(RelopGreaterEqual RelopGreaterEqual);
@@ -47,10 +40,8 @@ public interface Visitor {
     public void visit(Assignop Assignop);
     public void visit(DesignatorStmtDec DesignatorStmtDec);
     public void visit(DesignatorStmtInc DesignatorStmtInc);
-    public void visit(DesignatorStmtFunc DesignatorStmtFunc);
     public void visit(DesignatorStmtAssignop DesignatorStmtAssignop);
     public void visit(DesignatorArrayItem DesignatorArrayItem);
-    public void visit(DesignatorDot DesignatorDot);
     public void visit(Designator Designator);
     public void visit(ActualParam ActualParam);
     public void visit(ActualParams ActualParams);
@@ -59,7 +50,6 @@ public interface Visitor {
     public void visit(NewExpressionArray NewExpressionArray);
     public void visit(NewExpression NewExpression);
     public void visit(ExprParens ExprParens);
-    public void visit(FuncCall FuncCall);
     public void visit(Var Var);
     public void visit(ConstBool ConstBool);
     public void visit(ConstChar ConstChar);
@@ -67,28 +57,13 @@ public interface Visitor {
     public void visit(TermMore TermMore);
     public void visit(Term Term);
     public void visit(Ternary Ternary);
-    public void visit(MinusExpresion MinusExpresion);
     public void visit(BasicExpresion BasicExpresion);
-    public void visit(MinusExpr MinusExpr);
+    public void visit(NoOptionalMinus NoOptionalMinus);
+    public void visit(OptionalMinus OptionalMinus);
     public void visit(TermExpr TermExpr);
     public void visit(AddExpr AddExpr);
-    public void visit(ConditionMore ConditionMore);
-    public void visit(Condition Condition);
-    public void visit(CondTermMore CondTermMore);
-    public void visit(CondTerm CondTerm);
     public void visit(CondtFactMore CondtFactMore);
     public void visit(CondFact CondFact);
-    public void visit(OnlyMinusExpr OnlyMinusExpr);
-    public void visit(OnlyBasicExpr OnlyBasicExpr);
-    public void visit(OneCaseStmt OneCaseStmt);
-    public void visit(CaseStatementList CaseStatementList);
-    public void visit(CaseStatement CaseStatement);
-    public void visit(StatementsBraces StatementsBraces);
-    public void visit(SwitchStatement SwitchStatement);
-    public void visit(ContinueStatement ContinueStatement);
-    public void visit(BreakStatement BreakStatement);
-    public void visit(WhileStatement WhileStatement);
-    public void visit(MatchedStatement MatchedStatement);
     public void visit(ReturnNoExpr ReturnNoExpr);
     public void visit(ReturnExpr ReturnExpr);
     public void visit(ReadStmt ReadStmt);
@@ -97,10 +72,6 @@ public interface Visitor {
     public void visit(ErrorStmtComma ErrorStmtComma);
     public void visit(ErrorStmt ErrorStmt);
     public void visit(Assignment Assignment);
-    public void visit(UnmatchedIfElse UnmatchedIfElse);
-    public void visit(UnmatchedIf UnmatchedIf);
-    public void visit(UnmatchedStmt UnmatchedStmt);
-    public void visit(MatchedStmt MatchedStmt);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
     public void visit(FormalParamDecl FormalParamDecl);
@@ -128,13 +99,7 @@ public interface Visitor {
     public void visit(ConstAssignNumbers ConstAssignNumbers);
     public void visit(ConstAssignNumber ConstAssignNumber);
     public void visit(ConstDeclaration ConstDeclaration);
-    public void visit(NoClassExtends NoClassExtends);
-    public void visit(ClassExtends ClassExtends);
-    public void visit(NoClassMethDeclaration NoClassMethDeclaration);
-    public void visit(ClassMethDeclaration ClassMethDeclaration);
-    public void visit(ClassDecl ClassDecl);
     public void visit(NoProgramDecls NoProgramDecls);
-    public void visit(ProgramDeclClass ProgramDeclClass);
     public void visit(ProgramDeclVar ProgramDeclVar);
     public void visit(ProgramDeclConst ProgramDeclConst);
     public void visit(Program Program);
