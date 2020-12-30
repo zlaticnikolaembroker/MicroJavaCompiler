@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 4:20:44
+// 30/11/2020 12:42:8
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -44,6 +44,7 @@ public interface Visitor {
     public void visit(Assignop Assignop);
     public void visit(DesignatorStmtDec DesignatorStmtDec);
     public void visit(DesignatorStmtInc DesignatorStmtInc);
+    public void visit(DesignatorStmtAssignopError DesignatorStmtAssignopError);
     public void visit(DesignatorStmtAssignop DesignatorStmtAssignop);
     public void visit(DesignatorArrayItem DesignatorArrayItem);
     public void visit(DesignatorBasic DesignatorBasic);
@@ -72,8 +73,6 @@ public interface Visitor {
     public void visit(ReadStmt ReadStmt);
     public void visit(PrintStmtWithNum PrintStmtWithNum);
     public void visit(PrintStmt PrintStmt);
-    public void visit(ErrorStmtComma ErrorStmtComma);
-    public void visit(ErrorStmt ErrorStmt);
     public void visit(Assignment Assignment);
     public void visit(NoStmt NoStmt);
     public void visit(Statements Statements);
@@ -92,6 +91,7 @@ public interface Visitor {
     public void visit(MultipleVars MultipleVars);
     public void visit(SingleArray SingleArray);
     public void visit(SingleVar SingleVar);
+    public void visit(VarErrorComma VarErrorComma);
     public void visit(VarError VarError);
     public void visit(VarDecl VarDecl);
     public void visit(NoVarDecl NoVarDecl);

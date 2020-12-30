@@ -366,6 +366,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     			report_error("read funkcija je primenljiva samo na osnovnim tipovima", read);
     }
     
+    public void visit(VarError error) {
+    	report_error("Oporavak od greske prilikom definisanja promeljive.", error);
+    }
+    
+    public void visit(VarErrorComma error) {
+    	report_error("Oporavak od greske prilikom definisanja promeljive.", error);
+    }
+    
+    public void visit(DesignatorStmtAssignopError error) {
+    	report_error("Oporavak od greske prilikom dodele vrednosti.", error);
+    }
+    
     public boolean passed(){
     	return !errorDetected;
     }

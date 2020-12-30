@@ -99,7 +99,8 @@ VarDeclList ::= (VarDeclarations) VarDeclList VarDecl
 VarDecl ::= (VarDecl) Type:varType Identifiers SEMI
 		|
 		(VarError) error SEMI:l
-		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
+		|
+		(VarErrorComma) error COMMA:l
 		   ;
 
 Identifiers ::= (SingleVar) IDENT:varName
@@ -143,12 +144,6 @@ StatementList ::= (Statements) StatementList Statement
 				;	 
 
 Statement ::= (Assignment) DesignatorStatement SEMI
-		   |
-		   (ErrorStmt) error SEMI:l
-		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :}
-		   |
-		   (ErrorStmtComma) error COMMA:c
-		   {: parser.report_error("Izvrsen oporavak do , u liniji " + cleft, null);  :}
 		   |
 		   (PrintStmt) PRINT LPAREN Expr RPAREN SEMI
 		   |
@@ -215,6 +210,8 @@ Designator ::= (DesignatorBasic) IDENT:name
 			;
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator Assignop Expr
+					|
+					(DesignatorStmtAssignopError) Designator Assignop:l error
 					|
 					(DesignatorStmtInc) Designator INCREMENT
 					|

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 4:20:44
+// 30/11/2020 12:42:8
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -44,6 +44,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Assignop Assignop) { visit(); }
     public void visit(DesignatorStmtDec DesignatorStmtDec) { visit(); }
     public void visit(DesignatorStmtInc DesignatorStmtInc) { visit(); }
+    public void visit(DesignatorStmtAssignopError DesignatorStmtAssignopError) { visit(); }
     public void visit(DesignatorStmtAssignop DesignatorStmtAssignop) { visit(); }
     public void visit(DesignatorArrayItem DesignatorArrayItem) { visit(); }
     public void visit(DesignatorBasic DesignatorBasic) { visit(); }
@@ -72,8 +73,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ReadStmt ReadStmt) { visit(); }
     public void visit(PrintStmtWithNum PrintStmtWithNum) { visit(); }
     public void visit(PrintStmt PrintStmt) { visit(); }
-    public void visit(ErrorStmtComma ErrorStmtComma) { visit(); }
-    public void visit(ErrorStmt ErrorStmt) { visit(); }
     public void visit(Assignment Assignment) { visit(); }
     public void visit(NoStmt NoStmt) { visit(); }
     public void visit(Statements Statements) { visit(); }
@@ -92,6 +91,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MultipleVars MultipleVars) { visit(); }
     public void visit(SingleArray SingleArray) { visit(); }
     public void visit(SingleVar SingleVar) { visit(); }
+    public void visit(VarErrorComma VarErrorComma) { visit(); }
     public void visit(VarError VarError) { visit(); }
     public void visit(VarDecl VarDecl) { visit(); }
     public void visit(NoVarDecl NoVarDecl) { visit(); }

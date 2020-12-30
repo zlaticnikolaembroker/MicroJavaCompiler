@@ -1,13 +1,14 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 4:20:44
+// 30/11/2020 12:42:8
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ErrorStmtComma extends Statement {
+public class VarErrorComma extends VarDecl {
 
-    public ErrorStmtComma () {
+    public VarErrorComma () {
+    	super(null, null);
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +29,10 @@ public class ErrorStmtComma extends Statement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ErrorStmtComma(\n");
+        buffer.append("VarErrorComma(\n");
 
         buffer.append(tab);
-        buffer.append(") [ErrorStmtComma]");
+        buffer.append(") [VarErrorComma]");
         return buffer.toString();
     }
 }

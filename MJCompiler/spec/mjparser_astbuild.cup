@@ -113,8 +113,9 @@ VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDecl:V2 {: RESULT=new VarDec
 
 VarDecl ::= (VarDecl) Type:varType Identifiers:I1 SEMI {: RESULT=new VarDecl(varType, I1); RESULT.setLine(varTypeleft); :}
 		|
-		(VarError) error SEMI:l
-		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new VarError(); :}
+		(VarError) error SEMI:l {: RESULT=new VarError(); :}
+		|
+		(VarErrorComma) error COMMA:l {: RESULT=new VarErrorComma(); :}
 		   ;
 
 Identifiers ::= (SingleVar) IDENT:varName {: RESULT=new SingleVar(varName); RESULT.setLine(varNameleft); :}
@@ -158,12 +159,6 @@ StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new State
 				;	 
 
 Statement ::= (Assignment) DesignatorStatement:D1 SEMI {: RESULT=new Assignment(D1); RESULT.setLine(D1left); :}
-		   |
-		   (ErrorStmt) error SEMI:l
-		   {: parser.report_error("Izvrsen oporavak do ; u liniji " + lleft, null);  :} {: RESULT=new ErrorStmt(); :}
-		   |
-		   (ErrorStmtComma) error COMMA:c
-		   {: parser.report_error("Izvrsen oporavak do , u liniji " + cleft, null);  :} {: RESULT=new ErrorStmtComma(); :}
 		   |
 		   (PrintStmt) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new PrintStmt(E1); RESULT.setLine(E1left); :}
 		   |
@@ -230,6 +225,8 @@ Designator ::= (DesignatorBasic) IDENT:name {: RESULT=new DesignatorBasic(name);
 			;
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStmtAssignop(D1, A2, E3); RESULT.setLine(D1left); :}
+					|
+					(DesignatorStmtAssignopError) Designator:D1 Assignop:l error {: RESULT=new DesignatorStmtAssignopError(D1, l); RESULT.setLine(D1left); :}
 					|
 					(DesignatorStmtInc) Designator:D1 INCREMENT {: RESULT=new DesignatorStmtInc(D1); RESULT.setLine(D1left); :}
 					|
