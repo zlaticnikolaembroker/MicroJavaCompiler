@@ -1,15 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 2:46:37
+// 30/11/2020 4:20:44
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
+    public void visit(Designator Designator) { }
     public void visit(MethodDecl MethodDecl) { }
     public void visit(BasicExpr BasicExpr) { }
     public void visit(Factor Factor) { }
+    public void visit(MethodTypeDecl MethodTypeDecl) { }
     public void visit(Mulop Mulop) { }
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(ConstDecl ConstDecl) { }
@@ -44,12 +46,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorStmtInc DesignatorStmtInc) { visit(); }
     public void visit(DesignatorStmtAssignop DesignatorStmtAssignop) { visit(); }
     public void visit(DesignatorArrayItem DesignatorArrayItem) { visit(); }
-    public void visit(Designator Designator) { visit(); }
+    public void visit(DesignatorBasic DesignatorBasic) { visit(); }
     public void visit(ActualParam ActualParam) { visit(); }
     public void visit(ActualParams ActualParams) { visit(); }
     public void visit(NoActuals NoActuals) { visit(); }
     public void visit(Actuals Actuals) { visit(); }
-    public void visit(NewExpressionArray NewExpressionArray) { visit(); }
     public void visit(NewExpression NewExpression) { visit(); }
     public void visit(ExprParens ExprParens) { visit(); }
     public void visit(Var Var) { visit(); }
@@ -81,6 +82,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
+    public void visit(MethodTypeDeclaration MethodTypeDeclaration) { visit(); }
     public void visit(MethodDeclVoid MethodDeclVoid) { visit(); }
     public void visit(MethodDeclaration MethodDeclaration) { visit(); }
     public void visit(NoMethodDecl NoMethodDecl) { visit(); }

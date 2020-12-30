@@ -74,11 +74,10 @@ nonterminal Relop Relop;
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal CondFact CondFact;
 nonterminal Assignop Assignop;
-nonterminal BasicExpr BasicExpr;
 nonterminal OptionalMinus OptionalMinus;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
 
 Program ::= (Program) PROG ProgName:name ProgramDeclarations:P1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(name, P1, M2); RESULT.setLine(nameleft); :};
 
@@ -136,7 +135,10 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESUL
 				
 MethodDecl ::= (MethodDeclaration) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclaration(retType, methName, F1, V2, S3); RESULT.setLine(retTypeleft); :}
 			|
-			(MethodDeclVoid) VOID:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclVoid(methName, F1, V2, S3); RESULT.setLine(methNameleft); :};
+			(MethodDeclVoid) MethodTypeDecl:M1 LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDeclVoid(M1, F2, V3, S4); RESULT.setLine(M1left); :};
+			
+MethodTypeDecl ::= (MethodTypeDeclaration) VOID:retType IDENT:methName {: RESULT=new MethodTypeDeclaration(methName); RESULT.setLine(methNameleft); :}
+				;
 
 FormPars ::= (FormParams) FormalParamList:F1 {: RESULT=new FormParams(F1); RESULT.setLine(F1left); :}
 		  |
@@ -209,9 +211,7 @@ Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
 		|
 		(ExprParens) LPAREN Expr:E1 RPAREN {: RESULT=new ExprParens(E1); RESULT.setLine(E1left); :}
 		|
-		(NewExpression) NEW Type:varType {: RESULT=new NewExpression(varType); RESULT.setLine(varTypeleft); :}
-		|
-		(NewExpressionArray) NEW Type:varType LSQUARE Expr:E1 RSQUARE {: RESULT=new NewExpressionArray(varType, E1); RESULT.setLine(varTypeleft); :}
+		(NewExpression) NEW Type:varType LSQUARE Expr:E1 RSQUARE {: RESULT=new NewExpression(varType, E1); RESULT.setLine(varTypeleft); :}
 		;
 		
 ActualPars ::= (Actuals) ActualParamList:A1 {: RESULT=new Actuals(A1); RESULT.setLine(A1left); :}
@@ -224,9 +224,9 @@ ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=ne
 				(ActualParam) Expr:E1 {: RESULT=new ActualParam(E1); RESULT.setLine(E1left); :}
 				;
 				
-Designator ::= (Designator) IDENT:name {: RESULT=new Designator(name); RESULT.setLine(nameleft); :}
+Designator ::= (DesignatorBasic) IDENT:name {: RESULT=new DesignatorBasic(name); RESULT.setLine(nameleft); :}
 			|
-			(DesignatorArrayItem) Designator:D1 LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(D1, index); RESULT.setLine(D1left); :} 
+			(DesignatorArrayItem) IDENT:name LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(name, index); RESULT.setLine(nameleft); :} 
 			;
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStmtAssignop(D1, A2, E3); RESULT.setLine(D1left); :}

@@ -59,10 +59,10 @@ nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement
 nonterminal Addop, ActualPars, ActualParamList;
 nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal Mulop, Relop, DesignatorStatement, CondFact, Assignop;
-nonterminal BasicExpr, OptionalMinus;
+nonterminal OptionalMinus;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
 
 Program ::= (Program) PROG ProgName:name ProgramDeclarations LBRACE MethodDeclList RBRACE;
 
@@ -120,7 +120,10 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 				
 MethodDecl ::= (MethodDeclaration) Type:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE
 			|
-			(MethodDeclVoid) VOID:retType IDENT:methName LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
+			(MethodDeclVoid) MethodTypeDecl LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE;
+			
+MethodTypeDecl ::= (MethodTypeDeclaration) VOID:retType IDENT:methName
+				;
 
 FormPars ::= (FormParams) FormalParamList
 		  |
@@ -193,9 +196,7 @@ Factor ::= (Const) NUMBER
 		|
 		(ExprParens) LPAREN Expr RPAREN
 		|
-		(NewExpression) NEW Type:varType
-		|
-		(NewExpressionArray) NEW Type:varType LSQUARE Expr RSQUARE
+		(NewExpression) NEW Type:varType LSQUARE Expr RSQUARE
 		;
 		
 ActualPars ::= (Actuals) ActualParamList
@@ -208,9 +209,9 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 				(ActualParam) Expr
 				;
 				
-Designator ::= (Designator) IDENT:name
+Designator ::= (DesignatorBasic) IDENT:name
 			|
-			(DesignatorArrayItem) Designator LSQUARE Expr:index RSQUARE 
+			(DesignatorArrayItem) IDENT:name LSQUARE Expr:index RSQUARE 
 			;
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator Assignop Expr

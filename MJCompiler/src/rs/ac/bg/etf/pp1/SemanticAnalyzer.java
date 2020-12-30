@@ -18,6 +18,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Struct lastType = null;
 	
 	Logger log = Logger.getLogger(getClass());
+	
+	final Struct boolType = new Struct(Struct.Bool);
+	
+	public SemanticAnalyzer() {
+		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
+	}
 
 	public void report_error(String message, SyntaxNode info) {
 		errorDetected = true;
@@ -62,8 +68,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			return;
 		}
 		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName(), varDecl);
-		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), lastType);
+		report_info("Deklarisana promenljiva "+ varDecl.getVarName() + " tipa " + lastType, varDecl);
+		
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, lastType));
 	}
 	
 	public void visit(MultupleArray varDecl){
@@ -72,8 +79,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			return;
 		}
 		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName(), varDecl);
-		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), lastType);
+		report_info("Deklarisana promenljiva "+ varDecl.getVarName() + " tipa " + lastType, varDecl);
+		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, lastType));
 	}
 	
 	public void visit(ConstAssignNumber constDecl) {
@@ -84,7 +91,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.intType);
 	}
 	
 	public void visit(ConstAssignBool constDecl) {
@@ -94,7 +101,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), boolType);
 	}
 	
 	public void visit(ConstAssignChar constDecl) {
@@ -104,7 +111,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.charType);
 	}
 	
 	public void visit(ConstAssignNumbers constDecl) {
@@ -114,7 +121,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.intType);
 	}
 	
 	public void visit(ConstAssignBools constDecl) {
@@ -124,7 +131,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), boolType);
 	}
 	
 	public void visit(ConstAssignChars constDecl) {
@@ -134,11 +141,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		varDeclCount++;
 		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
 	}
 	
     public void visit(PrintStmt print) {
-		printCallCount++;
+    	if( !print.getExpr().struct.equals(Tab.intType) &&
+    			!print.getExpr().struct.equals(Tab.charType) &&
+    			!print.getExpr().struct.equals(boolType))
+    			report_error("print funkcija je primenljiva samo na osnovnim tipovima", print); else {
+    				printCallCount++;
+    		}
 	}
     
     public void visit(ProgramName progName){
@@ -148,8 +160,27 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     
     public void visit(Program program){
     	nVars = Tab.currentScope.getnVars();
-    	Tab.chainLocalSymbols(program.getProgName().obj);
-    	Tab.closeScope();
+
+		Obj mainMethod = Tab.currentScope.findSymbol("main");
+
+		if(
+			mainMethod != null && // postoji
+			mainMethod.getKind() == Obj.Meth && 
+			mainMethod.getType() == Tab.noType && // nema povratni tip
+			mainMethod.getFpPos() == 0 // nema argumente
+		){
+			Tab.chainLocalSymbols(program.getProgName().obj); // import symbols to program name
+			Tab.closeScope(); // close program scope
+		}
+		else if(mainMethod == null || mainMethod.getKind() != Obj.Meth){
+			report_error("Main method ne postoji!", program);
+		}
+		else{
+			if(mainMethod.getType() != Tab.noType)
+				report_error("Main method ne sme da ima povratni tip!", program);
+			if(mainMethod.getFpPos() > 0)
+				report_error("Main method ne sme da ima argumente!", program);
+		}
     }
     
     public void visit(Type type){
@@ -157,6 +188,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if(typeNode == Tab.noObj){
     		report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola! ", null);
     		type.struct = Tab.noType;
+    		lastType = type.struct;
     	}else{
     		if(Obj.Type == typeNode.getKind()){
     			type.struct = typeNode.getType();
@@ -164,29 +196,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		}else{
     			report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip!", type);
     			type.struct = Tab.noType;
+    			lastType = type.struct;
     		}
     	}
     }
-    /*
-    public void visit(MethodTypeName methodTypeName){
-    	currentMethod = Tab.insert(Obj.Meth, methodTypeName.getMethName(), methodTypeName.getType().struct);
-    	methodTypeName.obj = currentMethod;
-    	Tab.openScope();
-		report_info("Obradjuje se funkcija " + methodTypeName.getMethName(), methodTypeName);
-    }
     
-    public void visit(MethodDecl methodDecl){
-    	if(!returnFound && currentMethod.getType() != Tab.noType){
-			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funkcija " + currentMethod.getName() + " nema return iskaz!", null);
-    	}
-    	Tab.chainLocalSymbols(currentMethod);
-    	Tab.closeScope();
-    	
-    	returnFound = false;
-    	currentMethod = null;
-    }
-    
-    public void visit(Designator designator){
+    public void visit(DesignatorBasic designator){
     	Obj obj = Tab.find(designator.getName());
     	if(obj == Tab.noObj){
 			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getName()+" nije deklarisano! ", null);
@@ -194,19 +209,28 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	designator.obj = obj;
     }
     
-    
-    public void visit(FuncCall funcCall){
-    	Obj func = funcCall.getDesignator().obj;
-    	if(Obj.Meth == func.getKind()){
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-			funcCall.struct = func.getType();
-    	}else{
-			report_error("Greska na liniji " + funcCall.getLine()+" : ime " + func.getName() + " nije funkcija!", null);
-			funcCall.struct = Tab.noType;
-    	}
+    public void visit(DesignatorArrayItem designator){
+    	Obj arrayType = Tab.find(designator.getName());
+    	designator.obj = new Obj(Obj.Elem, "", arrayType.getType().getElemType());
+
+		if(Struct.Array != arrayType.getType().getKind()){
+			report_error("Tip simbola mora biti niz!", designator);
+			designator.obj = Tab.noObj;
+		}
+
+		if(!(designator.getExpr().struct == Tab.intType)){
+			report_error("Izraz izmedju zagrada mora biti celobrojna vrednost!", designator);
+			designator.obj = Tab.noObj;
+		}
+		// to which index we are accessing
+		report_info("Prostupamo clanu niza " + designator.obj.getName(), designator);
     }
     
     public void visit(Term term){
+    	term.struct = term.getFactor().struct;
+    }
+    
+    public void visit(TermMore term){
     	term.struct = term.getFactor().struct;
     }
     
@@ -215,7 +239,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(AddExpr addExpr){
-    	Struct te = addExpr.getExpr().struct;
+    	Struct te = addExpr.getBasicExpr().struct;
     	Struct t = addExpr.getTerm().struct;
     	if(te.equals(t) && te == Tab.intType){
     		addExpr.struct = te;
@@ -225,28 +249,123 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     }
     
-    public void visit(Const cnst){
+    public void visit(MethodTypeDeclaration methodType) {
+    	currentMethod = Tab.insert(Obj.Meth, methodType.getMethName(), Tab.noType);
+    	methodType.obj = currentMethod;
+    	Tab.openScope();
+		report_info("Obradjuje se funkcija " + methodType.getMethName(), methodType);
+    }
+    
+    public void visit(MethodDeclVoid methodDecl){
+    	Tab.chainLocalSymbols(currentMethod);
+    	Tab.closeScope();
+    	
+    	returnFound = false;
+    	currentMethod = null;
+    }
+    
+    public void visit(Const cnst) {
     	cnst.struct = Tab.intType;
     }
     
-    public void visit(Var var){
+    public void visit(ConstChar cnst) {
+    	cnst.struct = Tab.charType;
+    }
+    
+    public void visit(ConstBool cnst) {
+    	cnst.struct = boolType;
+    }
+    
+    public void visit(Var var) {
     	var.struct = var.getDesignator().obj.getType();
     }
     
-    public void visit(ReturnExpr returnExpr){
-    	returnFound = true;
-    	Struct currMethType = currentMethod.getType();
-    	if(!currMethType.compatibleWith(returnExpr.getExpr().struct)){
-			report_error("Greska na liniji " + returnExpr.getLine() + " : " + "tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije " + currentMethod.getName(), null);
+    public void visit(BasicExpresion basicExpresion) {
+    	basicExpresion.struct = basicExpresion.getBasicExpr().struct;
+    }
+    
+    public void visit(ExprParens var) {
+    	var.struct = var.getExpr().struct;
+    }
+    
+    public void visit(DesignatorStmtAssignop designatorStmtAssignop) {
+    	if(!designatorStmtAssignop.getExpr().struct.assignableTo(designatorStmtAssignop.getDesignator().obj.getType())) {
+    		report_error("Greska na liniji " + designatorStmtAssignop.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ", null);
     	}
     }
     
-    public void visit(Assignment assignment){
-    	if(!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
-    		report_error("Greska na liniji " + assignment.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ", null);
+    private static boolean isVarOrArray(Obj obj){
+		return obj.getKind() == Obj.Elem || obj.getKind() == Obj.Var;
+	}
+    
+    private boolean isNumber(Obj obj){
+		return obj.getType() == Tab.intType;
+	}
+    
+    public void visit(DesignatorStmtInc designatorStmtInc) {
+    	if(!isVarOrArray(designatorStmtInc.getDesignator().obj))
+			report_error("Promenljiva mora biti promenljiva ili niz!", designatorStmtInc);
+
+		if(!isNumber(designatorStmtInc.getDesignator().obj)) {
+			report_error("Promenljiva mora biti broj(int)", designatorStmtInc);
+		}
     }
     
-    */
+    public void visit(DesignatorStmtDec designatorStmtInc) {
+    	if(!isVarOrArray(designatorStmtInc.getDesignator().obj))
+			report_error("Promenljiva mora biti promenljiva ili niz!", designatorStmtInc);
+
+		if(!isNumber(designatorStmtInc.getDesignator().obj))
+			report_error("Promenljiva mora biti broj(int)", designatorStmtInc);
+    }
+    
+    public void visit(NewExpression newExpression) {
+		if(newExpression.getExpr().struct != Tab.intType){
+			report_error("Velicina niza mora biti broj(int)!", newExpression);
+		}
+		newExpression.struct = new Struct(Struct.Array, newExpression.getType().struct);
+		
+	}
+    
+    public void visit(CondFact condFact) {
+    	if (!(condFact.getOptionalMinus() instanceof NoOptionalMinus) || !condFact.getBasicExpr().struct.assignableTo(boolType)) {
+    		report_error("Neispravan tip uslova u ternarnom operatoru", condFact);
+    	}
+    	
+    }
+    
+    public void visit(CondtFactMore condFact) {
+    	if (condFact.getBasicExpr().struct.getKind() != condFact.getBasicExpr2().struct.getKind() || !condFact.getBasicExpr().struct.assignableTo(Tab.intType)) {
+    		report_error("Neispravan tip uslova u ternarnom operatoru", condFact);
+    	}
+    	
+    }
+    
+    public void visit(Ternary ternary) {
+    	if(ternary.getExpr().struct.getKind() != ternary.getExpr1().struct.getKind()) {
+    		report_error("Tip expression-a u ternarnom operatoru se moraju poklapati.", ternary);
+    	}
+    	
+    	ternary.struct = ternary.getExpr().struct;
+    	
+    }
+    
+    public void visit(ReadStmt read) {
+    	if(
+    			!(
+    					read.getDesignator().obj.getKind() == Obj.Elem ||
+    							read.getDesignator().obj.getKind() ==  Obj.Var
+    			)
+    		){
+    			report_error("Read funkcija prima argument `" + read.getDesignator().obj.getName() +  " tipa promenljive ili elementa niza", read);
+    		}
+
+    		if( !read.getDesignator().obj.getType().equals(Tab.intType) &&
+    				!read.getDesignator().obj.getType().equals(Tab.charType) &&
+    				!read.getDesignator().obj.getType().equals(boolType))
+    			report_error("read funkcija je primenljiva samo na osnovnim tipovima", read);
+    }
+    
     public boolean passed(){
     	return !errorDetected;
     }

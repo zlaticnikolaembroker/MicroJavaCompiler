@@ -5,21 +5,20 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class ExprParens extends Factor {
+public class MethodTypeDeclaration extends MethodTypeDecl {
 
-    private Expr Expr;
+    private String methName;
 
-    public ExprParens (Expr Expr) {
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+    public MethodTypeDeclaration (String methName) {
+        this.methName=methName;
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public String getMethName() {
+        return methName;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setMethName(String methName) {
+        this.methName=methName;
     }
 
     public void accept(Visitor visitor) {
@@ -27,32 +26,26 @@ public class ExprParens extends Factor {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("ExprParens(\n");
+        buffer.append("MethodTypeDeclaration(\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
+        buffer.append(" "+tab+methName);
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [ExprParens]");
+        buffer.append(") [MethodTypeDeclaration]");
         return buffer.toString();
     }
 }
