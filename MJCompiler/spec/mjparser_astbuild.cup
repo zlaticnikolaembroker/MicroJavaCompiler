@@ -54,22 +54,15 @@ terminal String IDENT;
 terminal Character CONSTCHAR;
 terminal Boolean CONSTBOOL;
 
-nonterminal Program Program;
 nonterminal VarDeclList VarDeclList;
 nonterminal MethodDeclList MethodDeclList;
 nonterminal VarDecl VarDecl;
-nonterminal Type Type;
-nonterminal MethodDecl MethodDecl;
 nonterminal FormPars FormPars;
 nonterminal StatementList StatementList;
 nonterminal FormalParamList FormalParamList;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal Statement Statement;
-nonterminal Designator Designator;
-nonterminal Expr Expr;
-nonterminal Term Term;
 nonterminal Addop Addop;
-nonterminal Factor Factor;
 nonterminal ActualPars ActualPars;
 nonterminal ActualParamList ActualParamList;
 nonterminal Identifiers Identifiers;
@@ -84,7 +77,13 @@ nonterminal Assignop Assignop;
 nonterminal BasicExpr BasicExpr;
 nonterminal OptionalMinus OptionalMinus;
 
-Program ::= (Program) PROG IDENT:I1 ProgramDeclarations:P2 LBRACE MethodDeclList:M3 RBRACE {: RESULT=new Program(I1, P2, M3); RESULT.setLine(I1left); :};
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr;
+
+Program ::= (Program) PROG ProgName:name ProgramDeclarations:P1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(name, P1, M2); RESULT.setLine(nameleft); :};
+
+ProgName ::= (ProgramName) IDENT:progName {: RESULT=new ProgramName(progName); RESULT.setLine(progNameleft); :}
+		;
 
 ProgramDeclarations ::= (ProgramDeclConst) ProgramDeclarations:P1 ConstDecl:C2 {: RESULT=new ProgramDeclConst(P1, C2); RESULT.setLine(P1left); :}
 					|					
@@ -123,9 +122,9 @@ Identifiers ::= (SingleVar) IDENT:varName {: RESULT=new SingleVar(varName); RESU
 			|
 			(SingleArray) IDENT:varName LSQUARE RSQUARE {: RESULT=new SingleArray(varName); RESULT.setLine(varNameleft); :}
 			|
-			(MultipleVars) Identifiers:I1 COMMA IDENT:I2 {: RESULT=new MultipleVars(I1, I2); RESULT.setLine(I1left); :} 
+			(MultipleVars) Identifiers:I1 COMMA IDENT:varName {: RESULT=new MultipleVars(I1, varName); RESULT.setLine(I1left); :} 
 			|
-			(MultupleArray) Identifiers:I1 COMMA IDENT:I2 LSQUARE RSQUARE {: RESULT=new MultupleArray(I1, I2); RESULT.setLine(I1left); :} 
+			(MultupleArray) Identifiers:I1 COMMA IDENT:varName LSQUARE RSQUARE {: RESULT=new MultupleArray(I1, varName); RESULT.setLine(I1left); :} 
 			;
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :};
@@ -135,7 +134,7 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESUL
 				(NoMethodDecl) {: RESULT=new NoMethodDecl(); :} /* epsilon */
 				;
 				
-MethodDecl ::= (MethodDecl) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDecl(retType, methName, F1, V2, S3); RESULT.setLine(retTypeleft); :}
+MethodDecl ::= (MethodDeclaration) Type:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclaration(retType, methName, F1, V2, S3); RESULT.setLine(retTypeleft); :}
 			|
 			(MethodDeclVoid) VOID:retType IDENT:methName LPAREN FormPars:F1 RPAREN VarDeclList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new MethodDeclVoid(methName, F1, V2, S3); RESULT.setLine(methNameleft); :};
 

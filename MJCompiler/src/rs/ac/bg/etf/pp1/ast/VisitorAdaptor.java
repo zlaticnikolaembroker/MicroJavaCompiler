@@ -1,12 +1,13 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 2:0:15
+// 30/11/2020 2:46:37
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public abstract class VisitorAdaptor implements Visitor { 
 
+    public void visit(MethodDecl MethodDecl) { }
     public void visit(BasicExpr BasicExpr) { }
     public void visit(Factor Factor) { }
     public void visit(Mulop Mulop) { }
@@ -22,9 +23,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(Statement Statement) { }
     public void visit(Relop Relop) { }
-    public void visit(Identifiers Identifiers) { }
     public void visit(StatementList StatementList) { }
+    public void visit(Identifiers Identifiers) { }
     public void visit(ProgramDeclarations ProgramDeclarations) { }
+    public void visit(ProgName ProgName) { }
     public void visit(ActualPars ActualPars) { }
     public void visit(RelopLessEqual RelopLessEqual) { visit(); }
     public void visit(RelopLess RelopLess) { visit(); }
@@ -80,7 +82,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
     public void visit(MethodDeclVoid MethodDeclVoid) { visit(); }
-    public void visit(MethodDecl MethodDecl) { visit(); }
+    public void visit(MethodDeclaration MethodDeclaration) { visit(); }
     public void visit(NoMethodDecl NoMethodDecl) { visit(); }
     public void visit(MethodDeclarations MethodDeclarations) { visit(); }
     public void visit(Type Type) { visit(); }
@@ -102,6 +104,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoProgramDecls NoProgramDecls) { visit(); }
     public void visit(ProgramDeclVar ProgramDeclVar) { visit(); }
     public void visit(ProgramDeclConst ProgramDeclConst) { visit(); }
+    public void visit(ProgramName ProgramName) { visit(); }
     public void visit(Program Program) { visit(); }
 
 

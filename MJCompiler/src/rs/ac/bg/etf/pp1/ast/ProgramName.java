@@ -5,27 +5,20 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class OptionalMinus implements SyntaxNode {
+public class ProgramName extends ProgName {
 
-    private SyntaxNode parent;
-    private int line;
-    public OptionalMinus () {
+    private String progName;
+
+    public ProgramName (String progName) {
+        this.progName=progName;
     }
 
-    public SyntaxNode getParent() {
-        return parent;
+    public String getProgName() {
+        return progName;
     }
 
-    public void setParent(SyntaxNode parent) {
-        this.parent=parent;
-    }
-
-    public int getLine() {
-        return line;
-    }
-
-    public void setLine(int line) {
-        this.line=line;
+    public void setProgName(String progName) {
+        this.progName=progName;
     }
 
     public void accept(Visitor visitor) {
@@ -46,10 +39,13 @@ public class OptionalMinus implements SyntaxNode {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("OptionalMinus(\n");
+        buffer.append("ProgramName(\n");
+
+        buffer.append(" "+tab+progName);
+        buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [OptionalMinus]");
+        buffer.append(") [ProgramName]");
         return buffer.toString();
     }
 }

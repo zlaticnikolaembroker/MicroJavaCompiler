@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/11/2020 2:0:15
+// 30/11/2020 2:46:37
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,12 +8,12 @@ package rs.ac.bg.etf.pp1.ast;
 public class MultipleVars extends Identifiers {
 
     private Identifiers Identifiers;
-    private String I2;
+    private String varName;
 
-    public MultipleVars (Identifiers Identifiers, String I2) {
+    public MultipleVars (Identifiers Identifiers, String varName) {
         this.Identifiers=Identifiers;
         if(Identifiers!=null) Identifiers.setParent(this);
-        this.I2=I2;
+        this.varName=varName;
     }
 
     public Identifiers getIdentifiers() {
@@ -24,12 +24,12 @@ public class MultipleVars extends Identifiers {
         this.Identifiers=Identifiers;
     }
 
-    public String getI2() {
-        return I2;
+    public String getVarName() {
+        return varName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setVarName(String varName) {
+        this.varName=varName;
     }
 
     public void accept(Visitor visitor) {
@@ -61,7 +61,7 @@ public class MultipleVars extends Identifiers {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+varName);
         buffer.append("\n");
 
         buffer.append(tab);

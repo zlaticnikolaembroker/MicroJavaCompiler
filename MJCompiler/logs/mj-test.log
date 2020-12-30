@@ -1,302 +1,122 @@
-INFO  02:03:59,473 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  02:03:59,493 - #2 program
-INFO  02:03:59,493 - #34 test301
-INFO  02:03:59,493 - #14 const
-INFO  02:03:59,493 - #34 int
-INFO  02:03:59,493 - #34 nula
-INFO  02:03:59,494 - #8 =
-INFO  02:03:59,494 - #33 0
-INFO  02:03:59,494 - #5 ;
-INFO  02:03:59,494 - #14 const
-INFO  02:03:59,494 - #34 int
-INFO  02:03:59,494 - #34 jedan
-INFO  02:03:59,494 - #8 =
-INFO  02:03:59,494 - #33 1
-INFO  02:03:59,494 - #5 ;
-INFO  02:03:59,494 - #14 const
-INFO  02:03:59,494 - #34 int
-INFO  02:03:59,494 - #34 pet
-INFO  02:03:59,494 - #8 =
-INFO  02:03:59,495 - #33 5
-INFO  02:03:59,495 - #5 ;
-INFO  02:03:59,495 - #34 int
-INFO  02:03:59,495 - #34 niz
-INFO  02:03:59,495 - #15 [
-INFO  02:03:59,495 - #16 ]
-INFO  02:03:59,495 - #5 ;
-INFO  02:03:59,495 - #34 char
-INFO  02:03:59,496 - #34 nizch
-INFO  02:03:59,496 - #15 [
-INFO  02:03:59,496 - #16 ]
-INFO  02:03:59,496 - #5 ;
-INFO  02:03:59,496 - #3 {
-INFO  02:03:59,496 - #13 void
-INFO  02:03:59,496 - #34 main
-INFO  02:03:59,496 - #6 (
-INFO  02:03:59,496 - #7 )
-INFO  02:03:59,497 - #34 int
-INFO  02:03:59,497 - #34 bodovi
-INFO  02:03:59,497 - #5 ;
-INFO  02:03:59,497 - #34 bool
-INFO  02:03:59,497 - #34 bt
-INFO  02:03:59,497 - #5 ;
-INFO  02:03:59,497 - #3 {
-INFO  02:03:59,498 - #34 bodovi
-INFO  02:03:59,498 - #8 =
-INFO  02:03:59,498 - #33 0
-INFO  02:03:59,499 - #5 ;
-INFO  02:03:59,500 - #34 bodovi
-INFO  02:03:59,500 - #30 ++
-INFO  02:03:59,500 - #5 ;
-INFO  02:03:59,500 - #34 bodovi
-INFO  02:03:59,500 - #8 =
-INFO  02:03:59,500 - #34 bodovi
-INFO  02:03:59,500 - #10 +
-INFO  02:03:59,500 - #34 jedan
-INFO  02:03:59,501 - #5 ;
-INFO  02:03:59,501 - #34 bodovi
-INFO  02:03:59,501 - #8 =
-INFO  02:03:59,501 - #34 bodovi
-INFO  02:03:59,501 - #22 *
-INFO  02:03:59,501 - #34 pet
-INFO  02:03:59,502 - #5 ;
-INFO  02:03:59,502 - #34 bodovi
-INFO  02:03:59,502 - #31 --
-INFO  02:03:59,502 - #5 ;
-INFO  02:03:59,503 - #12 print
-INFO  02:03:59,503 - #6 (
-INFO  02:03:59,503 - #34 bodovi
-INFO  02:03:59,503 - #7 )
-INFO  02:03:59,503 - #5 ;
-INFO  02:03:59,503 - #34 niz
-INFO  02:03:59,503 - #8 =
-INFO  02:03:59,503 - #29 new
-INFO  02:03:59,503 - #34 int
-INFO  02:03:59,504 - #15 [
-INFO  02:03:59,504 - #33 3
-INFO  02:03:59,504 - #16 ]
-INFO  02:03:59,504 - #5 ;
-INFO  02:03:59,504 - #34 niz
-INFO  02:03:59,504 - #15 [
-INFO  02:03:59,504 - #34 nula
-INFO  02:03:59,504 - #16 ]
-INFO  02:03:59,504 - #8 =
-INFO  02:03:59,504 - #34 jedan
-INFO  02:03:59,505 - #5 ;
-INFO  02:03:59,505 - #34 niz
-INFO  02:03:59,505 - #15 [
-INFO  02:03:59,505 - #33 1
-INFO  02:03:59,505 - #16 ]
-INFO  02:03:59,505 - #8 =
-INFO  02:03:59,505 - #33 2
-INFO  02:03:59,505 - #5 ;
-INFO  02:03:59,505 - #34 niz
-INFO  02:03:59,505 - #15 [
-INFO  02:03:59,505 - #34 niz
-INFO  02:03:59,505 - #15 [
-INFO  02:03:59,505 - #34 jedan
-INFO  02:03:59,505 - #16 ]
-INFO  02:03:59,505 - #16 ]
-INFO  02:03:59,506 - #8 =
-INFO  02:03:59,506 - #34 niz
-INFO  02:03:59,506 - #15 [
-INFO  02:03:59,506 - #34 niz
-INFO  02:03:59,506 - #15 [
-INFO  02:03:59,506 - #33 0
-INFO  02:03:59,506 - #16 ]
-INFO  02:03:59,506 - #16 ]
-INFO  02:03:59,506 - #22 *
-INFO  02:03:59,506 - #33 3
-INFO  02:03:59,506 - #5 ;
-INFO  02:03:59,506 - #34 bodovi
-INFO  02:03:59,506 - #8 =
-INFO  02:03:59,506 - #34 niz
-INFO  02:03:59,506 - #15 [
-INFO  02:03:59,506 - #33 2
-INFO  02:03:59,506 - #16 ]
-INFO  02:03:59,507 - #23 /
-INFO  02:03:59,507 - #34 niz
-INFO  02:03:59,507 - #15 [
-INFO  02:03:59,507 - #33 0
-INFO  02:03:59,507 - #16 ]
-INFO  02:03:59,507 - #5 ;
-INFO  02:03:59,507 - #12 print
-INFO  02:03:59,508 - #6 (
-INFO  02:03:59,508 - #34 bodovi
-INFO  02:03:59,508 - #7 )
-INFO  02:03:59,508 - #5 ;
-INFO  02:03:59,508 - #12 print
-INFO  02:03:59,508 - #6 (
-INFO  02:03:59,508 - #34 niz
-INFO  02:03:59,508 - #15 [
-INFO  02:03:59,508 - #33 2
-INFO  02:03:59,508 - #16 ]
-INFO  02:03:59,508 - #7 )
-INFO  02:03:59,508 - #5 ;
-INFO  02:03:59,508 - #34 nizch
-INFO  02:03:59,508 - #8 =
-INFO  02:03:59,508 - #29 new
-INFO  02:03:59,508 - #34 char
-INFO  02:03:59,508 - #15 [
-INFO  02:03:59,508 - #33 3
-INFO  02:03:59,509 - #16 ]
-INFO  02:03:59,509 - #5 ;
-INFO  02:03:59,509 - #34 nizch
-INFO  02:03:59,509 - #15 [
-INFO  02:03:59,509 - #33 0
-INFO  02:03:59,509 - #16 ]
-INFO  02:03:59,509 - #8 =
-INFO  02:03:59,509 - #35 a
-INFO  02:03:59,509 - #5 ;
-INFO  02:03:59,509 - #34 nizch
-INFO  02:03:59,509 - #15 [
-INFO  02:03:59,509 - #34 jedan
-INFO  02:03:59,509 - #16 ]
-INFO  02:03:59,509 - #8 =
-INFO  02:03:59,509 - #35 b
-INFO  02:03:59,509 - #5 ;
-INFO  02:03:59,509 - #34 nizch
-INFO  02:03:59,509 - #15 [
-INFO  02:03:59,510 - #34 pet
-INFO  02:03:59,510 - #17 -
-INFO  02:03:59,510 - #33 3
-INFO  02:03:59,510 - #16 ]
-INFO  02:03:59,510 - #8 =
-INFO  02:03:59,510 - #35 c
-INFO  02:03:59,510 - #5 ;
-INFO  02:03:59,510 - #12 print
-INFO  02:03:59,510 - #6 (
-INFO  02:03:59,510 - #34 nizch
-INFO  02:03:59,510 - #15 [
-INFO  02:03:59,511 - #33 1
-INFO  02:03:59,511 - #16 ]
-INFO  02:03:59,511 - #7 )
-INFO  02:03:59,511 - #5 ;
-INFO  02:03:59,511 - #12 print
-INFO  02:03:59,511 - #6 (
-INFO  02:03:59,511 - #34 nizch
-INFO  02:03:59,511 - #15 [
-INFO  02:03:59,511 - #34 jedan
-INFO  02:03:59,511 - #22 *
-INFO  02:03:59,511 - #33 2
-INFO  02:03:59,511 - #16 ]
-INFO  02:03:59,511 - #7 )
-INFO  02:03:59,511 - #5 ;
-INFO  02:03:59,511 - #34 bodovi
-INFO  02:03:59,511 - #8 =
-INFO  02:03:59,511 - #34 bodovi
-INFO  02:03:59,511 - #10 +
-INFO  02:03:59,511 - #6 (
-INFO  02:03:59,511 - #34 pet
-INFO  02:03:59,512 - #22 *
-INFO  02:03:59,512 - #34 jedan
-INFO  02:03:59,512 - #17 -
-INFO  02:03:59,512 - #33 1
-INFO  02:03:59,512 - #7 )
-INFO  02:03:59,512 - #22 *
-INFO  02:03:59,512 - #34 bodovi
-INFO  02:03:59,512 - #17 -
-INFO  02:03:59,512 - #6 (
-INFO  02:03:59,512 - #33 3
-INFO  02:03:59,512 - #24 %
-INFO  02:03:59,512 - #33 2
-INFO  02:03:59,512 - #10 +
-INFO  02:03:59,513 - #33 3
-INFO  02:03:59,513 - #22 *
-INFO  02:03:59,513 - #33 2
-INFO  02:03:59,513 - #17 -
-INFO  02:03:59,513 - #33 3
-INFO  02:03:59,513 - #7 )
-INFO  02:03:59,513 - #5 ;
-INFO  02:03:59,513 - #12 print
-INFO  02:03:59,513 - #6 (
-INFO  02:03:59,513 - #34 bodovi
-INFO  02:03:59,513 - #7 )
-INFO  02:03:59,513 - #5 ;
-INFO  02:03:59,513 - #27 read
-INFO  02:03:59,513 - #6 (
-INFO  02:03:59,513 - #34 bodovi
-INFO  02:03:59,513 - #7 )
-INFO  02:03:59,513 - #5 ;
-INFO  02:03:59,513 - #34 bt
-INFO  02:03:59,513 - #8 =
-INFO  02:03:59,513 - #36 true
-INFO  02:03:59,513 - #5 ;
-INFO  02:03:59,513 - #34 nizch
-INFO  02:03:59,513 - #15 [
-INFO  02:03:59,513 - #33 1
-INFO  02:03:59,513 - #16 ]
-INFO  02:03:59,513 - #8 =
-INFO  02:03:59,514 - #34 bt
-INFO  02:03:59,514 - #32 ?
-INFO  02:03:59,514 - #34 bodovi
-INFO  02:03:59,514 - #28 :
-INFO  02:03:59,514 - #34 bodovi
-INFO  02:03:59,514 - #10 +
-INFO  02:03:59,514 - #33 10
-INFO  02:03:59,514 - #5 ;
-INFO  02:03:59,514 - #12 print
-INFO  02:03:59,514 - #6 (
-INFO  02:03:59,514 - #34 bt
-INFO  02:03:59,514 - #32 ?
-INFO  02:03:59,514 - #34 bodovi
-INFO  02:03:59,514 - #28 :
-INFO  02:03:59,514 - #34 bodovi
-INFO  02:03:59,514 - #10 +
-INFO  02:03:59,514 - #33 10
-INFO  02:03:59,514 - #7 )
-INFO  02:03:59,514 - #5 ;
-INFO  02:03:59,514 - #12 print
-INFO  02:03:59,514 - #6 (
-INFO  02:03:59,514 - #36 false
-INFO  02:03:59,514 - #32 ?
-INFO  02:03:59,514 - #34 bodovi
-INFO  02:03:59,514 - #10 +
-INFO  02:03:59,514 - #33 20
-INFO  02:03:59,514 - #28 :
-INFO  02:03:59,515 - #34 bodovi
-INFO  02:03:59,515 - #10 +
-INFO  02:03:59,515 - #33 30
-INFO  02:03:59,515 - #7 )
-INFO  02:03:59,515 - #5 ;
-INFO  02:03:59,515 - #12 print
-INFO  02:03:59,515 - #6 (
-INFO  02:03:59,515 - #34 bodovi
-INFO  02:03:59,515 - #20 >
-INFO  02:03:59,515 - #33 10
-INFO  02:03:59,516 - #32 ?
-INFO  02:03:59,516 - #35 +
-INFO  02:03:59,517 - #28 :
-INFO  02:03:59,517 - #35 -
-INFO  02:03:59,517 - #7 )
-INFO  02:03:59,517 - #5 ;
-INFO  02:03:59,517 - #4 }
-INFO  02:03:59,517 - #4 }
-INFO  02:03:59,523 - Program(
- test301
-  ProgramDeclVar(
-    ProgramDeclVar(
+INFO  02:59:23,917 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  02:59:23,934 - #2 program
+INFO  02:59:23,935 - #34 test301
+INFO  02:59:23,935 - #34 int
+INFO  02:59:23,935 - #34 c
+INFO  02:59:23,936 - #5 ;
+INFO  02:59:23,936 - #34 char
+INFO  02:59:23,936 - #34 xx
+INFO  02:59:23,937 - #5 ;
+INFO  02:59:23,937 - #34 int
+INFO  02:59:23,937 - #34 cc
+INFO  02:59:23,937 - #11 ,
+INFO  02:59:23,937 - #34 vv
+INFO  02:59:23,937 - #5 ;
+INFO  02:59:23,937 - #34 int
+INFO  02:59:23,937 - #34 xxx
+INFO  02:59:23,937 - #15 [
+INFO  02:59:23,937 - #16 ]
+INFO  02:59:23,937 - #11 ,
+INFO  02:59:23,937 - #34 yyy
+INFO  02:59:23,937 - #15 [
+INFO  02:59:23,937 - #16 ]
+INFO  02:59:23,937 - #5 ;
+INFO  02:59:23,938 - #14 const
+INFO  02:59:23,938 - #34 int
+INFO  02:59:23,938 - #34 x
+INFO  02:59:23,938 - #8 =
+INFO  02:59:23,938 - #33 1
+INFO  02:59:23,938 - #5 ;
+INFO  02:59:23,938 - #14 const
+INFO  02:59:23,938 - #34 int
+INFO  02:59:23,938 - #34 ccccc
+INFO  02:59:23,938 - #8 =
+INFO  02:59:23,938 - #33 2
+INFO  02:59:23,938 - #11 ,
+INFO  02:59:23,938 - #34 x2
+INFO  02:59:23,938 - #8 =
+INFO  02:59:23,939 - #33 1
+INFO  02:59:23,939 - #5 ;
+INFO  02:59:23,939 - #14 const
+INFO  02:59:23,939 - #34 int
+INFO  02:59:23,939 - #34 er
+INFO  02:59:23,939 - #8 =
+INFO  02:59:23,939 - #33 2
+INFO  02:59:23,939 - #5 ;
+INFO  02:59:23,939 - #14 const
+INFO  02:59:23,939 - #34 char
+INFO  02:59:23,939 - #34 s
+INFO  02:59:23,939 - #8 =
+INFO  02:59:23,939 - #35 1
+INFO  02:59:23,939 - #11 ,
+INFO  02:59:23,939 - #34 ss
+INFO  02:59:23,939 - #8 =
+INFO  02:59:23,940 - #35 2
+INFO  02:59:23,940 - #5 ;
+INFO  02:59:23,940 - #3 {
+INFO  02:59:23,940 - #4 }
+INFO  02:59:23,944 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  ProgramDeclConst(
+    ProgramDeclConst(
       ProgramDeclConst(
         ProgramDeclConst(
-          ProgramDeclConst(
-            NoProgramDecls(
-            ) [NoProgramDecls]
-            ConstDeclaration(
+          ProgramDeclVar(
+            ProgramDeclVar(
+              ProgramDeclVar(
+                ProgramDeclVar(
+                  NoProgramDecls(
+                  ) [NoProgramDecls]
+                  VarDecl(
+                    Type(
+                     int
+                    ) [Type]
+                    SingleVar(
+                     c
+                    ) [SingleVar]
+                  ) [VarDecl]
+                ) [ProgramDeclVar]
+                VarDecl(
+                  Type(
+                   char
+                  ) [Type]
+                  SingleVar(
+                   xx
+                  ) [SingleVar]
+                ) [VarDecl]
+              ) [ProgramDeclVar]
+              VarDecl(
+                Type(
+                 int
+                ) [Type]
+                MultipleVars(
+                  SingleVar(
+                   cc
+                  ) [SingleVar]
+                 vv
+                ) [MultipleVars]
+              ) [VarDecl]
+            ) [ProgramDeclVar]
+            VarDecl(
               Type(
                int
               ) [Type]
-              ConstAssignNumber(
-               nula
-               0
-              ) [ConstAssignNumber]
-            ) [ConstDeclaration]
-          ) [ProgramDeclConst]
+              MultupleArray(
+                SingleArray(
+                 xxx
+                ) [SingleArray]
+               yyy
+              ) [MultupleArray]
+            ) [VarDecl]
+          ) [ProgramDeclVar]
           ConstDeclaration(
             Type(
              int
             ) [Type]
             ConstAssignNumber(
-             jedan
+             x
              1
             ) [ConstAssignNumber]
           ) [ConstDeclaration]
@@ -305,1123 +125,60 @@ INFO  02:03:59,523 - Program(
           Type(
            int
           ) [Type]
-          ConstAssignNumber(
-           pet
-           5
-          ) [ConstAssignNumber]
+          ConstAssignNumbers(
+            ConstAssignNumber(
+             ccccc
+             2
+            ) [ConstAssignNumber]
+           x2
+           1
+          ) [ConstAssignNumbers]
         ) [ConstDeclaration]
       ) [ProgramDeclConst]
-      VarDecl(
+      ConstDeclaration(
         Type(
          int
         ) [Type]
-        SingleArray(
-         niz
-        ) [SingleArray]
-      ) [VarDecl]
-    ) [ProgramDeclVar]
-    VarDecl(
+        ConstAssignNumber(
+         er
+         2
+        ) [ConstAssignNumber]
+      ) [ConstDeclaration]
+    ) [ProgramDeclConst]
+    ConstDeclaration(
       Type(
        char
       ) [Type]
-      SingleArray(
-       nizch
-      ) [SingleArray]
-    ) [VarDecl]
-  ) [ProgramDeclVar]
-  MethodDeclarations(
-    NoMethodDecl(
-    ) [NoMethodDecl]
-    MethodDeclVoid(
-     main
-      NoFormParam(
-      ) [NoFormParam]
-      VarDeclarations(
-        VarDeclarations(
-          NoVarDecl(
-          ) [NoVarDecl]
-          VarDecl(
-            Type(
-             int
-            ) [Type]
-            SingleVar(
-             bodovi
-            ) [SingleVar]
-          ) [VarDecl]
-        ) [VarDeclarations]
-        VarDecl(
-          Type(
-           bool
-          ) [Type]
-          SingleVar(
-           bt
-          ) [SingleVar]
-        ) [VarDecl]
-      ) [VarDeclarations]
-      Statements(
-        Statements(
-          Statements(
-            Statements(
-              Statements(
-                Statements(
-                  Statements(
-                    Statements(
-                      Statements(
-                        Statements(
-                          Statements(
-                            Statements(
-                              Statements(
-                                Statements(
-                                  Statements(
-                                    Statements(
-                                      Statements(
-                                        Statements(
-                                          Statements(
-                                            Statements(
-                                              Statements(
-                                                Statements(
-                                                  Statements(
-                                                    Statements(
-                                                      Statements(
-                                                        Statements(
-                                                          Statements(
-                                                            NoStmt(
-                                                            ) [NoStmt]
-                                                            Assignment(
-                                                              DesignatorStmtAssignop(
-                                                                Designator(
-                                                                 bodovi
-                                                                ) [Designator]
-                                                                Assignop(
-                                                                ) [Assignop]
-                                                                BasicExpresion(
-                                                                  NoOptionalMinus(
-                                                                  ) [NoOptionalMinus]
-                                                                  TermExpr(
-                                                                    Term(
-                                                                      Const(
-                                                                       0
-                                                                      ) [Const]
-                                                                    ) [Term]
-                                                                  ) [TermExpr]
-                                                                ) [BasicExpresion]
-                                                              ) [DesignatorStmtAssignop]
-                                                            ) [Assignment]
-                                                          ) [Statements]
-                                                          Assignment(
-                                                            DesignatorStmtInc(
-                                                              Designator(
-                                                               bodovi
-                                                              ) [Designator]
-                                                            ) [DesignatorStmtInc]
-                                                          ) [Assignment]
-                                                        ) [Statements]
-                                                        Assignment(
-                                                          DesignatorStmtAssignop(
-                                                            Designator(
-                                                             bodovi
-                                                            ) [Designator]
-                                                            Assignop(
-                                                            ) [Assignop]
-                                                            BasicExpresion(
-                                                              NoOptionalMinus(
-                                                              ) [NoOptionalMinus]
-                                                              AddExpr(
-                                                                TermExpr(
-                                                                  Term(
-                                                                    Var(
-                                                                      Designator(
-                                                                       bodovi
-                                                                      ) [Designator]
-                                                                    ) [Var]
-                                                                  ) [Term]
-                                                                ) [TermExpr]
-                                                                AddopPlus(
-                                                                ) [AddopPlus]
-                                                                Term(
-                                                                  Var(
-                                                                    Designator(
-                                                                     jedan
-                                                                    ) [Designator]
-                                                                  ) [Var]
-                                                                ) [Term]
-                                                              ) [AddExpr]
-                                                            ) [BasicExpresion]
-                                                          ) [DesignatorStmtAssignop]
-                                                        ) [Assignment]
-                                                      ) [Statements]
-                                                      Assignment(
-                                                        DesignatorStmtAssignop(
-                                                          Designator(
-                                                           bodovi
-                                                          ) [Designator]
-                                                          Assignop(
-                                                          ) [Assignop]
-                                                          BasicExpresion(
-                                                            NoOptionalMinus(
-                                                            ) [NoOptionalMinus]
-                                                            TermExpr(
-                                                              TermMore(
-                                                                Term(
-                                                                  Var(
-                                                                    Designator(
-                                                                     bodovi
-                                                                    ) [Designator]
-                                                                  ) [Var]
-                                                                ) [Term]
-                                                                MulopMul(
-                                                                ) [MulopMul]
-                                                                Var(
-                                                                  Designator(
-                                                                   pet
-                                                                  ) [Designator]
-                                                                ) [Var]
-                                                              ) [TermMore]
-                                                            ) [TermExpr]
-                                                          ) [BasicExpresion]
-                                                        ) [DesignatorStmtAssignop]
-                                                      ) [Assignment]
-                                                    ) [Statements]
-                                                    Assignment(
-                                                      DesignatorStmtDec(
-                                                        Designator(
-                                                         bodovi
-                                                        ) [Designator]
-                                                      ) [DesignatorStmtDec]
-                                                    ) [Assignment]
-                                                  ) [Statements]
-                                                  PrintStmt(
-                                                    BasicExpresion(
-                                                      NoOptionalMinus(
-                                                      ) [NoOptionalMinus]
-                                                      TermExpr(
-                                                        Term(
-                                                          Var(
-                                                            Designator(
-                                                             bodovi
-                                                            ) [Designator]
-                                                          ) [Var]
-                                                        ) [Term]
-                                                      ) [TermExpr]
-                                                    ) [BasicExpresion]
-                                                  ) [PrintStmt]
-                                                ) [Statements]
-                                                Assignment(
-                                                  DesignatorStmtAssignop(
-                                                    Designator(
-                                                     niz
-                                                    ) [Designator]
-                                                    Assignop(
-                                                    ) [Assignop]
-                                                    BasicExpresion(
-                                                      NoOptionalMinus(
-                                                      ) [NoOptionalMinus]
-                                                      TermExpr(
-                                                        Term(
-                                                          NewExpressionArray(
-                                                            Type(
-                                                             int
-                                                            ) [Type]
-                                                            BasicExpresion(
-                                                              NoOptionalMinus(
-                                                              ) [NoOptionalMinus]
-                                                              TermExpr(
-                                                                Term(
-                                                                  Const(
-                                                                   3
-                                                                  ) [Const]
-                                                                ) [Term]
-                                                              ) [TermExpr]
-                                                            ) [BasicExpresion]
-                                                          ) [NewExpressionArray]
-                                                        ) [Term]
-                                                      ) [TermExpr]
-                                                    ) [BasicExpresion]
-                                                  ) [DesignatorStmtAssignop]
-                                                ) [Assignment]
-                                              ) [Statements]
-                                              Assignment(
-                                                DesignatorStmtAssignop(
-                                                  DesignatorArrayItem(
-                                                    Designator(
-                                                     niz
-                                                    ) [Designator]
-                                                    BasicExpresion(
-                                                      NoOptionalMinus(
-                                                      ) [NoOptionalMinus]
-                                                      TermExpr(
-                                                        Term(
-                                                          Var(
-                                                            Designator(
-                                                             nula
-                                                            ) [Designator]
-                                                          ) [Var]
-                                                        ) [Term]
-                                                      ) [TermExpr]
-                                                    ) [BasicExpresion]
-                                                  ) [DesignatorArrayItem]
-                                                  Assignop(
-                                                  ) [Assignop]
-                                                  BasicExpresion(
-                                                    NoOptionalMinus(
-                                                    ) [NoOptionalMinus]
-                                                    TermExpr(
-                                                      Term(
-                                                        Var(
-                                                          Designator(
-                                                           jedan
-                                                          ) [Designator]
-                                                        ) [Var]
-                                                      ) [Term]
-                                                    ) [TermExpr]
-                                                  ) [BasicExpresion]
-                                                ) [DesignatorStmtAssignop]
-                                              ) [Assignment]
-                                            ) [Statements]
-                                            Assignment(
-                                              DesignatorStmtAssignop(
-                                                DesignatorArrayItem(
-                                                  Designator(
-                                                   niz
-                                                  ) [Designator]
-                                                  BasicExpresion(
-                                                    NoOptionalMinus(
-                                                    ) [NoOptionalMinus]
-                                                    TermExpr(
-                                                      Term(
-                                                        Const(
-                                                         1
-                                                        ) [Const]
-                                                      ) [Term]
-                                                    ) [TermExpr]
-                                                  ) [BasicExpresion]
-                                                ) [DesignatorArrayItem]
-                                                Assignop(
-                                                ) [Assignop]
-                                                BasicExpresion(
-                                                  NoOptionalMinus(
-                                                  ) [NoOptionalMinus]
-                                                  TermExpr(
-                                                    Term(
-                                                      Const(
-                                                       2
-                                                      ) [Const]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [BasicExpresion]
-                                              ) [DesignatorStmtAssignop]
-                                            ) [Assignment]
-                                          ) [Statements]
-                                          Assignment(
-                                            DesignatorStmtAssignop(
-                                              DesignatorArrayItem(
-                                                Designator(
-                                                 niz
-                                                ) [Designator]
-                                                BasicExpresion(
-                                                  NoOptionalMinus(
-                                                  ) [NoOptionalMinus]
-                                                  TermExpr(
-                                                    Term(
-                                                      Var(
-                                                        DesignatorArrayItem(
-                                                          Designator(
-                                                           niz
-                                                          ) [Designator]
-                                                          BasicExpresion(
-                                                            NoOptionalMinus(
-                                                            ) [NoOptionalMinus]
-                                                            TermExpr(
-                                                              Term(
-                                                                Var(
-                                                                  Designator(
-                                                                   jedan
-                                                                  ) [Designator]
-                                                                ) [Var]
-                                                              ) [Term]
-                                                            ) [TermExpr]
-                                                          ) [BasicExpresion]
-                                                        ) [DesignatorArrayItem]
-                                                      ) [Var]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [BasicExpresion]
-                                              ) [DesignatorArrayItem]
-                                              Assignop(
-                                              ) [Assignop]
-                                              BasicExpresion(
-                                                NoOptionalMinus(
-                                                ) [NoOptionalMinus]
-                                                TermExpr(
-                                                  TermMore(
-                                                    Term(
-                                                      Var(
-                                                        DesignatorArrayItem(
-                                                          Designator(
-                                                           niz
-                                                          ) [Designator]
-                                                          BasicExpresion(
-                                                            NoOptionalMinus(
-                                                            ) [NoOptionalMinus]
-                                                            TermExpr(
-                                                              Term(
-                                                                Var(
-                                                                  DesignatorArrayItem(
-                                                                    Designator(
-                                                                     niz
-                                                                    ) [Designator]
-                                                                    BasicExpresion(
-                                                                      NoOptionalMinus(
-                                                                      ) [NoOptionalMinus]
-                                                                      TermExpr(
-                                                                        Term(
-                                                                          Const(
-                                                                           0
-                                                                          ) [Const]
-                                                                        ) [Term]
-                                                                      ) [TermExpr]
-                                                                    ) [BasicExpresion]
-                                                                  ) [DesignatorArrayItem]
-                                                                ) [Var]
-                                                              ) [Term]
-                                                            ) [TermExpr]
-                                                          ) [BasicExpresion]
-                                                        ) [DesignatorArrayItem]
-                                                      ) [Var]
-                                                    ) [Term]
-                                                    MulopMul(
-                                                    ) [MulopMul]
-                                                    Const(
-                                                     3
-                                                    ) [Const]
-                                                  ) [TermMore]
-                                                ) [TermExpr]
-                                              ) [BasicExpresion]
-                                            ) [DesignatorStmtAssignop]
-                                          ) [Assignment]
-                                        ) [Statements]
-                                        Assignment(
-                                          DesignatorStmtAssignop(
-                                            Designator(
-                                             bodovi
-                                            ) [Designator]
-                                            Assignop(
-                                            ) [Assignop]
-                                            BasicExpresion(
-                                              NoOptionalMinus(
-                                              ) [NoOptionalMinus]
-                                              TermExpr(
-                                                TermMore(
-                                                  Term(
-                                                    Var(
-                                                      DesignatorArrayItem(
-                                                        Designator(
-                                                         niz
-                                                        ) [Designator]
-                                                        BasicExpresion(
-                                                          NoOptionalMinus(
-                                                          ) [NoOptionalMinus]
-                                                          TermExpr(
-                                                            Term(
-                                                              Const(
-                                                               2
-                                                              ) [Const]
-                                                            ) [Term]
-                                                          ) [TermExpr]
-                                                        ) [BasicExpresion]
-                                                      ) [DesignatorArrayItem]
-                                                    ) [Var]
-                                                  ) [Term]
-                                                  MulopDiv(
-                                                  ) [MulopDiv]
-                                                  Var(
-                                                    DesignatorArrayItem(
-                                                      Designator(
-                                                       niz
-                                                      ) [Designator]
-                                                      BasicExpresion(
-                                                        NoOptionalMinus(
-                                                        ) [NoOptionalMinus]
-                                                        TermExpr(
-                                                          Term(
-                                                            Const(
-                                                             0
-                                                            ) [Const]
-                                                          ) [Term]
-                                                        ) [TermExpr]
-                                                      ) [BasicExpresion]
-                                                    ) [DesignatorArrayItem]
-                                                  ) [Var]
-                                                ) [TermMore]
-                                              ) [TermExpr]
-                                            ) [BasicExpresion]
-                                          ) [DesignatorStmtAssignop]
-                                        ) [Assignment]
-                                      ) [Statements]
-                                      PrintStmt(
-                                        BasicExpresion(
-                                          NoOptionalMinus(
-                                          ) [NoOptionalMinus]
-                                          TermExpr(
-                                            Term(
-                                              Var(
-                                                Designator(
-                                                 bodovi
-                                                ) [Designator]
-                                              ) [Var]
-                                            ) [Term]
-                                          ) [TermExpr]
-                                        ) [BasicExpresion]
-                                      ) [PrintStmt]
-                                    ) [Statements]
-                                    PrintStmt(
-                                      BasicExpresion(
-                                        NoOptionalMinus(
-                                        ) [NoOptionalMinus]
-                                        TermExpr(
-                                          Term(
-                                            Var(
-                                              DesignatorArrayItem(
-                                                Designator(
-                                                 niz
-                                                ) [Designator]
-                                                BasicExpresion(
-                                                  NoOptionalMinus(
-                                                  ) [NoOptionalMinus]
-                                                  TermExpr(
-                                                    Term(
-                                                      Const(
-                                                       2
-                                                      ) [Const]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [BasicExpresion]
-                                              ) [DesignatorArrayItem]
-                                            ) [Var]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [BasicExpresion]
-                                    ) [PrintStmt]
-                                  ) [Statements]
-                                  Assignment(
-                                    DesignatorStmtAssignop(
-                                      Designator(
-                                       nizch
-                                      ) [Designator]
-                                      Assignop(
-                                      ) [Assignop]
-                                      BasicExpresion(
-                                        NoOptionalMinus(
-                                        ) [NoOptionalMinus]
-                                        TermExpr(
-                                          Term(
-                                            NewExpressionArray(
-                                              Type(
-                                               char
-                                              ) [Type]
-                                              BasicExpresion(
-                                                NoOptionalMinus(
-                                                ) [NoOptionalMinus]
-                                                TermExpr(
-                                                  Term(
-                                                    Const(
-                                                     3
-                                                    ) [Const]
-                                                  ) [Term]
-                                                ) [TermExpr]
-                                              ) [BasicExpresion]
-                                            ) [NewExpressionArray]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [BasicExpresion]
-                                    ) [DesignatorStmtAssignop]
-                                  ) [Assignment]
-                                ) [Statements]
-                                Assignment(
-                                  DesignatorStmtAssignop(
-                                    DesignatorArrayItem(
-                                      Designator(
-                                       nizch
-                                      ) [Designator]
-                                      BasicExpresion(
-                                        NoOptionalMinus(
-                                        ) [NoOptionalMinus]
-                                        TermExpr(
-                                          Term(
-                                            Const(
-                                             0
-                                            ) [Const]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [BasicExpresion]
-                                    ) [DesignatorArrayItem]
-                                    Assignop(
-                                    ) [Assignop]
-                                    BasicExpresion(
-                                      NoOptionalMinus(
-                                      ) [NoOptionalMinus]
-                                      TermExpr(
-                                        Term(
-                                          ConstChar(
-                                           a
-                                          ) [ConstChar]
-                                        ) [Term]
-                                      ) [TermExpr]
-                                    ) [BasicExpresion]
-                                  ) [DesignatorStmtAssignop]
-                                ) [Assignment]
-                              ) [Statements]
-                              Assignment(
-                                DesignatorStmtAssignop(
-                                  DesignatorArrayItem(
-                                    Designator(
-                                     nizch
-                                    ) [Designator]
-                                    BasicExpresion(
-                                      NoOptionalMinus(
-                                      ) [NoOptionalMinus]
-                                      TermExpr(
-                                        Term(
-                                          Var(
-                                            Designator(
-                                             jedan
-                                            ) [Designator]
-                                          ) [Var]
-                                        ) [Term]
-                                      ) [TermExpr]
-                                    ) [BasicExpresion]
-                                  ) [DesignatorArrayItem]
-                                  Assignop(
-                                  ) [Assignop]
-                                  BasicExpresion(
-                                    NoOptionalMinus(
-                                    ) [NoOptionalMinus]
-                                    TermExpr(
-                                      Term(
-                                        ConstChar(
-                                         b
-                                        ) [ConstChar]
-                                      ) [Term]
-                                    ) [TermExpr]
-                                  ) [BasicExpresion]
-                                ) [DesignatorStmtAssignop]
-                              ) [Assignment]
-                            ) [Statements]
-                            Assignment(
-                              DesignatorStmtAssignop(
-                                DesignatorArrayItem(
-                                  Designator(
-                                   nizch
-                                  ) [Designator]
-                                  BasicExpresion(
-                                    NoOptionalMinus(
-                                    ) [NoOptionalMinus]
-                                    AddExpr(
-                                      TermExpr(
-                                        Term(
-                                          Var(
-                                            Designator(
-                                             pet
-                                            ) [Designator]
-                                          ) [Var]
-                                        ) [Term]
-                                      ) [TermExpr]
-                                      AddopMinus(
-                                      ) [AddopMinus]
-                                      Term(
-                                        Const(
-                                         3
-                                        ) [Const]
-                                      ) [Term]
-                                    ) [AddExpr]
-                                  ) [BasicExpresion]
-                                ) [DesignatorArrayItem]
-                                Assignop(
-                                ) [Assignop]
-                                BasicExpresion(
-                                  NoOptionalMinus(
-                                  ) [NoOptionalMinus]
-                                  TermExpr(
-                                    Term(
-                                      ConstChar(
-                                       c
-                                      ) [ConstChar]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [BasicExpresion]
-                              ) [DesignatorStmtAssignop]
-                            ) [Assignment]
-                          ) [Statements]
-                          PrintStmt(
-                            BasicExpresion(
-                              NoOptionalMinus(
-                              ) [NoOptionalMinus]
-                              TermExpr(
-                                Term(
-                                  Var(
-                                    DesignatorArrayItem(
-                                      Designator(
-                                       nizch
-                                      ) [Designator]
-                                      BasicExpresion(
-                                        NoOptionalMinus(
-                                        ) [NoOptionalMinus]
-                                        TermExpr(
-                                          Term(
-                                            Const(
-                                             1
-                                            ) [Const]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [BasicExpresion]
-                                    ) [DesignatorArrayItem]
-                                  ) [Var]
-                                ) [Term]
-                              ) [TermExpr]
-                            ) [BasicExpresion]
-                          ) [PrintStmt]
-                        ) [Statements]
-                        PrintStmt(
-                          BasicExpresion(
-                            NoOptionalMinus(
-                            ) [NoOptionalMinus]
-                            TermExpr(
-                              Term(
-                                Var(
-                                  DesignatorArrayItem(
-                                    Designator(
-                                     nizch
-                                    ) [Designator]
-                                    BasicExpresion(
-                                      NoOptionalMinus(
-                                      ) [NoOptionalMinus]
-                                      TermExpr(
-                                        TermMore(
-                                          Term(
-                                            Var(
-                                              Designator(
-                                               jedan
-                                              ) [Designator]
-                                            ) [Var]
-                                          ) [Term]
-                                          MulopMul(
-                                          ) [MulopMul]
-                                          Const(
-                                           2
-                                          ) [Const]
-                                        ) [TermMore]
-                                      ) [TermExpr]
-                                    ) [BasicExpresion]
-                                  ) [DesignatorArrayItem]
-                                ) [Var]
-                              ) [Term]
-                            ) [TermExpr]
-                          ) [BasicExpresion]
-                        ) [PrintStmt]
-                      ) [Statements]
-                      Assignment(
-                        DesignatorStmtAssignop(
-                          Designator(
-                           bodovi
-                          ) [Designator]
-                          Assignop(
-                          ) [Assignop]
-                          BasicExpresion(
-                            NoOptionalMinus(
-                            ) [NoOptionalMinus]
-                            AddExpr(
-                              AddExpr(
-                                TermExpr(
-                                  Term(
-                                    Var(
-                                      Designator(
-                                       bodovi
-                                      ) [Designator]
-                                    ) [Var]
-                                  ) [Term]
-                                ) [TermExpr]
-                                AddopPlus(
-                                ) [AddopPlus]
-                                TermMore(
-                                  Term(
-                                    ExprParens(
-                                      BasicExpresion(
-                                        NoOptionalMinus(
-                                        ) [NoOptionalMinus]
-                                        AddExpr(
-                                          TermExpr(
-                                            TermMore(
-                                              Term(
-                                                Var(
-                                                  Designator(
-                                                   pet
-                                                  ) [Designator]
-                                                ) [Var]
-                                              ) [Term]
-                                              MulopMul(
-                                              ) [MulopMul]
-                                              Var(
-                                                Designator(
-                                                 jedan
-                                                ) [Designator]
-                                              ) [Var]
-                                            ) [TermMore]
-                                          ) [TermExpr]
-                                          AddopMinus(
-                                          ) [AddopMinus]
-                                          Term(
-                                            Const(
-                                             1
-                                            ) [Const]
-                                          ) [Term]
-                                        ) [AddExpr]
-                                      ) [BasicExpresion]
-                                    ) [ExprParens]
-                                  ) [Term]
-                                  MulopMul(
-                                  ) [MulopMul]
-                                  Var(
-                                    Designator(
-                                     bodovi
-                                    ) [Designator]
-                                  ) [Var]
-                                ) [TermMore]
-                              ) [AddExpr]
-                              AddopMinus(
-                              ) [AddopMinus]
-                              Term(
-                                ExprParens(
-                                  BasicExpresion(
-                                    NoOptionalMinus(
-                                    ) [NoOptionalMinus]
-                                    AddExpr(
-                                      AddExpr(
-                                        TermExpr(
-                                          TermMore(
-                                            Term(
-                                              Const(
-                                               3
-                                              ) [Const]
-                                            ) [Term]
-                                            MulopMod(
-                                            ) [MulopMod]
-                                            Const(
-                                             2
-                                            ) [Const]
-                                          ) [TermMore]
-                                        ) [TermExpr]
-                                        AddopPlus(
-                                        ) [AddopPlus]
-                                        TermMore(
-                                          Term(
-                                            Const(
-                                             3
-                                            ) [Const]
-                                          ) [Term]
-                                          MulopMul(
-                                          ) [MulopMul]
-                                          Const(
-                                           2
-                                          ) [Const]
-                                        ) [TermMore]
-                                      ) [AddExpr]
-                                      AddopMinus(
-                                      ) [AddopMinus]
-                                      Term(
-                                        Const(
-                                         3
-                                        ) [Const]
-                                      ) [Term]
-                                    ) [AddExpr]
-                                  ) [BasicExpresion]
-                                ) [ExprParens]
-                              ) [Term]
-                            ) [AddExpr]
-                          ) [BasicExpresion]
-                        ) [DesignatorStmtAssignop]
-                      ) [Assignment]
-                    ) [Statements]
-                    PrintStmt(
-                      BasicExpresion(
-                        NoOptionalMinus(
-                        ) [NoOptionalMinus]
-                        TermExpr(
-                          Term(
-                            Var(
-                              Designator(
-                               bodovi
-                              ) [Designator]
-                            ) [Var]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [BasicExpresion]
-                    ) [PrintStmt]
-                  ) [Statements]
-                  ReadStmt(
-                    Designator(
-                     bodovi
-                    ) [Designator]
-                  ) [ReadStmt]
-                ) [Statements]
-                Assignment(
-                  DesignatorStmtAssignop(
-                    Designator(
-                     bt
-                    ) [Designator]
-                    Assignop(
-                    ) [Assignop]
-                    BasicExpresion(
-                      NoOptionalMinus(
-                      ) [NoOptionalMinus]
-                      TermExpr(
-                        Term(
-                          ConstBool(
-                          ) [ConstBool]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [BasicExpresion]
-                  ) [DesignatorStmtAssignop]
-                ) [Assignment]
-              ) [Statements]
-              Assignment(
-                DesignatorStmtAssignop(
-                  DesignatorArrayItem(
-                    Designator(
-                     nizch
-                    ) [Designator]
-                    BasicExpresion(
-                      NoOptionalMinus(
-                      ) [NoOptionalMinus]
-                      TermExpr(
-                        Term(
-                          Const(
-                           1
-                          ) [Const]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [BasicExpresion]
-                  ) [DesignatorArrayItem]
-                  Assignop(
-                  ) [Assignop]
-                  Ternary(
-                    CondFact(
-                      NoOptionalMinus(
-                      ) [NoOptionalMinus]
-                      TermExpr(
-                        Term(
-                          Var(
-                            Designator(
-                             bt
-                            ) [Designator]
-                          ) [Var]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [CondFact]
-                    BasicExpresion(
-                      NoOptionalMinus(
-                      ) [NoOptionalMinus]
-                      TermExpr(
-                        Term(
-                          Var(
-                            Designator(
-                             bodovi
-                            ) [Designator]
-                          ) [Var]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [BasicExpresion]
-                    BasicExpresion(
-                      NoOptionalMinus(
-                      ) [NoOptionalMinus]
-                      AddExpr(
-                        TermExpr(
-                          Term(
-                            Var(
-                              Designator(
-                               bodovi
-                              ) [Designator]
-                            ) [Var]
-                          ) [Term]
-                        ) [TermExpr]
-                        AddopPlus(
-                        ) [AddopPlus]
-                        Term(
-                          Const(
-                           10
-                          ) [Const]
-                        ) [Term]
-                      ) [AddExpr]
-                    ) [BasicExpresion]
-                  ) [Ternary]
-                ) [DesignatorStmtAssignop]
-              ) [Assignment]
-            ) [Statements]
-            PrintStmt(
-              Ternary(
-                CondFact(
-                  NoOptionalMinus(
-                  ) [NoOptionalMinus]
-                  TermExpr(
-                    Term(
-                      Var(
-                        Designator(
-                         bt
-                        ) [Designator]
-                      ) [Var]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [CondFact]
-                BasicExpresion(
-                  NoOptionalMinus(
-                  ) [NoOptionalMinus]
-                  TermExpr(
-                    Term(
-                      Var(
-                        Designator(
-                         bodovi
-                        ) [Designator]
-                      ) [Var]
-                    ) [Term]
-                  ) [TermExpr]
-                ) [BasicExpresion]
-                BasicExpresion(
-                  NoOptionalMinus(
-                  ) [NoOptionalMinus]
-                  AddExpr(
-                    TermExpr(
-                      Term(
-                        Var(
-                          Designator(
-                           bodovi
-                          ) [Designator]
-                        ) [Var]
-                      ) [Term]
-                    ) [TermExpr]
-                    AddopPlus(
-                    ) [AddopPlus]
-                    Term(
-                      Const(
-                       10
-                      ) [Const]
-                    ) [Term]
-                  ) [AddExpr]
-                ) [BasicExpresion]
-              ) [Ternary]
-            ) [PrintStmt]
-          ) [Statements]
-          PrintStmt(
-            Ternary(
-              CondFact(
-                NoOptionalMinus(
-                ) [NoOptionalMinus]
-                TermExpr(
-                  Term(
-                    ConstBool(
-                    ) [ConstBool]
-                  ) [Term]
-                ) [TermExpr]
-              ) [CondFact]
-              BasicExpresion(
-                NoOptionalMinus(
-                ) [NoOptionalMinus]
-                AddExpr(
-                  TermExpr(
-                    Term(
-                      Var(
-                        Designator(
-                         bodovi
-                        ) [Designator]
-                      ) [Var]
-                    ) [Term]
-                  ) [TermExpr]
-                  AddopPlus(
-                  ) [AddopPlus]
-                  Term(
-                    Const(
-                     20
-                    ) [Const]
-                  ) [Term]
-                ) [AddExpr]
-              ) [BasicExpresion]
-              BasicExpresion(
-                NoOptionalMinus(
-                ) [NoOptionalMinus]
-                AddExpr(
-                  TermExpr(
-                    Term(
-                      Var(
-                        Designator(
-                         bodovi
-                        ) [Designator]
-                      ) [Var]
-                    ) [Term]
-                  ) [TermExpr]
-                  AddopPlus(
-                  ) [AddopPlus]
-                  Term(
-                    Const(
-                     30
-                    ) [Const]
-                  ) [Term]
-                ) [AddExpr]
-              ) [BasicExpresion]
-            ) [Ternary]
-          ) [PrintStmt]
-        ) [Statements]
-        PrintStmt(
-          Ternary(
-            CondtFactMore(
-              NoOptionalMinus(
-              ) [NoOptionalMinus]
-              TermExpr(
-                Term(
-                  Var(
-                    Designator(
-                     bodovi
-                    ) [Designator]
-                  ) [Var]
-                ) [Term]
-              ) [TermExpr]
-              RelopGreater(
-              ) [RelopGreater]
-              NoOptionalMinus(
-              ) [NoOptionalMinus]
-              TermExpr(
-                Term(
-                  Const(
-                   10
-                  ) [Const]
-                ) [Term]
-              ) [TermExpr]
-            ) [CondtFactMore]
-            BasicExpresion(
-              NoOptionalMinus(
-              ) [NoOptionalMinus]
-              TermExpr(
-                Term(
-                  ConstChar(
-                   +
-                  ) [ConstChar]
-                ) [Term]
-              ) [TermExpr]
-            ) [BasicExpresion]
-            BasicExpresion(
-              NoOptionalMinus(
-              ) [NoOptionalMinus]
-              TermExpr(
-                Term(
-                  ConstChar(
-                   -
-                  ) [ConstChar]
-                ) [Term]
-              ) [TermExpr]
-            ) [BasicExpresion]
-          ) [Ternary]
-        ) [PrintStmt]
-      ) [Statements]
-    ) [MethodDeclVoid]
-  ) [MethodDeclarations]
+      ConstAssignChars(
+        ConstAssignChar(
+         s
+         1
+        ) [ConstAssignChar]
+       ss
+       2
+      ) [ConstAssignChars]
+    ) [ConstDeclaration]
+  ) [ProgramDeclConst]
+  NoMethodDecl(
+  ) [NoMethodDecl]
 ) [Program]
-INFO  02:03:59,525 - ===================================
-INFO  02:03:59,527 -  Print count calls = 9
-INFO  02:03:59,527 -  Deklarisanih promenljivih ima = 4
+INFO  02:59:23,944 - ===================================
+INFO  02:59:23,945 - Deklarisana promenljiva c na liniji 5
+INFO  02:59:23,945 - Deklarisana promenljiva xx na liniji 6
+INFO  02:59:23,945 - Deklarisana promenljiva cc na liniji 7
+INFO  02:59:23,945 - Deklarisana promenljiva vv na liniji 7
+INFO  02:59:23,945 - Deklarisana promenljiva xxx na liniji 9
+INFO  02:59:23,945 - Deklarisana promenljiva yyy na liniji 9
+INFO  02:59:23,945 - Deklarisana konstanta x na liniji 11
+INFO  02:59:23,945 - Deklarisana konstanta x na liniji 11
+INFO  02:59:23,945 - Deklarisana konstanta ccccc na liniji 12
+INFO  02:59:23,945 - Deklarisana konstanta ccccc na liniji 12
+INFO  02:59:23,945 - Deklarisana konstanta x2 na liniji 12
+INFO  02:59:23,946 - Deklarisana konstanta er na liniji 13
+INFO  02:59:23,946 - Deklarisana konstanta er na liniji 13
+INFO  02:59:23,946 - Deklarisana konstanta s na liniji 15
+INFO  02:59:23,946 - Deklarisana konstanta ss na liniji 15
+INFO  02:59:23,946 -  Print count calls = 0
+INFO  02:59:23,946 -  Deklarisanih promenljivih ima = 12
+INFO  02:59:23,946 - ===================================
+INFO  02:59:23,946 - Parsiranje uspesno zavrseno!
