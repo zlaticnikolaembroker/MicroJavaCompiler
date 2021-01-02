@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VisitorAdaptor"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MultipleVars"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MultupleArray"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ConstAssignBool"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ConstAssignChar"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorArrayItem"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.Tab"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ConstBool"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.MethodTypeDeclaration"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.DesignatorStmtDec"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NewExpression"/>
+    <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.concepts.Obj"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.OptionalMinus"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.Ternary"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.SemanticAnalyzer"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.NoOptionalMinus"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.CondtFactMore"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.ReadStmt"/>
+    <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.ast.VarError"/>
+</qualifiedTypeNameHistroy>

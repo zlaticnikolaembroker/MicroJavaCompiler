@@ -2,58 +2,17 @@
 
 program test301
 
-	const int nula = 0;
 	const int jedan = 1;
 	const int pet = 5;
 
 	int niz[];
-	char nizch[];
-	
-	char nizz, nizz asd , 
-	
 	
 {
-	void main()	
-		int bodovi;
-		bool bt;
+	void main()	int x;
 	{
-		bodovi  =123 123 123 ;
-		bodovi = 0;
-		bodovi++;
-		bodovi = bodovi + jedan;
-		bodovi = bodovi * pet;
-		bodovi--;
-		print(bodovi); 
 			
+		print(-(jedan + pet));
 		
-		niz = new int[3];
-		nizch[nula] = jedan;
-		niz[1] = 2;
-		nizch[niz[jedan]] = niz[niz[0]] * 3;
-		bodovi = niz[2]/nizch[0];
-		print(bodovi); 
-		print(niz[2]);
-		
-		
-		nizch = new char[3];
-		nizch[0] = 'a';
-		nizch[jedan] = 'b';
-		nizch[pet - 3] = 'c';
-		print(nizch[1]);
-		print(nizch[jedan * 2]);
-			
-		
-		bodovi = bodovi + (pet * jedan - 1) * bodovi - (3 % 2 + 3 * 2 - 3); 
-		print(bodovi);
-			
-		read(bodovi);
-		bt = true;
-		
-		read(bt);
-		
-		print(bt ? bodovi : bodovi + 10);
-		print(false ? bodovi + 20 : bodovi + 30);
-		print(bodovi > 10 ? '+' : '-');
 	}
 }
 

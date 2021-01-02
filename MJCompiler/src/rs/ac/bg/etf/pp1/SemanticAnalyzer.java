@@ -11,7 +11,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	int printCallCount = 0;
 	int varDeclCount = 0;
 	Obj currentMethod = null;
-	boolean returnFound = false;
 	boolean errorDetected = false;
 	int nVars;
 	
@@ -84,67 +83,107 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 	
 	public void visit(ConstAssignNumber constDecl) {
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal());
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.intType);
+		// NumConst must be int type
+		if (lastType != Tab.intType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
 	public void visit(ConstAssignBool constDecl) {
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal()?1:0);
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), boolType);
+		if (lastType != boolType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
 	public void visit(ConstAssignChar constDecl) {
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal());
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.charType);
+		if (lastType != Tab.charType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
 	public void visit(ConstAssignNumbers constDecl) {
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal());
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), Tab.intType);
+		// NumConst must be int type
+		if (lastType != Tab.intType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
 	public void visit(ConstAssignBools constDecl) {
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal()?1:0);
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), boolType);
+		if (lastType != boolType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
 	public void visit(ConstAssignChars constDecl) {
-		if (Tab.currentScope.findSymbol(constDecl.getConstName()) != null) {
-			report_error("Konstanta " + constDecl.getConstName() + " je vec deklarisana", constDecl);
-			return;
+		Obj objNumConst = Tab.currentScope.findSymbol(constDecl.getConstName());
+
+		if (objNumConst == null)
+		{
+			Obj newNumConst = Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+			newNumConst.setAdr(constDecl.getConstVal());
+		} else {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` je vec deklarisana!", constDecl);
 		}
-		varDeclCount++;
-		report_info("Deklarisana konstanta "+ constDecl.getConstName(), constDecl);
-		Tab.insert(Obj.Con, constDecl.getConstName(), lastType);
+		if (lastType != Tab.charType) {
+			report_error("Greska: Identifikator `" + constDecl.getConstName() + "` mora biti odgovarajuca vrednost!", constDecl);
+		}
 	}
 	
     public void visit(PrintStmt print) {
+    	if( !print.getExpr().struct.equals(Tab.intType) &&
+    			!print.getExpr().struct.equals(Tab.charType) &&
+    			!print.getExpr().struct.equals(boolType))
+    			report_error("print funkcija je primenljiva samo na osnovnim tipovima", print); else {
+    				printCallCount++;
+    		}
+	}
+    
+    public void visit(PrintStmtWithNum print) {
     	if( !print.getExpr().struct.equals(Tab.intType) &&
     			!print.getExpr().struct.equals(Tab.charType) &&
     			!print.getExpr().struct.equals(boolType))
@@ -260,7 +299,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	Tab.chainLocalSymbols(currentMethod);
     	Tab.closeScope();
     	
-    	returnFound = false;
     	currentMethod = null;
     }
     
@@ -292,6 +330,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	if(!designatorStmtAssignop.getExpr().struct.assignableTo(designatorStmtAssignop.getDesignator().obj.getType())) {
     		report_error("Greska na liniji " + designatorStmtAssignop.getLine() + " : " + "nekompatibilni tipovi u dodeli vrednosti! ", null);
     	}
+    	if(!isVarOrArray(designatorStmtAssignop.getDesignator().obj))
+			report_error("Simbol mora biti element niza ili promenljiva", designatorStmtAssignop);
+
+
+
+		Obj designatorObject = designatorStmtAssignop.getDesignator().obj;
+		Struct expressionType = designatorStmtAssignop.getExpr().struct;
+
+		if(expressionType.getKind() == Obj.Prog)
+			report_error("Simbol koji dodeljujemo ne sme biti tip!", designatorStmtAssignop);
+
+
+		if(!expressionType.assignableTo(designatorObject.getType())){
+			report_error("Tipovi nisu kompatibilni za dodelu vrednosti!", designatorStmtAssignop);
+		}
     }
     
     private static boolean isVarOrArray(Obj obj){
@@ -323,7 +376,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(newExpression.getExpr().struct != Tab.intType){
 			report_error("Velicina niza mora biti broj(int)!", newExpression);
 		}
-		newExpression.struct = new Struct(Struct.Array, newExpression.getType().struct);
+		newExpression.struct = new Struct(Struct.Array, lastType);
 		
 	}
     
