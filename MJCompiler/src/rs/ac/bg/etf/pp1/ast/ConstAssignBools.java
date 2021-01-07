@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 2/0/2021 21:35:45
+// 7/0/2021 19:49:10
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -73,7 +73,6 @@ public class ConstAssignBools extends ConstAssignops {
 
         buffer.append(" "+tab+constName);
         buffer.append("\n");
-
         buffer.append(tab);
         buffer.append(") [ConstAssignBools]");
         return buffer.toString();

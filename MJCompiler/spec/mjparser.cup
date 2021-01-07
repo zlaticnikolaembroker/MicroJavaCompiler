@@ -59,7 +59,7 @@ nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement
 nonterminal Addop, ActualPars, ActualParamList;
 nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal Mulop, Relop, DesignatorStatement, CondFact, Assignop;
-nonterminal OptionalMinus;
+nonterminal OptionalMinus, DesignatorArray;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
@@ -206,8 +206,10 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 				
 Designator ::= (DesignatorBasic) IDENT:name
 			|
-			(DesignatorArrayItem) IDENT:name LSQUARE Expr:index RSQUARE 
+			(DesignatorArrayItem) DesignatorArray LSQUARE Expr:index RSQUARE 
 			;
+			
+DesignatorArray ::= (DesignatorArray) Designator;
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator Assignop Expr
 					|

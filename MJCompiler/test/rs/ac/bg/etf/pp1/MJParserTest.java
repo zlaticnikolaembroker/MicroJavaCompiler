@@ -41,25 +41,32 @@ public class MJParserTest {
 	        Symbol s = p.parse();  //pocetak parsiranja
 	        
 	        Program prog = (Program)(s.value); 
-	        Tab.init(); // Universe scope
-            SemanticAnalyzer semanticCheck = new SemanticAnalyzer();
-            prog.traverseBottomUp(semanticCheck);
+	        Tab.init();
+			// ispis sintaksnog stabla
+			log.info(prog.toString(""));
+			log.info("===================================");
 
-            log.info("Print calls = " + semanticCheck.printCallCount);
-            Tab.dump();
+			// ispis prepoznatih programskih konstrukcija
+			SemanticAnalyzer v = new SemanticAnalyzer();
+			prog.traverseBottomUp(v); 
+	      
+			log.info(" Print count calls = " + v.printCallCount);
+
+			log.info(" Deklarisanih promenljivih ima = " + v.varDeclCount);
 			
-			if(!semanticCheck.errorDetected && semanticCheck.passed()){
+			log.info("===================================");
+			Tab.dump();
+			
+			if(!v.errorDetected && v.passed()){
 				File objFile = new File("test/program.obj");
 				if(objFile.exists()) objFile.delete();
 				
 				CodeGenerator codeGenerator = new CodeGenerator();
 				prog.traverseBottomUp(codeGenerator);
-				Code.dataSize = semanticCheck.nVars;
+				Code.dataSize = v.nVars;
 				Code.mainPc = codeGenerator.getMainPC();
 				Code.write(new FileOutputStream(objFile));
 				log.info("Parsiranje uspesno zavrseno!");
-				log.info(Code.mainPc);
-				log.info(Code.dataSize);
 			}else{
 				log.error("Parsiranje NIJE uspesno zavrseno!");
 			}

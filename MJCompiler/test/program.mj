@@ -1,18 +1,16 @@
 // Test301
 
 program test301
-
-	const int jedan = 1;
-	const int pet = 5;
-
-	int niz[];
 	
 {
-	void main()	int x;
+	void main() int niz[];
 	{
-			
-		print(-(jedan + pet));
 		
+		niz = new int[10];
+		niz[1] = 10;
+		niz[2] = niz[1] + 2;
+		print(niz[1] + niz[1] * 2);
+		print(niz[2]);
 	}
 }
 

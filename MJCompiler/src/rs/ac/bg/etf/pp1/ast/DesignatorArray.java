@@ -5,25 +5,23 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Term implements SyntaxNode {
+public class DesignatorArray implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    public rs.etf.pp1.symboltable.concepts.Struct struct = null;
+    private Designator Designator;
 
-    private Factor Factor;
-
-    public Term (Factor Factor) {
-        this.Factor=Factor;
-        if(Factor!=null) Factor.setParent(this);
+    public DesignatorArray (Designator Designator) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
     }
 
-    public Factor getFactor() {
-        return Factor;
+    public Designator getDesignator() {
+        return Designator;
     }
 
-    public void setFactor(Factor Factor) {
-        this.Factor=Factor;
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
     }
 
     public SyntaxNode getParent() {
@@ -47,32 +45,32 @@ public class Term implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Factor!=null) Factor.accept(visitor);
+        if(Designator!=null) Designator.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Factor!=null) Factor.traverseTopDown(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Factor!=null) Factor.traverseBottomUp(visitor);
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
         accept(visitor);
     }
 
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Term(\n");
+        buffer.append("DesignatorArray(\n");
 
-        if(Factor!=null)
-            buffer.append(Factor.toString("  "+tab));
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [Term]");
+        buffer.append(") [DesignatorArray]");
         return buffer.toString();
     }
 }

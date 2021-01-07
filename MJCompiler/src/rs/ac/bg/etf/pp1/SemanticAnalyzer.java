@@ -241,6 +241,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorBasic designator){
+    	log.info(designator.getName());
     	Obj obj = Tab.find(designator.getName());
     	if(obj == Tab.noObj){
 			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getName()+" nije deklarisano! ", null);
@@ -249,7 +250,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorArrayItem designator){
-    	Obj arrayType = Tab.find(designator.getName());
+    	Obj arrayType = Tab.find(designator.getDesignatorArray().getDesignator().obj.getName());
     	designator.obj = new Obj(Obj.Elem, "", arrayType.getType().getElemType());
 
 		if(Struct.Array != arrayType.getType().getKind()){
@@ -257,12 +258,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			designator.obj = Tab.noObj;
 		}
 
-		if(!(designator.getExpr().struct == Tab.intType)){
+		if(!(designator.getExpr().struct == Tab.intType || designator.getExpr().struct.getKind() == Struct.Enum)){
 			report_error("Izraz izmedju zagrada mora biti celobrojna vrednost!", designator);
 			designator.obj = Tab.noObj;
 		}
 		// to which index we are accessing
-		report_info("Prostupamo clanu niza " + designator.obj.getName(), designator);
+		report_info("Prostupamo clanu niza " + designator.getDesignatorArray().getDesignator().obj.getName(), designator);
     }
     
     public void visit(Term term){

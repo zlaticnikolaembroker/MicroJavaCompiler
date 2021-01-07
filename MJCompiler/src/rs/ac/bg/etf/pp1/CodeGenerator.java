@@ -30,6 +30,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	
+	public void visit(DesignatorArray desiArr) {
+		Code.load(desiArr.getDesignator().obj);
+	}
+	
 	public void visit(PrintStmtWithNum print) {
 		Code.loadConst(print.getN2());
 		if(print.getExpr().struct.equals(Tab.charType))
@@ -87,12 +91,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.store(assignment.getDesignator().obj);
 	}
 	
-	public void visit(DesignatorBasic designatorBasic) {
-		Code.load(designatorBasic.obj);
-	}
-	
-	public void visit(DesignatorArrayItem arrayItem) {
-		Code.load(arrayItem.obj);
+	public void visit(Var designatorBasic) {
+		Code.load(designatorBasic.getDesignator().obj);
 	}
 	
 	public void visit(DesignatorStmtInc inc) {
@@ -152,16 +152,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(ReadStmt read) {
-		if(!read.getDesignator().obj.getType().equals(Tab.charType))
-		{
-			Code.put(Code.read);
-			Code.store(read.getDesignator().obj);
-		}
-		else 
-		{
+		if (read.getDesignator().obj.getType().equals(Tab.charType)) {
 			Code.put(Code.bread);
-			Code.store(read.getDesignator().obj);
+		} else {
+			Code.put(Code.read);
 		}
+		Code.store(read.getDesignator().obj);
 	}
 	
 	

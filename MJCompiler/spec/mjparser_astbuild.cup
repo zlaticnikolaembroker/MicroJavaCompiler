@@ -75,6 +75,7 @@ nonterminal DesignatorStatement DesignatorStatement;
 nonterminal CondFact CondFact;
 nonterminal Assignop Assignop;
 nonterminal OptionalMinus OptionalMinus;
+nonterminal DesignatorArray DesignatorArray;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
@@ -221,8 +222,10 @@ ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=ne
 				
 Designator ::= (DesignatorBasic) IDENT:name {: RESULT=new DesignatorBasic(name); RESULT.setLine(nameleft); :}
 			|
-			(DesignatorArrayItem) IDENT:name LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(name, index); RESULT.setLine(nameleft); :} 
+			(DesignatorArrayItem) DesignatorArray:D1 LSQUARE Expr:index RSQUARE {: RESULT=new DesignatorArrayItem(D1, index); RESULT.setLine(D1left); :} 
 			;
+			
+DesignatorArray ::= (DesignatorArray) Designator:D1 {: RESULT=new DesignatorArray(D1); RESULT.setLine(D1left); :};
 			
 DesignatorStatement ::= (DesignatorStmtAssignop) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStmtAssignop(D1, A2, E3); RESULT.setLine(D1left); :}
 					|

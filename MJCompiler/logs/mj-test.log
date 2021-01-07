@@ -1,48 +1,350 @@
-INFO  00:36:57,128 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
-INFO  00:36:57,142 - #2 program
-INFO  00:36:57,142 - #34 test301
-INFO  00:36:57,142 - #14 const
-INFO  00:36:57,142 - #34 int
-INFO  00:36:57,142 - #34 jedan
-INFO  00:36:57,142 - #8 =
-INFO  00:36:57,142 - #33 1
-INFO  00:36:57,142 - #5 ;
-INFO  00:36:57,143 - #14 const
-INFO  00:36:57,143 - #34 int
-INFO  00:36:57,143 - #34 pet
-INFO  00:36:57,143 - #8 =
-INFO  00:36:57,143 - #33 5
-INFO  00:36:57,143 - #5 ;
-INFO  00:36:57,143 - #34 int
-INFO  00:36:57,143 - #34 niz
-INFO  00:36:57,143 - #15 [
-INFO  00:36:57,143 - #16 ]
-INFO  00:36:57,143 - #5 ;
-INFO  00:36:57,143 - #3 {
-INFO  00:36:57,144 - #13 void
-INFO  00:36:57,144 - #34 main
-INFO  00:36:57,144 - #6 (
-INFO  00:36:57,144 - #7 )
-INFO  00:36:57,144 - #34 int
-INFO  00:36:57,144 - #34 x
-INFO  00:36:57,144 - #5 ;
-INFO  00:36:57,144 - #3 {
-INFO  00:36:57,145 - #12 print
-INFO  00:36:57,145 - #6 (
-INFO  00:36:57,145 - #17 -
-INFO  00:36:57,145 - #6 (
-INFO  00:36:57,145 - #34 jedan
-INFO  00:36:57,146 - #10 +
-INFO  00:36:57,146 - #34 pet
-INFO  00:36:57,146 - #7 )
-INFO  00:36:57,146 - #7 )
-INFO  00:36:57,147 - #5 ;
-INFO  00:36:57,147 - #4 }
-INFO  00:36:57,147 - #4 }
-INFO  00:36:57,153 - Deklarisana promenljiva niz tipa rs.etf.pp1.symboltable.concepts.Struct@7eda2dbb na liniji 8
-INFO  00:36:57,153 - Obradjuje se funkcija main na liniji 11
-INFO  00:36:57,153 - Deklarisana promenljiva x na liniji 11
-INFO  00:36:57,153 - Print calls = 1
-INFO  00:36:57,156 - Parsiranje uspesno zavrseno!
-INFO  00:36:57,156 - 0
-INFO  00:36:57,156 - 1
+INFO  23:40:17,825 - Compiling source file: /home/nikola/CODE/pp1domaci/workspace/MJCompiler/test/program.mj
+INFO  23:40:17,839 - #2 program
+INFO  23:40:17,840 - #34 test301
+INFO  23:40:17,840 - #3 {
+INFO  23:40:17,840 - #13 void
+INFO  23:40:17,840 - #34 main
+INFO  23:40:17,840 - #6 (
+INFO  23:40:17,840 - #7 )
+INFO  23:40:17,840 - #34 int
+INFO  23:40:17,841 - #34 niz
+INFO  23:40:17,841 - #15 [
+INFO  23:40:17,841 - #16 ]
+INFO  23:40:17,841 - #5 ;
+INFO  23:40:17,841 - #3 {
+INFO  23:40:17,842 - #34 niz
+INFO  23:40:17,842 - #8 =
+INFO  23:40:17,842 - #29 new
+INFO  23:40:17,843 - #34 int
+INFO  23:40:17,843 - #15 [
+INFO  23:40:17,843 - #33 10
+INFO  23:40:17,843 - #16 ]
+INFO  23:40:17,843 - #5 ;
+INFO  23:40:17,844 - #34 niz
+INFO  23:40:17,844 - #15 [
+INFO  23:40:17,844 - #33 1
+INFO  23:40:17,844 - #16 ]
+INFO  23:40:17,844 - #8 =
+INFO  23:40:17,845 - #33 10
+INFO  23:40:17,845 - #5 ;
+INFO  23:40:17,845 - #34 niz
+INFO  23:40:17,845 - #15 [
+INFO  23:40:17,845 - #33 2
+INFO  23:40:17,845 - #16 ]
+INFO  23:40:17,845 - #8 =
+INFO  23:40:17,845 - #34 niz
+INFO  23:40:17,845 - #15 [
+INFO  23:40:17,845 - #33 1
+INFO  23:40:17,845 - #16 ]
+INFO  23:40:17,845 - #10 +
+INFO  23:40:17,845 - #33 2
+INFO  23:40:17,846 - #5 ;
+INFO  23:40:17,846 - #12 print
+INFO  23:40:17,846 - #6 (
+INFO  23:40:17,846 - #34 niz
+INFO  23:40:17,846 - #15 [
+INFO  23:40:17,846 - #33 1
+INFO  23:40:17,846 - #16 ]
+INFO  23:40:17,846 - #10 +
+INFO  23:40:17,846 - #34 niz
+INFO  23:40:17,846 - #15 [
+INFO  23:40:17,846 - #33 1
+INFO  23:40:17,846 - #16 ]
+INFO  23:40:17,846 - #22 *
+INFO  23:40:17,847 - #33 2
+INFO  23:40:17,847 - #7 )
+INFO  23:40:17,847 - #5 ;
+INFO  23:40:17,847 - #12 print
+INFO  23:40:17,847 - #6 (
+INFO  23:40:17,847 - #34 niz
+INFO  23:40:17,847 - #15 [
+INFO  23:40:17,847 - #33 2
+INFO  23:40:17,847 - #16 ]
+INFO  23:40:17,847 - #7 )
+INFO  23:40:17,847 - #5 ;
+INFO  23:40:17,847 - #4 }
+INFO  23:40:17,848 - #4 }
+INFO  23:40:17,855 - Program(
+  ProgramName(
+   test301
+  ) [ProgramName]
+  NoProgramDecls(
+  ) [NoProgramDecls]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDeclVoid(
+      MethodTypeDeclaration(
+       main
+      ) [MethodTypeDeclaration]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+          SingleArray(
+           niz
+          ) [SingleArray]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                Assignment(
+                  DesignatorStmtAssignop(
+                    DesignatorBasic(
+                     niz
+                    ) [DesignatorBasic]
+                    Assignop(
+                    ) [Assignop]
+                    BasicExpresion(
+                      NoOptionalMinus(
+                      ) [NoOptionalMinus]
+                      TermExpr(
+                        Term(
+                          NewExpression(
+                            Type(
+                             int
+                            ) [Type]
+                            BasicExpresion(
+                              NoOptionalMinus(
+                              ) [NoOptionalMinus]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   10
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [BasicExpresion]
+                          ) [NewExpression]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [BasicExpresion]
+                  ) [DesignatorStmtAssignop]
+                ) [Assignment]
+              ) [Statements]
+              Assignment(
+                DesignatorStmtAssignop(
+                  DesignatorArrayItem(
+                    DesignatorArray(
+                      DesignatorBasic(
+                       niz
+                      ) [DesignatorBasic]
+                    ) [DesignatorArray]
+                    BasicExpresion(
+                      NoOptionalMinus(
+                      ) [NoOptionalMinus]
+                      TermExpr(
+                        Term(
+                          Const(
+                           1
+                          ) [Const]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [BasicExpresion]
+                  ) [DesignatorArrayItem]
+                  Assignop(
+                  ) [Assignop]
+                  BasicExpresion(
+                    NoOptionalMinus(
+                    ) [NoOptionalMinus]
+                    TermExpr(
+                      Term(
+                        Const(
+                         10
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [BasicExpresion]
+                ) [DesignatorStmtAssignop]
+              ) [Assignment]
+            ) [Statements]
+            Assignment(
+              DesignatorStmtAssignop(
+                DesignatorArrayItem(
+                  DesignatorArray(
+                    DesignatorBasic(
+                     niz
+                    ) [DesignatorBasic]
+                  ) [DesignatorArray]
+                  BasicExpresion(
+                    NoOptionalMinus(
+                    ) [NoOptionalMinus]
+                    TermExpr(
+                      Term(
+                        Const(
+                         2
+                        ) [Const]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [BasicExpresion]
+                ) [DesignatorArrayItem]
+                Assignop(
+                ) [Assignop]
+                BasicExpresion(
+                  NoOptionalMinus(
+                  ) [NoOptionalMinus]
+                  AddExpr(
+                    TermExpr(
+                      Term(
+                        Var(
+                          DesignatorArrayItem(
+                            DesignatorArray(
+                              DesignatorBasic(
+                               niz
+                              ) [DesignatorBasic]
+                            ) [DesignatorArray]
+                            BasicExpresion(
+                              NoOptionalMinus(
+                              ) [NoOptionalMinus]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   1
+                                  ) [Const]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [BasicExpresion]
+                          ) [DesignatorArrayItem]
+                        ) [Var]
+                      ) [Term]
+                    ) [TermExpr]
+                    AddopPlus(
+                    ) [AddopPlus]
+                    Term(
+                      Const(
+                       2
+                      ) [Const]
+                    ) [Term]
+                  ) [AddExpr]
+                ) [BasicExpresion]
+              ) [DesignatorStmtAssignop]
+            ) [Assignment]
+          ) [Statements]
+          PrintStmt(
+            BasicExpresion(
+              NoOptionalMinus(
+              ) [NoOptionalMinus]
+              AddExpr(
+                TermExpr(
+                  Term(
+                    Var(
+                      DesignatorArrayItem(
+                        DesignatorArray(
+                          DesignatorBasic(
+                           niz
+                          ) [DesignatorBasic]
+                        ) [DesignatorArray]
+                        BasicExpresion(
+                          NoOptionalMinus(
+                          ) [NoOptionalMinus]
+                          TermExpr(
+                            Term(
+                              Const(
+                               1
+                              ) [Const]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [BasicExpresion]
+                      ) [DesignatorArrayItem]
+                    ) [Var]
+                  ) [Term]
+                ) [TermExpr]
+                AddopPlus(
+                ) [AddopPlus]
+                TermMore(
+                  Term(
+                    Var(
+                      DesignatorArrayItem(
+                        DesignatorArray(
+                          DesignatorBasic(
+                           niz
+                          ) [DesignatorBasic]
+                        ) [DesignatorArray]
+                        BasicExpresion(
+                          NoOptionalMinus(
+                          ) [NoOptionalMinus]
+                          TermExpr(
+                            Term(
+                              Const(
+                               1
+                              ) [Const]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [BasicExpresion]
+                      ) [DesignatorArrayItem]
+                    ) [Var]
+                  ) [Term]
+                  MulopMul(
+                  ) [MulopMul]
+                  Const(
+                   2
+                  ) [Const]
+                ) [TermMore]
+              ) [AddExpr]
+            ) [BasicExpresion]
+          ) [PrintStmt]
+        ) [Statements]
+        PrintStmt(
+          BasicExpresion(
+            NoOptionalMinus(
+            ) [NoOptionalMinus]
+            TermExpr(
+              Term(
+                Var(
+                  DesignatorArrayItem(
+                    DesignatorArray(
+                      DesignatorBasic(
+                       niz
+                      ) [DesignatorBasic]
+                    ) [DesignatorArray]
+                    BasicExpresion(
+                      NoOptionalMinus(
+                      ) [NoOptionalMinus]
+                      TermExpr(
+                        Term(
+                          Const(
+                           2
+                          ) [Const]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [BasicExpresion]
+                  ) [DesignatorArrayItem]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+          ) [BasicExpresion]
+        ) [PrintStmt]
+      ) [Statements]
+    ) [MethodDeclVoid]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:40:17,855 - ===================================
+INFO  23:40:17,858 - Obradjuje se funkcija main na liniji 6
+INFO  23:40:17,858 - Deklarisana promenljiva niz tipa rs.etf.pp1.symboltable.concepts.Struct@7eda2dbb na liniji 6
+INFO  23:40:17,858 - niz
+INFO  23:40:17,858 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 10
+INFO  23:40:17,859 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 11
+INFO  23:40:17,859 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 11
+INFO  23:40:17,859 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 12
+INFO  23:40:17,859 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 12
+INFO  23:40:17,859 - niz
+INFO  23:40:17,859 - Prostupamo clanu niza niz na liniji 13
+INFO  23:40:17,859 -  Print count calls = 2
+INFO  23:40:17,859 -  Deklarisanih promenljivih ima = 1
+INFO  23:40:17,859 - ===================================
+INFO  23:40:17,861 - Parsiranje uspesno zavrseno!
