@@ -46,8 +46,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Promenljiva " + varDecl.getVarName() + " je vec deklarisana", varDecl);
 			return;
 		}
+		
 		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName(), varDecl);
 		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), lastType);
 	}
 	
@@ -56,8 +56,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Promenljiva " + varDecl.getVarName() + " je vec deklarisana", varDecl);
 			return;
 		}
+		
 		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName(), varDecl);
 		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), lastType);
 	}
 	
@@ -66,9 +66,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Promenljiva " + varDecl.getVarName() + " je vec deklarisana", varDecl);
 			return;
 		}
-		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName() + " tipa " + lastType, varDecl);
 		
+		varDeclCount++;
 		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, lastType));
 	}
 	
@@ -77,8 +76,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Promenljiva " + varDecl.getVarName() + " je vec deklarisana", varDecl);
 			return;
 		}
+		
 		varDeclCount++;
-		report_info("Deklarisana promenljiva "+ varDecl.getVarName() + " tipa " + lastType, varDecl);
 		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, lastType));
 	}
 	
@@ -241,7 +240,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(DesignatorBasic designator){
-    	log.info(designator.getName());
     	Obj obj = Tab.find(designator.getName());
     	if(obj == Tab.noObj){
 			report_error("Greska na liniji " + designator.getLine()+ " : ime "+designator.getName()+" nije deklarisano! ", null);
@@ -262,8 +260,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Izraz izmedju zagrada mora biti celobrojna vrednost!", designator);
 			designator.obj = Tab.noObj;
 		}
-		// to which index we are accessing
-		report_info("Prostupamo clanu niza " + designator.getDesignatorArray().getDesignator().obj.getName(), designator);
     }
     
     public void visit(Term term){

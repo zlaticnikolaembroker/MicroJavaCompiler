@@ -76,6 +76,8 @@ nonterminal CondFact CondFact;
 nonterminal Assignop Assignop;
 nonterminal OptionalMinus OptionalMinus;
 nonterminal DesignatorArray DesignatorArray;
+nonterminal TernaryOne TernaryOne;
+nonterminal TernaryTwo TernaryTwo;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
@@ -189,8 +191,14 @@ OptionalMinus ::= (OptionalMinus) MINUS {: RESULT=new OptionalMinus(); :}
 	
 Expr ::= (BasicExpresion) OptionalMinus:O1 BasicExpr:B2 {: RESULT=new BasicExpresion(O1, B2); RESULT.setLine(O1left); :}
 		|
-		(Ternary) CondFact:C1 QUESTION Expr:E2 COLON Expr:E3 {: RESULT=new Ternary(C1, E2, E3); RESULT.setLine(C1left); :}
+		(Ternary) CondFact:C1 TernaryOne:T2 Expr:E3 TernaryTwo:T4 Expr:E5 {: RESULT=new Ternary(C1, T2, E3, T4, E5); RESULT.setLine(C1left); :}
 		;
+		
+TernaryOne ::= (TernaryOne) QUESTION {: RESULT=new TernaryOne(); :}
+;
+
+TernaryTwo ::= (TernaryTwo) COLON {: RESULT=new TernaryTwo(); :}
+;
 
 Term ::= (Term) Factor:t {: RESULT=new Term(t); RESULT.setLine(tleft); :} 
 		|

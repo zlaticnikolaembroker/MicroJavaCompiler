@@ -59,7 +59,7 @@ nonterminal FormPars, StatementList, FormalParamList, FormalParamDecl, Statement
 nonterminal Addop, ActualPars, ActualParamList;
 nonterminal Identifiers, ProgramDeclarations, ConstDecl, ConstAssignops;
 nonterminal Mulop, Relop, DesignatorStatement, CondFact, Assignop;
-nonterminal OptionalMinus, DesignatorArray;
+nonterminal OptionalMinus, DesignatorArray, TernaryOne, TernaryTwo;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program, MethodDecl, Designator, MethodTypeDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Factor, Expr, BasicExpr;
@@ -173,8 +173,14 @@ OptionalMinus ::= (OptionalMinus) MINUS
 	
 Expr ::= (BasicExpresion) OptionalMinus BasicExpr
 		|
-		(Ternary) CondFact QUESTION Expr COLON Expr
+		(Ternary) CondFact TernaryOne Expr TernaryTwo Expr
 		;
+		
+TernaryOne ::= (TernaryOne) QUESTION
+;
+
+TernaryTwo ::= (TernaryTwo) COLON
+;
 
 Term ::= (Term) Factor:t 
 		|

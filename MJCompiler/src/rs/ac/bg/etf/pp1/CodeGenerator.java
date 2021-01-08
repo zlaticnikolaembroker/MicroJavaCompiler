@@ -11,8 +11,17 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 	
 	Logger log = Logger.getLogger(MJParserTest.class);
+	
+	public class Condition{
+		int startPos=0;
+		java.util.List<Integer> caseIf = new java.util.ArrayList<Integer>();
+		java.util.List<Integer> caseElse = new java.util.ArrayList<Integer>();
+	}
+	
+	private int listIndex = -1;
 
 	private int mainPC;
+	private java.util.List<Condition> conditionList= new java.util.ArrayList<Condition>();
 	
 	public int getMainPC() {
 		return mainPC;
@@ -20,14 +29,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(PrintStmt print) {
 		Code.loadConst(1);
-		if(print.getExpr().struct.equals(Tab.charType))
-		{
+		if(print.getExpr().struct.equals(Tab.charType)) {
 			Code.put(Code.bprint);
+			return;
 		}
-		else 
-		{
-			Code.put(Code.print);
-		}
+		Code.put(Code.print);
 	}
 	
 	public void visit(DesignatorArray desiArr) {
@@ -36,14 +42,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(PrintStmtWithNum print) {
 		Code.loadConst(print.getN2());
-		if(print.getExpr().struct.equals(Tab.charType))
-		{
+		if(print.getExpr().struct.equals(Tab.charType)) {
 			Code.put(Code.bprint);
+			return;
 		}
-		else
-		{
-			Code.put(Code.print);
-		}
+		Code.put(Code.print);
 	}
 	
 	public void visit(Const cnst) {
@@ -69,7 +72,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(MethodTypeDeclaration methodTypeDecl) {
 
-		if("main".equalsIgnoreCase(methodTypeDecl.getMethName())){
+		if(methodTypeDecl.getMethName().equalsIgnoreCase("main")){
 			mainPC = Code.pc;
 		}
 		
@@ -78,7 +81,6 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.enter);
 		Code.put(0);
 		Code.put(methodTypeDecl.obj.getLocalSymbols().size());
-
 
 	}
 	
@@ -96,43 +98,48 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	public void visit(DesignatorStmtInc inc) {
-		if(inc.getDesignator().obj.getKind() == Obj.Elem)
+		if(inc.getDesignator().obj.getKind() == Obj.Elem) {
 			Code.put(Code.dup2);
+		}
 
 		Code.load(inc.getDesignator().obj);
 		Code.loadConst(1);
 		Code.put(Code.add);
 		Code.store(inc.getDesignator().obj);
-		
 	}
 	
 	public void visit(DesignatorStmtDec dec) {
-		if(dec.getDesignator().obj.getKind() == Obj.Elem)
+		if(dec.getDesignator().obj.getKind() == Obj.Elem) {
 			Code.put(Code.dup2);
-
+		}
+		
 		Code.load(dec.getDesignator().obj);
 		Code.loadConst(1);
 		Code.put(Code.sub);
 		Code.store(dec.getDesignator().obj);
-		
 	}
 	
 	public void visit(TermMore termMore) {
 		if (termMore.getMulop() instanceof MulopMul) {
 			Code.put(Code.mul);
-		} else if (termMore.getMulop() instanceof MulopDiv) {
-			Code.put(Code.div);
-		} else {
-			Code.put(Code.rem);
+			return;
 		}
+		
+		if (termMore.getMulop() instanceof MulopDiv) {
+			Code.put(Code.div);
+			return;
+		}
+		
+		Code.put(Code.rem);
 	}
 	
 	public void visit(AddExpr addExpr) {
 		if (addExpr.getAddop() instanceof AddopMinus) {
 			Code.put(Code.sub);
-		} else {
-			Code.put(Code.add);
-		}
+			return;
+		} 
+		
+		Code.put(Code.add);
 	}
 	
 	public void visit(BasicExpresion optMinus) {
@@ -143,12 +150,13 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(NewExpression newExpr) {
 		Code.put(Code.newarray);
+		
 		if(!newExpr.getType().struct.equals(Tab.charType)){
 			Code.put(1);
+			return;
 		}
-		else{
-			Code.put(0);
-		}	
+		
+		Code.put(0);
 	}
 	
 	public void visit(ReadStmt read) {
@@ -163,6 +171,83 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	public void visit(ExprParens expr) {
 		expr.struct = expr.getExpr().struct;
+	}
+	
+	private void addEmptyElementToGlobalList() {
+		listIndex++;
+		conditionList.add(new Condition());
+	}
+	
+	public void visit(CondFact condFact) {
+		addEmptyElementToGlobalList();
+		
+		Code.load(new Obj(Obj.Con, "", condFact.getBasicExpr().struct, 1, 0));
+		conditionList.get(listIndex).caseElse.add(Code.pc+1);
+		Code.putFalseJump(Code.eq, 0);
+	}
+	
+	public void visit(CondtFactMore condFactMore){
+		addEmptyElementToGlobalList();
+		
+		SyntaxNode node = condFactMore.getRelop();
+		conditionList.get(listIndex).caseElse.add(Code.pc+1);
+		
+		if(node instanceof RelopIdentical){
+			Code.putFalseJump(Code.eq, 0);
+			return;
+		}
+		
+		if(node instanceof RelopNotIdentical){
+			Code.putFalseJump(Code.ne, 0);
+			return;
+		}
+		
+		if(node instanceof RelopGreater){
+			Code.putFalseJump(Code.gt, 0);
+			return;
+		}
+		
+		if(node instanceof RelopGreaterEqual){
+			Code.putFalseJump(Code.ge, 0);
+			return;
+		}
+		
+		if(node instanceof RelopLess){
+			Code.putFalseJump(Code.lt, 0);
+			return;
+		}
+		
+		Code.putFalseJump(Code.le, 0);
+		
+	}
+	
+	public void visit(TernaryOne ifst){
+		for (int elem : conditionList.get(listIndex).caseIf) {
+			Code.fixup(elem);
+		}
+		
+		conditionList.get(listIndex).caseIf.clear();
+	}
+	
+	public void visit(TernaryTwo elseSt){
+		conditionList.get(listIndex).caseIf.add(Code.pc+1);
+		Code.putJump(0);
+		
+		for (int elem : conditionList.get(listIndex).caseElse) {
+			Code.fixup(elem);
+		}
+		
+		conditionList.get(listIndex).caseElse.clear();
+	}
+	
+	public void visit(Ternary ternary) {
+		for (int elem : conditionList.get(listIndex).caseIf) {
+			Code.fixup(elem);
+		}
+		
+		conditionList.get(listIndex).caseIf.clear();
+		conditionList.remove(listIndex);
+		listIndex--;
 	}
 	
 }

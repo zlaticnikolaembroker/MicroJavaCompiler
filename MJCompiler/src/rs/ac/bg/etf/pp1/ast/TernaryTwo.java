@@ -5,11 +5,11 @@
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Assignop implements SyntaxNode {
+public class TernaryTwo implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    public Assignop () {
+    public TernaryTwo () {
     }
 
     public SyntaxNode getParent() {
@@ -46,10 +46,10 @@ public class Assignop implements SyntaxNode {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("Assignop(\n");
+        buffer.append("TernaryTwo(\n");
 
         buffer.append(tab);
-        buffer.append(") [Assignop]");
+        buffer.append(") [TernaryTwo]");
         return buffer.toString();
     }
 }
